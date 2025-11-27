@@ -14,6 +14,8 @@ import p1 from "@/assets/images/home/p1.png";
 import p2 from "@/assets/images/home/p2.webp";
 import p3 from "@/assets/images/home/p3.jpg";
 import p4 from "@/assets/images/home/p4.jpg";
+import bg1 from "@/assets/images/bg-01-white.png";
+import bg2 from "@/assets/images/bg-04-white.png";
 
 const WhoBenefits = () => {
   const items = [
@@ -46,57 +48,65 @@ const WhoBenefits = () => {
   ];
 
   return (
-    <div className="max-w-7xl m-auto py-12">
-      <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">
-        WHO <span className="text-green-300">BENEFITS</span> FROM OUR <span className="text-green-300">EXPERT ADVICE</span> AND EXPERIENCE?
-      </h1>
+    <div className="relative">
+      <Image src={bg1} className="absolute left-5 top-0"/>
+      <Image src={bg2} className="absolute right-5 bottom-0"/>
+      <div className="max-w-7xl m-auto py-12">
+        <div className="flex flex-col gap-5">
+          <p className="text-center brand-text-orange text-xl ">Tailored Property Advice</p>
+          <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">
+            Who Benefits From Our <span className="text-green-300">Expert Advice</span> and <span className="text-green-300">Experience</span>?
+          </h1>
+        </div>
 
-      <div className="relative group rounded-lg">
-        {/* Custom navigation buttons */}
-        <button className="swiper-button-prev absolute !-left-3 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <GrPrevious />
-        </button>
-        <button className="swiper-button-next absolute !-right-3 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <GrNext />
-        </button>
 
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          slidesPerView={3}
-          spaceBetween={0}
-          loop={false}
-        >
-          {items.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="px-4 py-4 rounded-lg relative flex flex-col items-center">
-                <div className="z-10 w-[96%] relative">
-                    <Image src={item.img} className="rounded-2xl object-cover" />
-                    <Image src={item.img2} alt="profile" className="absolute w-12 h-12 rounded-full right-5 z-10 -bottom-5 p-[2px] bg-white"/>
+        <div className="relative group rounded-lg">
+          {/* Custom navigation buttons */}
+          <button className="swiper-button-prev absolute !-left-3 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <GrPrevious />
+          </button>
+          <button className="swiper-button-next absolute !-right-3 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <GrNext />
+          </button>
+
+          <Swiper
+            modules={[Navigation]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            slidesPerView={3}
+            spaceBetween={0}
+            loop={false}
+          >
+            {items.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="px-4 py-4 rounded-lg relative flex flex-col items-center">
+                  <div className="z-10 w-[96%] relative">
+                      <Image src={item.img} className="rounded-2xl object-cover" />
+                      <Image src={item.img2} alt="profile" className="absolute w-12 h-12 rounded-full right-5 z-10 -bottom-5 p-[2px] bg-white"/>
+                  </div>
+
+
+                  <div className="bg-white h-[350px] w-full rounded-2xl relative -top-24 -z-10 pt-30 px-8 flex flex-col items-start gap-2">
+                      <div className="flex gap-3 items-center">
+                          <div className="flex gap-[1.5px]">
+                            {[...Array(5)].map((_, index) => (
+                              <FaStar size={16} key={index} className="text-yellow-400" />
+                            ))}
+                          </div>
+                          <p className="text-sm text-red-600">5.0</p>
+                          <p className="text-sm text-gray-500">(2)</p>
+                      </div>
+                          
+                    <h3 className="font-semibold text-lg">{item.title}</h3>
+                    <p className="text-gray-500 text-sm">{item.dscrpt}</p>
+                  </div>
                 </div>
-                
-
-                <div className="bg-white h-[350px] w-full rounded-2xl relative -top-24 -z-10 pt-30 px-8 flex flex-col items-start gap-2">
-                    <div className="flex gap-3 items-center">
-                        <div className="flex gap-[1.5px]">
-                          {[...Array(5)].map((_, index) => (
-                            <FaStar size={16} key={index} className="text-yellow-400" />
-                          ))}
-                        </div>
-                        <p className="text-sm text-red-600">5.0</p>
-                        <p className="text-sm text-gray-500">(2)</p>
-                    </div>
-                    
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="text-gray-500 text-sm">{item.dscrpt}</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

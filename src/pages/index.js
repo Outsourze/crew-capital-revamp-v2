@@ -1,5 +1,7 @@
 import Carousel from "@/components/home/CarouselIntro";
+import ContactUs from "@/components/home/ContactUs";
 import Foundation from "@/components/home/Foundation";
+import Testimonials from "@/components/home/Testimonials";
 import WhoBenefits from "@/components/home/WhoBenefits";
 import WhyUs from "@/components/home/WhyChooseUs";
 
@@ -13,6 +15,8 @@ export default function Home() {
         <WhoBenefits />
         <Foundation />
         <WhyUs />
+        <Testimonials />
+        <ContactUs />
       </div>
     </div>
   );

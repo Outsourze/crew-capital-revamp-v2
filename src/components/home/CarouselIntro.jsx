@@ -11,6 +11,7 @@ import p2 from "@/assets/images/home/p2.webp";
 import p3 from "@/assets/images/home/p3.jpg";
 import p4 from "@/assets/images/home/p4.jpg";
 import Image from "next/image";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Carousel() {
   const images = [bg1.src, bg2.src]; // list of images
@@ -24,8 +25,8 @@ export default function Carousel() {
         <p className="mb-6">
           TRANSFORMING THE LIVES OF INDIVIDUALS, COUPLES AND FAMILIES IN THE AVIATION & MINING SECTOR
         </p>
-        <button className="flex items-center gap-3 bg-white text-black px-6 py-3 rounded-md text-sm brand-text-blue uppercase">
-          Get Started
+        <button className="flex items-center gap-3 brand-bg-orange text-white px-6 py-3 rounded-md text-sm brand-text-blue">
+          Get Started <FaArrowRightLong />
         </button>
       </div>
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 text-white text-lg p-5 flex items-center gap-6 

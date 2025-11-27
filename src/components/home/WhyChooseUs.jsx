@@ -21,9 +21,10 @@ const WhyUs = () => {
     return (
         <div className="max-w-7xl m-auto py-12 flex w-full justify-between gap-10">
             <div className="flex flex-col gap-5 w-1/2">
-                <h1 className="font-semibold text-white text-4xl">
-                  Why Choose Us ?
-                </h1>
+                <div className="flex flex-col">
+                    <p className="brand-text-orange text-xl">Why Choose ?</p>
+                    <h1 className="text-4xl font-semibold text-white">Crew Capital</h1>
+                </div>
                 <p className="text-white opacity-90">Crew Capital was established to ensure that top-tier education and opportunities are accessible to everyone working in the aviation & mining industry.</p>
                 <Image
                   src={house}

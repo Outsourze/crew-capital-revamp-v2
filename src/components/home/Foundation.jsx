@@ -48,7 +48,10 @@ const Foundation = () => {
     return (
         <div className="w-full mx-auto">
             <div className="items-center justify-center flex flex-col gap-16 py-10">
-                <h1 className="text-4xl font-semibold w-[70%] text-center text-white">The 4 Foundations Of <span className="text-green-300">Success</span></h1>
+                <div className="flex flex-col gap-5">
+                    <p className="text-center brand-text-orange text-xl">Key Foundations</p>
+                    <h1 className="text-4xl font-semibold text-center text-white">The 4 Foundations Of <span className="text-green-300">Success</span></h1>
+                </div>
                 <div className="flex flex-col">
                     <div className="flex flex-wrap max-w-7xl gap-5 justify-between">
                         {FoundationData.map((i, index) => (

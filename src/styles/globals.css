@@ -4,7 +4,7 @@
 /* === Design Tokens / Brand Theme === */
 :root {
   /* Brand Colors */
-  --color-brand-blue: #4f86f9;
+  --color-brand-orange: #E3572B;
   --color-brand-navy-blue: #16243E;
   --color-black: #000000;
   --color-white: #ffffff;
@@ -41,7 +41,7 @@
 /* === Base Styles === */
 body {
   background-color: var(--background);
-  color: var(--primary-text-color);
+  color: var(--color-brand-navy-blue);
 }
 
 @layer utilities {
@@ -75,12 +75,16 @@ body {
     background-color: var(--color-brand-navy-blue);
   }
 
-  .brand-bg-blue {
-    background-color: var(--color-brand-blue);
+  .brand-text-navy {
+    color: var(--color-brand-navy-blue); 
   }
 
-  .brand-text-blue {
-    color: var(--color-brand-blue);
+  .brand-bg-orange {
+    background-color: var(--color-brand-orange);
+  }
+
+  .brand-text-orange {
+    color: var(--color-brand-orange);
   }
 
   .brand-text-gray {

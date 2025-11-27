@@ -1,24 +1,28 @@
 import CopyRight from "./Copyright";
-import bgFooter from "@/assets/images/footer-bg.webp";
 import Link from "next/link";
-import crewCapitalLogo from "@/assets/logo/crew-capital-logo.png";
+import crewCapitalLogo from "@/assets/logo/Crew-Capital-Management_cap-logo-white-1.png";
+import bg1 from "@/assets/images/bg-01-white.png";
+import bg2 from "@/assets/images/bg-04-white.png";
 import Image from "next/image";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaViber } from "react-icons/fa6";
-import { MdArrowRightAlt } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
+import { RiArrowRightDoubleLine } from "react-icons/ri";
+import FooterBanner from "./FooterBanner";
 
 const FooterContainer = () => {
     const socialMed = [{
-        icon: <FaFacebookF size={18}/>,
+        icon: <FaFacebookF size={20}/>,
         url: "/"
-
     }, {
-        icon: <FaTwitter size={18}/>,
+        icon: <FaTwitter size={20}/>,
         url: "/"
-
     }, {
-        icon: <FaViber size={18}/>,
+        icon: <FaXTwitter size={20} className="brand-text-orange"/>,
+        url: "/"
+    }, {
+        icon: <FaViber size={20}/>,
         url: "/"
     }]
 
@@ -66,17 +70,14 @@ const FooterContainer = () => {
 
 
     return (
-        <div className="flex flex-col">
-            <div
-                style={{ backgroundImage: `url(${bgFooter.src})` }}
-                className="h-[450px] bg-cover bg-no-repeat bg-[center_30%] relative"
-            >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/80 z-0"></div>
-
+        <div className="flex flex-col relative">
+            <Image src={bg1} className="absolute left-0 top-[35%]"/>
+            <Image src={bg2} className="absolute right-0 top-[35%]"/>
+            <FooterBanner />
+            <div className="h-[450px] relative max-w-7xl m-auto w-full">
                 {/* Content ABOVE overlay */}
-                <div className="relative z-10 flex items-start justify-between px-10 pt-16">
-                    <div className="flex flex-col gap-5 w-[24%]">
+                <div className="relative z-10 flex items-start justify-between pt-16">
+                    <div className="flex flex-col gap-8 w-[30%]">
                         <Link href="/" aria-label="Crew Capital Home">
                             <Image
                                 src={crewCapitalLogo}
@@ -85,11 +86,14 @@ const FooterContainer = () => {
                             />
                         </Link>
 
-                        <p className="text-white text-sm max-w-xs leading-relaxed">
-                            118 Cahors Rd, Padstow NSW 2211 Australia
+                        <p className="text-white">Helping you find your dream home with ease. Trusted, reliable, and local real estate experts.</p>
+
+                        <p className="text-gray-300 text-sm max-w-xs leading-relaxed">
+                            118 Cahors Rd, <br/> Padstow NSW 2211<br/> Australia
                         </p>
 
-                        <div className="flex items-center gap-1">
+                        <div className="flex items-center gap-2">
+                            <p className="text-gray-300">Follow on</p>
                             {socialMed.map((data, index) => (
                                 <Link href={data.url} className="brand-bg-blue text-white p-2 rounded-md">
                                     {data.icon}
@@ -97,34 +101,58 @@ const FooterContainer = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="text-white flex flex-col gap-10 w-[24%]">
-                        <h3 className="text-white font-semibold text-xl">Quick Links</h3>
+                    <div className="text-white flex flex-col gap-10 w-[20%]">
+                        <div className="flex flex-col gap-3">
+                            <h3 className="text-white font-semibold text-lg">Quick Links</h3>
+                            <div className="flex gap-1 w-[40%]">
+                                <div className="w-[30%] h-[2px] brand-bg-orange"></div>
+                                <div className="w-[70%] h-[2px] bg-white"></div>
+                            </div>
+                            
+                        </div>
+                        
                         <div className="flex flex-col gap-4">
                             {quickLink.map((data, index) => (
                                 <Link href={data.url} className="flex items-center gap-3 text-gray-300">
-                                    <MdArrowRightAlt />
+                                    <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
                                     {data.text}
                                 </Link>
                             ))}
                         </div>
                         
                     </div>
-                    <div className="text-white flex flex-col gap-10 w-[24%]">
-                        <h3 className="text-gray-300 font-semibold text-xl">Policies</h3>
+                    <div className="text-white flex flex-col gap-10 w-[20%]">
+                        <div className="flex flex-col gap-3">
+                            <h3 className="text-white font-semibold text-lg">Policies</h3>
+                            <div className="flex gap-1 w-[40%]">
+                                <div className="w-[30%] h-[2px] brand-bg-orange"></div>
+                                <div className="w-[70%] h-[2px] bg-white"></div>
+                            </div>
+                            
+                        </div>
                         <div className="flex flex-col gap-4">
                             {policies.map((data, index) => (
-                                <Link href={data.url}>
+                                <Link href={data.url} className="flex items-center gap-3 text-gray-300">
+                                    <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
                                     {data.text}
                                 </Link>
                             ))}
                         </div>
                         
                     </div>
-                    <div className="text-white flex flex-col gap-10 w-[24%]">
-                        <h3 className="text-gray-300 font-semibold text-xl">Services</h3>
+                    <div className="text-white flex flex-col gap-10 w-[20%]">
+                        <div className="flex flex-col gap-3">
+                            <h3 className="text-white font-semibold text-lg">Services</h3>
+                            <div className="flex gap-1 w-[40%]">
+                                <div className="w-[30%] h-[2px] brand-bg-orange"></div>
+                                <div className="w-[70%] h-[2px] bg-white"></div>
+                            </div>
+                            
+                        </div>
                         <div className="flex flex-col gap-4">
                             {services.map((data, index) => (
-                                <Link href={data.url}>
+                                <Link href={data.url} className="flex items-center gap-3 text-gray-300">
+                                    <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
                                     {data.text}
                                 </Link>
                             ))}
