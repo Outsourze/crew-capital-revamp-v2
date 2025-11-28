@@ -103,6 +103,11 @@ body {
     background-color: #020609;
   }
 
+  .border-opacity {
+  border: 1px solid rgba(189, 189, 189, 0.32);
+}
+
+
   .mask-spotlight {
     mask-image: radial-gradient(circle at center, transparent 80px, black 150px);
     -webkit-mask-image: radial-gradient(circle at center, transparent 80px, black 150px);

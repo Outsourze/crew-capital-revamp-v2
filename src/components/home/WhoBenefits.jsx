@@ -10,10 +10,10 @@ import img5 from "@/assets/images/home/financial-secure.png";
 import Image from "next/image";
 import { GrNext , GrPrevious } from "react-icons/gr";
 import { FaStar } from "react-icons/fa";
-import p1 from "@/assets/images/home/p1.png";
-import p2 from "@/assets/images/home/p2.webp";
-import p3 from "@/assets/images/home/p3.jpg";
-import p4 from "@/assets/images/home/p4.jpg";
+import p1 from "@/assets/images/p1.png";
+import p2 from "@/assets/images/p2.webp";
+import p3 from "@/assets/images/p3.jpg";
+import p4 from "@/assets/images/p4.jpg";
 import bg1 from "@/assets/images/bg-01-white.png";
 import bg2 from "@/assets/images/bg-04-white.png";
 

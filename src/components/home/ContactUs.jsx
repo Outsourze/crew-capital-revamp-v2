@@ -14,7 +14,7 @@ const ContactUs = () => {
                         <input className="w-1/2 border rounded-lg border-gray-700 placeholder-gray-300 text-gray-300 text-sm py-3 px-5" type="email" name="email" placeholder="Email Address*"/>
                     </div>
                     <textarea name="message " id="message" placeholder="Your Message" className="w-full border rounded-lg border-gray-700 placeholder-gray-300 text-gray-300 text-sm py-3 px-5 h-52"/>
-                    <button className="py-4 px-12 text-green-300 border border-green-300 rounded-full">Submit Message</button>
+                    <button className="py-4 px-12 text-green-300 border border-green-300 rounded-full font-semibold">Submit Message</button>
                 </form>
             </div>
             <div className="w-1/2">

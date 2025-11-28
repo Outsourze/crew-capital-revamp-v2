@@ -35,7 +35,7 @@ const WhyUs = () => {
             </div>
             <div className="w-1/2 flex flex-col gap-3">
                 {whyUsData.map((i, index) => (
-                    <div key={index} className="flex flex-col gap-3 text-white p-5 bg-slate-700 rounded-xl">
+                    <div key={index} className="flex flex-col gap-3 text-white p-5 rounded-xl bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-white/10">
                         {i.img}
                         <h3 className="text-xl font-semibold text-green-300">{i.title}</h3>
                         <p>{i.dscrpt}</p>

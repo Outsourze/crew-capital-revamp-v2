@@ -6,10 +6,10 @@ import bg2 from "@/assets/images/home/carousel-mining.png";
 import { FaStar } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
-import p1 from "@/assets/images/home/p1.png";
-import p2 from "@/assets/images/home/p2.webp";
-import p3 from "@/assets/images/home/p3.jpg";
-import p4 from "@/assets/images/home/p4.jpg";
+import p1 from "@/assets/images/p1.png";
+import p2 from "@/assets/images/p2.webp";
+import p3 from "@/assets/images/p3.jpg";
+import p4 from "@/assets/images/p4.jpg";
 import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 

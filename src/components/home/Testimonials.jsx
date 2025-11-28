@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { useRef, useEffect, useState } from "react";
 import { FaQuoteRight } from "react-icons/fa";
-import icon1 from "@/assets/images/home/p3.jpg";
-import icon2 from "@/assets/images/home/p4.jpg";
-import icon3 from "@/assets/images/home/p1.png";
+import icon1 from "@/assets/images/p3.jpg";
+import icon2 from "@/assets/images/p4.jpg";
+import icon3 from "@/assets/images/p1.png";
 import { FaStar } from "react-icons/fa";
 import bg1 from "@/assets/images/bg-01.png";
 

@@ -14,7 +14,7 @@ const Header = () => {
       <div className="">
           <div className='flex flex-col w-full'>
             {/* {isDesktop && <DesktopHeader />} */}
-            <div className='flex items-center justify-between max-w-[112rem] w-full m-auto py-5'>
+            <div className='flex items-center justify-between max-w-[112rem] w-full m-auto py-5 px-5'>
               <Link href={"/"} aria-label="Outsouzed Home">
                 <Image src={crewCapitalLogo}/>
               </Link>

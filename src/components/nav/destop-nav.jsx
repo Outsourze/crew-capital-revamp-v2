@@ -9,14 +9,14 @@ const DesktopNav = () => {
         <Link
 
           className=""
-          href="/wealth-creation"
+          href="/"
         >
           Home
         </Link>
         <Link
 
           className=""
-          href="/self-manged-super"
+          href="/about"
         >
           About
         </Link>
