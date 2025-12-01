@@ -26,7 +26,7 @@ const DesktopNav = () => {
           className=""
           href="/services"
         >
-          Investor guide
+          Services
         </Link> 
         <Link
 
@@ -43,7 +43,7 @@ const DesktopNav = () => {
           Financial Services
         </Link>
       </div>
-      <Link href={"/"} className="border border-green-300 rounded-full px-6 py-2 flex items-center gap-2 text-green-300">
+      <Link href={"/contact-us"} className="border border-green-300 rounded-full px-6 py-2 flex items-center gap-2 text-green-300">
         <IoCall />Contact Us
       </Link>
     </div>

@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       </Head>
       <div className={poppins.className}>
         <Header />
-        <main className=''>
+        <main className='lg:pt-32 lg:pb-16 md:py-16 md:pb-5 max-md:py-16 max-sm:pb-2'>
           {children}
         </main>
         <Footer />

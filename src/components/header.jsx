@@ -11,7 +11,7 @@ const Header = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
 
     return (
-      <div className="">
+      <div className="fixed lg:py-4 md:py-2 max-md:py-0 top-0 left-0 right-0 w-full z-50 brand-bg-navy">
           <div className='flex flex-col w-full'>
             {/* {isDesktop && <DesktopHeader />} */}
             <div className='flex items-center justify-between max-w-[112rem] w-full m-auto py-5 px-5'>

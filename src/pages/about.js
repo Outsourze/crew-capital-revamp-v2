@@ -7,14 +7,15 @@ import Testimonials from "@/components/about/Testimonials";
 export default function About() {
   return (
     <div className={""}>
-      <div className="flex flex-col 
-      lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+      <div className="flex flex-col ">
         {/* hero section container */}
         <Introduction />
-        <OurAchievement />
-        <OurVision />
-        <FinancialHelp />
-        <Testimonials />
+        <div className="flex flex-col lg:gap-10 md:gap-10 max-md:gap-10 max-sm:gap-5">
+          <OurAchievement />
+          <OurVision />
+          <FinancialHelp />
+          <Testimonials />
+        </div>
       </div>
     </div>
   );
