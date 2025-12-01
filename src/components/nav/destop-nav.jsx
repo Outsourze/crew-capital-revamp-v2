@@ -35,13 +35,6 @@ const DesktopNav = () => {
         >
           Events/webinars
         </Link>
-        <Link
-
-          className=""
-          href="/financial-services"
-        >
-          Financial Services
-        </Link>
       </div>
       <Link href={"/contact-us"} className="border border-green-300 rounded-full px-6 py-2 flex items-center gap-2 text-green-300">
         <IoCall />Contact Us

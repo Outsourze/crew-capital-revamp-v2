@@ -25,7 +25,7 @@ const WhyUs = () => {
                     <p className="brand-text-orange text-xl">Why Choose ?</p>
                     <h1 className="text-4xl font-semibold text-white">Crew Capital</h1>
                 </div>
-                <p className="text-white opacity-90">Crew Capital was established to ensure that top-tier education and opportunities are accessible to everyone working in the aviation & mining industry.</p>
+                <p className="text-white opacity-90">Crew Capital was established to ensure that top-tier education, professional guidance, and career opportunities are accessible to individuals across aviation, mining, finance, and legal industries.</p>
                 <Image
                   src={house}
                   alt="Residential Homes"

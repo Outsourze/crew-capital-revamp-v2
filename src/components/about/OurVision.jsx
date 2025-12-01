@@ -16,9 +16,9 @@ const OurVision = () => {
                     <div className="w-[48%] flex flex-col gap-8 items-start">
                         <div className="flex flex-col gap-2">
                             <p className="brand-text-orange text-xl">Our Vision</p>
-                            <h1 className="text-5xl font-semibold text-white">Advancing Careers in <span className="text-green-300">Aviation</span> & <span className="text-green-300">Mining</span>.</h1>
+                            <h1 className="text-5xl font-semibold text-white">Driving and <span className="text-green-300">Growth</span> & <span className="text-green-300">Excellence</span>.</h1>
                         </div>
-                        <p className="text-white opacity-90">Crew Capital was created to ensure that high-quality education and career pathways are accessible to everyone in the aviation and mining industries. We are committed to opening doors, elevating careers, and helping individuals reach their full potential.</p>
+                        <p className="text-white opacity-90">Crew Capital was founded to ensure that high-quality education, career pathways, and professional services are accessible to everyone. We are committed to opening doors, elevating careers, and helping individuals and businesses reach their full potential.</p>
 
                         <div className="flex items-center gap-5 text-white text-lg">
                             <div className="flex items-center gap-3">

@@ -1,11 +1,6 @@
-
-import Link from "next/link";
 import LottieAnimation from "../LottieAnimation";
 import commercialImg from "@/assets/images/about/comercial.png";
-import blue from "@/assets/images/about/blue.jpg"
-import hall from "@/assets/images/about/hall.jpg"
-import jewel from "@/assets/images/about/jewelfinance_logo.jpg"
-import Image from "next/image";
+import Partners from "../ui/Partners";
 
 const achievement = [{
     numbers: "25",
@@ -18,11 +13,6 @@ const achievement = [{
     text: "Lives Impacted"
 }]
 
-const partners = [
-  blue,
-  hall,
-  jewel
-]
 
 const OurAchievement = () => {
     return (
@@ -30,7 +20,7 @@ const OurAchievement = () => {
             <div className="max-w-[90rem] m-auto w-full py-10 flex justify-between items-center">
                 <div className="flex flex-col gap-1 w-[45%]">
                   <p className="brand-text-orange text-xl">Company Overview</p>
-                  <h1 className="text-5xl font-semibold leading-tight">Driving Success in Aviation & Mining</h1>
+                  <h1 className="text-5xl font-semibold leading-tight">Empowering Professionals Across Industries</h1>
                 </div>
                 <div className="w-[45%] flex  items-end justify-end gap-5">
                     {achievement.map((item, index) => (
@@ -52,16 +42,7 @@ const OurAchievement = () => {
                 className="max-w-[90rem] brand-bg-orange w-full h-[500px] m-auto rounded-2xl justify-center items-center flex bg-cover bg-no-repeat bg-center">
                 <LottieAnimation />
             </div>
-            <div className="max-w-7xl flex justify-between items-center m-auto my-20 gap-6">
-              {partners.map((i, index) => (
-                <Image
-                  src={i}
-                  key={index}
-                  className="rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                  alt=""
-                />
-              ))}
-            </div>
+            <Partners />
         </div>
     )
 }

@@ -21,7 +21,7 @@ const FooterBanner = () => {
     return (
         <div className="max-w-7xl w-full m-auto brand-bg-orange py-10 rounded-2xl flex items-center justify-between px-8">
             {footerDetailBanner.map((i, index) => (
-                <div className="flex items-center gap-5 w-[25%] text-white">
+                <div key={index} className="flex items-center gap-5 w-[25%] text-white">
                     <div className="p-3 rounded-full brand-bg-orange border border-[rgba(189,189,189,0.32)] ">
                         <div className="bg-white p-2 rounded-full">
                             {i.icon}

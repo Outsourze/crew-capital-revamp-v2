@@ -41,7 +41,7 @@ const FinancialHelp = () => {
                 <div className="flex flex-col justify-center gap-2 items-center">
                   <p className="text-center brand-text-orange text-xl ">Personalized Financial Guidance</p>
                   <h1 className="font-semibold text-4xl text-center mb-14 leading-tight w-[70%]">
-                    Get the financial help you need with the service you deserve.
+                    Get The Financial Help You Need With The Service You Deserve.
                   </h1>
                 </div>
                 <div className="relative group rounded-lg">

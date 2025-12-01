@@ -27,14 +27,14 @@ const FooterContainer = () => {
     }]
 
     const quickLink = [{
-        url: "/",
+        url: "/contact-us",
         text: "Contact Us"
     }, {
-        url: "/",
+        url: "/about",
         text: "About Us"
     }, {
-        url: "/",
-        text: "Wealth Creation"
+        url: "/services",
+        text: "Services"
     }]
 
     const policies = [{
@@ -95,7 +95,7 @@ const FooterContainer = () => {
                         <div className="flex items-center gap-2">
                             <p className="text-gray-300">Follow on</p>
                             {socialMed.map((data, index) => (
-                                <Link href={data.url} className="brand-bg-blue text-white p-2 rounded-md">
+                                <Link key={index} href={data.url} className="brand-bg-blue text-white p-2 rounded-md">
                                     {data.icon}
                                 </Link>
                             ))}
@@ -113,7 +113,7 @@ const FooterContainer = () => {
                         
                         <div className="flex flex-col gap-4">
                             {quickLink.map((data, index) => (
-                                <Link href={data.url} className="flex items-center gap-3 text-gray-300">
+                                <Link key={index} href={data.url} className="flex items-center gap-3 text-gray-300">
                                     <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
                                     {data.text}
                                 </Link>
@@ -132,7 +132,7 @@ const FooterContainer = () => {
                         </div>
                         <div className="flex flex-col gap-4">
                             {policies.map((data, index) => (
-                                <Link href={data.url} className="flex items-center gap-3 text-gray-300">
+                                <Link key={index} href={data.url} className="flex items-center gap-3 text-gray-300">
                                     <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
                                     {data.text}
                                 </Link>
@@ -151,7 +151,7 @@ const FooterContainer = () => {
                         </div>
                         <div className="flex flex-col gap-4">
                             {services.map((data, index) => (
-                                <Link href={data.url} className="flex items-center gap-3 text-gray-300">
+                                <Link key={index} href={data.url} className="flex items-center gap-3 text-gray-300">
                                     <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
                                     {data.text}
                                 </Link>
