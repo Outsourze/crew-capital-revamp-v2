@@ -77,11 +77,11 @@ const PropertyServices = () => {
                     </h1>
                 </div>
 
-                <div className="flex flex-wrap gap-6">
+                <div className="flex flex-wrap gap-5 justify-between">
                     {propertyData.map((data, index) => (
                         <div 
                             key={index} 
-                            className="w-full sm:w-[48%] p-6 flex flex-col gap-5 bg-gradient-to-br from-gray-900/80 to-gray-900/60 border border-green-300 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                            className="w-full sm:w-[49%] p-6 flex flex-col gap-5 bg-gradient-to-br from-gray-900/80 to-gray-900/60 border border-green-300 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
                         >
                             <h1 className="text-2xl font-semibold text-green-300">{data.title}</h1>
                             <div className="flex flex-col gap-3 mt-2">
