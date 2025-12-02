@@ -49,23 +49,23 @@ const FooterContainer = () => {
     }]
 
     const services = [{
-        url: "/",
+        url: "/airpline-crew",
         text: "Airline crew & staff"
     }, {
-        url: "/",
-        text: "mining professionals"
+        url: "/mining-professionals",
+        text: "Mining professionals"
     }, {
-        url: "/",
-        text: "let's build wealth"
+        url: "/lets-build-wealth",
+        text: "Let's build wealth"
     }, {
-        url: "/",
-        text: "financial services"
+        url: "/financial-services",
+        text: "Financial services"
     }, {
-        url: "/",
-        text: "self managed super funds"
+        url: "/smsf",
+        text: "Self managed super funds"
     }, {
-        url: "/",
-        text: "legal advice & property conveyancing"
+        url: "/wealth-creation",
+        text: "Welath creation"
     }]
 
 

@@ -1,0 +1,103 @@
+import bg1 from "@/assets/images/bg-01-white.png";
+import bg2 from "@/assets/images/bg-04-white.png";
+import Image from "next/image";
+import { FaCheck } from "react-icons/fa";
+
+const propertyData = [
+    {
+        title: "Conveyancing Services",
+        benefits: [
+            "Property sales and purchases",
+            "Transfer of ownership",
+            "Title searches and registration",
+            "Preparation of legal documents",
+            "Liaison with mortgage lenders and other parties",
+            "Settlement services"
+        ]
+    },
+    {
+        title: "Property Valuation",
+        benefits: [
+            "Residential property valuation",
+            "Commercial property valuation",
+            "Investment property assessment",
+            "Market appraisal",
+        ]
+    },
+    {
+        title: "Property Management",
+        benefits: [
+            "Tenant selection and screening",
+            "Rent collection and management",
+            "Maintenance and repairs coordination",
+            "Property inspections",
+            "Lease agreement management"
+        ]
+    },
+    {
+        title: "Real Estate Advisory",
+        benefits: [
+            "Market research and analysis",
+            "Investment property advice",
+            "Portfolio management",
+            "Property development consultancy",
+            "Strategic property planning",
+        ]
+    },
+    {
+        title: "Buyer's Agent Services",
+        benefits: [
+            "Property search and selection",
+            "Negotiation on behalf of buyers",
+            "Due diligence and inspections",
+            "Auction bidding and representation",
+        ]
+    },
+    {
+        title: "Seller's Agent Services",
+        benefits: [
+            "Property marketing and promotion",
+            "Open houses and property viewings",
+            "Negotiation on behalf of sellers",
+            "Auction management",
+        ]
+    }
+];
+
+const PropertyServices = () => {
+    return (
+        <div className="relative">
+            <Image src={bg1} className="absolute left-5 top-0" />
+            <Image src={bg2} className="absolute right-5 bottom-0" />
+            <div className="max-w-7xl m-auto py-12">
+                <div className="flex flex-col gap-5">
+                    <p className="text-center brand-text-orange text-xl ">Property Services</p>
+                    <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">
+                        Property Services Designed to Maximise Your <span className="text-green-300">Returns</span> and <span className="text-green-300">Opportunities</span>
+                    </h1>
+                </div>
+
+                <div className="flex flex-wrap gap-6">
+                    {propertyData.map((data, index) => (
+                        <div 
+                            key={index} 
+                            className="w-full sm:w-[48%] p-6 flex flex-col gap-5 bg-gradient-to-br from-gray-900/80 to-gray-900/60 border border-green-300 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                        >
+                            <h1 className="text-2xl font-semibold text-green-300">{data.title}</h1>
+                            <div className="flex flex-col gap-3 mt-2">
+                                {data.benefits.map((bene, i) => (
+                                    <div key={i} className="flex gap-3 items-start">
+                                        <FaCheck className="mt-1 text-green-400 flex-shrink-0" />
+                                        <p className="text-gray-200 leading-relaxed">{bene}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default PropertyServices;

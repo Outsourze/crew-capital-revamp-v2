@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { useState } from "react";
 import { IoCall } from "react-icons/io5";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const DesktopNav = () => {
+  
+
+
   return (
     <div className="flex items-center gap-40 relative ">
       <div className="flex items-center gap-9 relative text-white">
@@ -23,10 +27,11 @@ const DesktopNav = () => {
 
         <Link
 
-          className=""
+          className="flex items-center"
           href="/services"
         >
           Services
+          <RiArrowDropDownLine size={32}/>
         </Link> 
         <Link
 

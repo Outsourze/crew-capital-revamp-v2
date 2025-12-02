@@ -17,7 +17,7 @@ const achievement = [{
 const OurAchievement = () => {
     return (
         <div className="bg-[#fff8f2]">
-            <div className="max-w-[90rem] m-auto w-full py-10 flex justify-between items-center">
+            <div className="max-w-[90rem] m-auto w-full py-20 flex justify-between items-center">
                 <div className="flex flex-col gap-1 w-[45%]">
                   <p className="brand-text-orange text-xl">Company Overview</p>
                   <h1 className="text-5xl font-semibold leading-tight">Empowering Professionals Across Industries</h1>

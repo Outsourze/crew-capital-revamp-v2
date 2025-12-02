@@ -69,27 +69,3 @@ const Foundation = () => {
 }
 
 export default Foundation;
-
-
-        //   <div
-        //                 style={{ backgroundImage: `url(${banner.src})` }}
-        //                 className="
-        //                     flex flex-col gap-4 text-center items-center justify-center  
-        //                     brand-bg-blue h-[400px]
-        //                     bg-[center_35%] bg-cover bg-no-repeat relative
-        //                 "
-        //             >
-        //                 {/* Overlay */}
-        //                 <div className="absolute inset-0 bg-blue-500/85"></div>
-        //                 <h4 className="z-10 text-white uppercase text-sm font-semibold">Great Reviews for our services</h4>
-        //                 <h3 className="z-10 text-white text-4xl font-semibold">Technical Statistics</h3>                   
-
-        //                 <div className="flex items-center justify-evenly w-[80%] mt-10">
-        //                     {technicalData.map((data, index) => (
-        //                         <div key={index} className="flex flex-col items-center justify-center z-10 text-white">
-        //                             <h4 className="text-5xl font-bold">{data.title}</h4>
-        //                             <p>{data.dscrpt}</p>
-        //                         </div>
-        //                     ))}
-        //                 </div>
-        //             </div>
