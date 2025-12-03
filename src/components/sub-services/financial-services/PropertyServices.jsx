@@ -67,9 +67,13 @@ const propertyData = [
 const PropertyServices = () => {
     return (
         <div className="relative">
-            <Image src={bg1} className="absolute left-5 top-0" />
-            <Image src={bg2} className="absolute right-5 bottom-0" />
-            <div className="max-w-7xl m-auto py-12">
+            <Image src={bg1} className="absolute left-5 top-0 
+             xl:block
+             lg:hidden" />
+            <Image src={bg2} className="absolute right-5 bottom-0 
+             xl:block
+             lg:hidden" />
+            <div className="max-w-7xl m-auto py-12 px-10">
                 <div className="flex flex-col gap-5">
                     <p className="text-center brand-text-orange text-xl ">Property Services</p>
                     <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">

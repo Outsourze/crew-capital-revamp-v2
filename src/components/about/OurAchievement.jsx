@@ -1,6 +1,7 @@
 import LottieAnimation from "../LottieAnimation";
 import commercialImg from "@/assets/images/about/comercial.png";
 import Partners from "../ui/Partners";
+import playBtn from "@/assets/animations/Play Button Pulse.json";
 
 const achievement = [{
     numbers: "25",
@@ -16,7 +17,7 @@ const achievement = [{
 
 const OurAchievement = () => {
     return (
-        <div className="bg-[#fff8f2]">
+        <div className="bg-[#fff8f2] px-10">
             <div className="max-w-[90rem] m-auto w-full py-20 flex justify-between items-center">
                 <div className="flex flex-col gap-1 w-[45%]">
                   <p className="brand-text-orange text-xl">Company Overview</p>
@@ -40,7 +41,7 @@ const OurAchievement = () => {
             <div
                 style={{ backgroundImage: `url(${commercialImg.src})` }} 
                 className="max-w-[90rem] brand-bg-orange w-full h-[500px] m-auto rounded-2xl justify-center items-center flex bg-cover bg-no-repeat bg-center">
-                <LottieAnimation />
+                <LottieAnimation animation={playBtn} height={200} width={200}/>
             </div>
             <Partners />
         </div>

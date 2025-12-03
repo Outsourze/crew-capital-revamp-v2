@@ -30,7 +30,7 @@ const AncillaryServices = () => {
     return (
         <div className="relative">
             <Image src={bg1} className="absolute left-5 top-0" />
-            <div className="max-w-7xl m-auto py-12">
+            <div className="max-w-7xl m-auto py-12 px-10">
                 <div className="flex flex-col gap-5">
                     <p className="text-center brand-text-orange text-xl ">Ancillary Services</p>
                     <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">

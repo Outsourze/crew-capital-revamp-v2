@@ -19,7 +19,7 @@ const whyUsData = [{
 
 const WhyUs = () => {
     return (
-        <div className="max-w-7xl m-auto py-12 flex w-full justify-between gap-10">
+        <div className="max-w-7xl m-auto py-12 px-10 flex w-full justify-between gap-10">
             <div className="flex flex-col gap-5 w-1/2">
                 <div className="flex flex-col">
                     <p className="brand-text-orange text-xl">Why Choose ?</p>

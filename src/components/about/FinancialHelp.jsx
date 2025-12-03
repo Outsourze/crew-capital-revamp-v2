@@ -34,7 +34,7 @@ const items = [
 
 const FinancialHelp = () => {
     return (
-        <div className="bg-[#fff8f2] py-20 relative">
+        <div className="bg-[#fff8f2] py-20 relative px-10">
             <Image src={bg1} className="absolute left-0 top-5"/>
             <Image src={bg2} className="absolute right-0 bottom-5"/>
             <div className="max-w-7xl w-full m-auto">

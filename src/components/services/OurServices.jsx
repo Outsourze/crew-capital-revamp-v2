@@ -43,7 +43,7 @@ const services = [{
 
 const OurServices = () => {
     return (
-        <div className="max-w-7xl w-full m-auto py-20">
+        <div className="max-w-7xl w-full m-auto py-20 px-10">
             <div>
                 <div className="flex flex-col justify-center gap-2 items-center">
                   <p className="text-center brand-text-orange text-xl">Our Services</p>

@@ -8,9 +8,13 @@ import bg2 from "@/assets/images/bg-04-white.png";
 
 const OurVision = () => {
     return (
-        <div className="pt-10 pb-36 relative">
-            <Image src={bg1} className="absolute right-0 top-[35%]"/>
-            <Image src={bg2} className="absolute left-0 bottom-0"/>
+        <div className="pt-10 pb-36 relative px-10">
+            <Image src={bg1} className="absolute right-0 top-[35%]
+                xl:block
+                lg:hidden"/>
+            <Image src={bg2} className="absolute left-0 bottom-0
+                xl:block
+                lg:hidden"/>
             <div className="max-w-[90rem] w-full m-auto">
                 <div className="flex items-center gap-10 justify-between">
                     <div className="w-[48%] flex flex-col gap-8 items-start">

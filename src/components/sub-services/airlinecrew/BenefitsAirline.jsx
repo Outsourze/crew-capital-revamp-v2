@@ -24,7 +24,7 @@ const whyUsData = [
 
 const BenefitsAirline = () => {
     return (
-        <div className="max-w-7xl m-auto flex flex-col gap-12 py-20">
+        <div className="max-w-7xl m-auto flex flex-col gap-12 py-20 px-10">
             <div className="w-full flex justify-between items-center">
                 <div className="w-[45%] rounded-2xl overflow-hidden">
                     <Image src={avitation} alt="office girl"/>

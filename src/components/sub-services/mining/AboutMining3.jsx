@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const ClientSuccessSection = () => {
   return (
-    <section className="bg-[#fff8f2] py-24 px-5 pt-52">
+    <section className="bg-[#fff8f2] py-24 px-10 pt-52">
       <div className="max-w-[90rem] mx-auto flex justify-between gap-10 items-start">
         {/* LEFT SIDE */}
         <div className="flex flex-col py-12 w-1/2">

@@ -70,9 +70,13 @@ const FooterContainer = () => {
 
 
     return (
-        <div className="flex flex-col relative">
-            <Image src={bg1} className="absolute left-0 top-[35%]"/>
-            <Image src={bg2} className="absolute right-0 top-[35%]"/>
+        <div className="flex flex-col relative px-10">
+            <Image src={bg1} className="absolute left-0 top-[35%]
+                xl:block
+                lg:hidden"/>
+            <Image src={bg2} className="absolute right-0 top-[35%]
+                xl:block
+                lg:hidden"/>
             <FooterBanner />
             <div className="h-[450px] relative max-w-7xl m-auto w-full">
                 {/* Content ABOVE overlay */}

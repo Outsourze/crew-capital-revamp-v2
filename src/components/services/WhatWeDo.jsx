@@ -10,7 +10,7 @@ const WhatWeDo = () => {
         <div className="bg-[#fff8f2] relative">
             <Image src={bg1} className="absolute left-0 top-5"/>
             <Image src={bg2} className="absolute right-0 bottom-5"/>
-            <div className="max-w-[90rem] m-auto w-full py-20 flex justify-between items-center">
+            <div className="max-w-[90rem] m-auto w-full py-20 flex justify-between items-center px-10">
                 <div className="w-1/2 rounded-2xl overflow-hidden">
                     <Image src={business} alt="two business man"/>
                 </div>

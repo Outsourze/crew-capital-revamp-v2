@@ -2,7 +2,7 @@
 
 const ContactUs = () => {
     return (
-        <div className="max-w-7xl m-auto flex items-center justify-between gap-5 w-full py-10">
+        <div className="max-w-7xl m-auto flex items-center justify-between gap-5 w-full py-10 px-10">
             <div className="w-1/2">
                 <div className="flex flex-col gap-3 mb-10">
                   <p className="brand-text-orange text-xl">Book Appointment</p>

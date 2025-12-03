@@ -32,7 +32,7 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <div className="max-w-[90rem] w-full m-auto flex flex-col gap-10 py-10">
+        <div className="max-w-[90rem] w-full m-auto flex flex-col gap-10 py-10 px-10">
             <div className="flex flex-col gap-5">
                 <p className="text-center brand-text-orange text-xl">Testimonials</p>
                 <h1 className="text-5xl font-semibold text-center text-white">Latest Client Feedback</h1>

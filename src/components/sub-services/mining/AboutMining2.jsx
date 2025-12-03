@@ -4,7 +4,7 @@ import { BsDownload } from "react-icons/bs";
 
 const AboutMining2 = () => {
   return (
-    <div className="py-24">
+    <div className="py-24 px-10">
       <div className="max-w-7xl m-auto flex flex-col lg:flex-row items-center gap-16">
         
         {/* Image Left */}
