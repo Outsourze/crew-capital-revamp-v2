@@ -51,5 +51,15 @@ export const LightBtnLink = ({
     )
 }
 
-
+export const OrangeBtnLink = ({
+    url,
+    children
+}) => {
+    return (
+        <Link href={url}  className="rounded-full px-8 py-[10px] flex items-center gap-2 font-semibold cursor-pointer duration-300 bg-[#E3572B] text-white
+            hover:bg-[#E3572B] hover:text-white">
+            {children}
+        </Link>
+    )
+}
 
