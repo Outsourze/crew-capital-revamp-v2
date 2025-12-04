@@ -1,7 +1,7 @@
+import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail, MdOutlineAccessTime } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-import { MdOutlineAccessTime } from "react-icons/md";
 import airport from "@/assets/images/contact-us/airport.webp";
 
 const contactInfo = [
@@ -30,25 +30,32 @@ const contactInfo = [
 const Introduction = () => {
   return (
     <div className="w-full relative">
-      <div
-        className="w-full h-[500px] relative bg-cover bg-center"
-        style={{ backgroundImage: `url(${airport.src})` }}
-      >
-        {/* Overlay for better contrast */}
-        <div className="absolute inset-0 bg-black/40"></div>
+      
+      {/* Background Image */}
+      <div className="w-full h-[500px] relative">
+        <Image
+          src={airport}
+          alt="Airport Background"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Cards container overlapping the background */}
-      <div className="w-[90rem] mx-auto flex justify-between gap-8 px-5 -mt-32 relative z-10">
+      {/* Cards */}
+      <div className="max-w-7xl mx-auto flex justify-between gap-8 px-5 -mt-32 relative z-10">
         {contactInfo.map((i, index) => (
           <div
             key={index}
-            className="text-white flex flex-col justify-start items-center text-center gap-4 bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-white/10 rounded-xl p-7 pt-10 w-[23%]"
+            className="text-white flex flex-col items-center text-center gap-4
+                       bg-white/5 backdrop-blur-md border border-white/10 
+                       rounded-xl p-7 pt-10 w-full md:w-1/4"
           >
-            <div className="brand-bg-orange p-3 rounded-lg">{i.icon}</div>
+            <div className="bg-[#E3572B] p-3 rounded-lg">{i.icon}</div>
 
-            <h3 className="text-xl">{i.title}</h3>
-            <p className="text-gray-400">{i.dscrpt}</p>
+            <h3 className="text-xl font-semibold">{i.title}</h3>
+            <p className="text-gray-300">{i.dscrpt}</p>
           </div>
         ))}
       </div>
