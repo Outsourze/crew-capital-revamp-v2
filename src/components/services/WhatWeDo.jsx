@@ -1,9 +1,9 @@
 import business from "@/assets/images/services/business.jpg";
 import Image from "next/image";
-import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import bg1 from "@/assets/images/bg-01.png";
 import bg2 from "@/assets/images/bg-04.png";
+import { LightBtn } from "../ui/Button";
 
 const WhatWeDo = () => {
     return (
@@ -20,11 +20,9 @@ const WhatWeDo = () => {
                         <h1 className="text-5xl font-semibold">Building Futures Through Expertise</h1>
                     </div>
                     <p className="text-gray-500 ">Crew Capital provides industry-focused support for aviation crew, mining professionals, and individuals seeking financial, legal, and wealth-building services tailored to create long-term stability and growth.</p>
-                    <Link 
-                        href={"/"} 
-                        className="rounded-full flex items-center gap-3 brand-bg-navy text-green-300 py-3 px-8">
-                            Get Started <FaArrowRightLong />
-                    </Link>
+                    <LightBtn>
+                        Get Started <FaArrowRightLong />
+                    </LightBtn>
                 </div>
             </div>
         </div>

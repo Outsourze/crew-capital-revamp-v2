@@ -5,6 +5,7 @@ import aboutP from "@/assets/images/about/aboutP.png";
 import Image from "next/image";
 import bg1 from "@/assets/images/bg-01-white.png";
 import bg2 from "@/assets/images/bg-04-white.png";
+import { DarkBtnLink } from "../ui/Button";
 
 const OurVision = () => {
     return (
@@ -34,9 +35,9 @@ const OurVision = () => {
                                 <p>Friendly host & Fast support</p>
                             </div>
                         </div>
-                        <Link href={"/"} className="border border-green-300 rounded-full py-4 px-10 flex items-center gap-2 text-green-300 font-semibold">
-                          <IoCall />Contact Us
-                        </Link>
+                        <DarkBtnLink url={"/contact-us"}>
+                            <IoCall />Contact Us
+                        </DarkBtnLink>
                     </div>
                     <div className="w-[48%] flex flex-col gap-5">
                         <div className="relative rounded-2xl h-[500px] overflow-hidden">

@@ -1,4 +1,5 @@
 import bgImg from "@/assets/images/sub-services/mining/mining2.jpg";
+import { DarkBtnLink } from "@/components/ui/Button";
 import Image from "next/image";
 import { BsDownload } from "react-icons/bs";
 
@@ -14,7 +15,7 @@ const AboutMining2 = () => {
         </div>
 
         {/* Text Right */}
-        <div className="w-full lg:w-[55%] flex flex-col gap-7">
+        <div className="w-full lg:w-[55%] flex flex-col gap-7 items-start">
           {/* Section Indicator */}
           <p className="text-green-300 text-xl flex items-center gap-2">
             <span className="w-8 h-[3px] bg-green-300 rounded-full inline-block"></span>
@@ -41,9 +42,9 @@ const AboutMining2 = () => {
           </div>
 
           {/* CTA Button */}
-          <button className="mt-5 px-6 py-3 hover:opacity-80 transition-colors w-max text-green-300 border-green-300 border rounded-full flex items-center gap-3">
+          <DarkBtnLink url={"/"}>
             <BsDownload size={20}/> Download Free Guide 
-          </button>
+          </DarkBtnLink>
         </div>
       </div>
     </div>
