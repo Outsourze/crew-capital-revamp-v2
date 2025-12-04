@@ -95,7 +95,7 @@ const DesktopNav = () => {
         <Link
 
           className=" hover:text-[#E3572B] py-10"
-          href="/events/webinars"
+          href="/"
         >
           Events/webinars
         </Link>
