@@ -20,7 +20,7 @@
   --primary-text-color: var(--color-slight-black);
 
   /* Base Layout Colors */
-  --background: var(--color-slight-white);
+  --background: var(--color-brand-navy-blue);
   --foreground: var(--color-black);
 
   /* Corner radius */
@@ -31,6 +31,7 @@
   --text-shadow-heading: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* //dark mode and lightmode bg */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #16243E;
