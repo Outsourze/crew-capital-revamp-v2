@@ -18,7 +18,7 @@ const BannerIntro = ({ bgImg, title }) => {
           <div className="flex gap-2 items-center py-2 px-4 rounded-full text-white text-sm bg-white/10 backdrop-blur-md">
             <Link href={"/"}>Home</Link>
             <p>
-              / <span className="brand-text-orange">{title}</span>
+              / <span className="brand-text-primary">{title}</span>
             </p>
           </div>
         </div>

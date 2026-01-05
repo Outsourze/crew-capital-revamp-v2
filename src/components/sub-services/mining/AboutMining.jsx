@@ -9,8 +9,8 @@ const AboutMining = () => {
           {/* Text Content */}
           <div className="w-full lg:w-[45%] flex flex-col gap-7 items-start">
             <div className="flex flex-col gap-4">
-              <p className="brand-text-orange text-xl flex items-center gap-2">
-                <span className="w-8 h-[3px] brand-bg-orange rounded-full inline-block"></span>
+              <p className="brand-text-primary text-xl flex items-center gap-2">
+                <span className="w-8 h-[3px] brand-bg-primary rounded-full inline-block"></span>
                 Discover What’s Possible
               </p>
               <h1 className="text-dark-navy text-5xl font-bold">
@@ -27,7 +27,7 @@ const AboutMining = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="mt-5 px-6 py-3 brand-bg-orange text-white rounded-lg hover:opacity-80 transition-colors">
+            <button className="mt-5 px-6 py-3 brand-bg-primary text-white rounded-lg hover:opacity-80 transition-colors">
               Learn More
             </button>
           </div>

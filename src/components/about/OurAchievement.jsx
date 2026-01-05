@@ -20,7 +20,7 @@ const OurAchievement = () => {
         <div className="bg-[#fff8f2] px-10">
             <div className="max-w-[90rem] m-auto w-full py-20 flex justify-between items-center">
                 <div className="flex flex-col gap-1 w-[45%]">
-                  <p className="brand-text-orange text-xl">Company Overview</p>
+                  <p className="brand-text-primary text-xl">Company Overview</p>
                   <h1 className="text-5xl font-semibold leading-tight">Empowering Professionals Across Industries</h1>
                 </div>
                 <div className="w-[45%] flex  items-end justify-end gap-5">
@@ -40,7 +40,7 @@ const OurAchievement = () => {
             </div>
             <div
                 style={{ backgroundImage: `url(${commercialImg.src})` }} 
-                className="max-w-[90rem] brand-bg-orange w-full h-[500px] m-auto rounded-2xl justify-center items-center flex bg-cover bg-no-repeat bg-center">
+                className="max-w-[90rem] brand-bg-primary w-full h-[500px] m-auto rounded-2xl justify-center items-center flex bg-cover bg-no-repeat bg-center">
                 <LottieAnimation animation={playBtn} height={200} width={200}/>
             </div>
             <Partners />

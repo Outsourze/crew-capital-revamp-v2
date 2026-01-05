@@ -75,7 +75,7 @@ const PropertyServices = () => {
              lg:hidden" />
             <div className="max-w-7xl m-auto py-12 px-10">
                 <div className="flex flex-col gap-5">
-                    <p className="text-center brand-text-orange text-xl ">Property Services</p>
+                    <p className="text-center brand-text-primary text-xl ">Property Services</p>
                     <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">
                         Property Services Designed to Maximise Your <span className="text-green-300">Returns</span> and <span className="text-green-300">Opportunities</span>
                     </h1>

@@ -19,7 +19,7 @@ const FooterContainer = () => {
         icon: <FaTwitter size={20}/>,
         url: "/"
     }, {
-        icon: <FaXTwitter size={20} className="brand-text-orange"/>,
+        icon: <FaXTwitter size={20} className="brand-text-primary"/>,
         url: "/"
     }, {
         icon: <FaViber size={20}/>,
@@ -70,7 +70,7 @@ const FooterContainer = () => {
 
 
     return (
-        <div className="flex flex-col relative px-10">
+        <div className="flex flex-col relative px-10 brand-bg-secondary py-10">
             <Image src={bg1} className="absolute left-0 top-[35%]
                 xl:block
                 lg:hidden"/>
@@ -109,7 +109,7 @@ const FooterContainer = () => {
                         <div className="flex flex-col gap-3">
                             <h3 className="text-white font-semibold text-lg">Quick Links</h3>
                             <div className="flex gap-1 w-[40%]">
-                                <div className="w-[30%] h-[2px] brand-bg-orange"></div>
+                                <div className="w-[30%] h-[2px] brand-bg-primary"></div>
                                 <div className="w-[70%] h-[2px] bg-white"></div>
                             </div>
                             
@@ -118,7 +118,7 @@ const FooterContainer = () => {
                         <div className="flex flex-col gap-4">
                             {quickLink.map((data, index) => (
                                 <Link key={index} href={data.url} className="flex items-center gap-3 text-gray-300">
-                                    <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
+                                    <RiArrowRightDoubleLine size={20} className="brand-text-primary"/>
                                     {data.text}
                                 </Link>
                             ))}
@@ -129,7 +129,7 @@ const FooterContainer = () => {
                         <div className="flex flex-col gap-3">
                             <h3 className="text-white font-semibold text-lg">Policies</h3>
                             <div className="flex gap-1 w-[40%]">
-                                <div className="w-[30%] h-[2px] brand-bg-orange"></div>
+                                <div className="w-[30%] h-[2px] brand-bg-primary"></div>
                                 <div className="w-[70%] h-[2px] bg-white"></div>
                             </div>
                             
@@ -137,7 +137,7 @@ const FooterContainer = () => {
                         <div className="flex flex-col gap-4">
                             {policies.map((data, index) => (
                                 <Link key={index} href={data.url} className="flex items-center gap-3 text-gray-300">
-                                    <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
+                                    <RiArrowRightDoubleLine size={20} className="brand-text-primary"/>
                                     {data.text}
                                 </Link>
                             ))}
@@ -148,7 +148,7 @@ const FooterContainer = () => {
                         <div className="flex flex-col gap-3">
                             <h3 className="text-white font-semibold text-lg">Services</h3>
                             <div className="flex gap-1 w-[40%]">
-                                <div className="w-[30%] h-[2px] brand-bg-orange"></div>
+                                <div className="w-[30%] h-[2px] brand-bg-primary"></div>
                                 <div className="w-[70%] h-[2px] bg-white"></div>
                             </div>
                             
@@ -156,7 +156,7 @@ const FooterContainer = () => {
                         <div className="flex flex-col gap-4">
                             {services.map((data, index) => (
                                 <Link key={index} href={data.url} className="flex items-center gap-3 text-gray-300">
-                                    <RiArrowRightDoubleLine size={20} className="brand-text-orange"/>
+                                    <RiArrowRightDoubleLine size={20} className="brand-text-primary"/>
                                     {data.text}
                                 </Link>
                             ))}

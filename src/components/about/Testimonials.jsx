@@ -34,7 +34,7 @@ const Testimonials = () => {
     return (
         <div className="max-w-[90rem] w-full m-auto flex flex-col gap-10 py-10 px-10">
             <div className="flex flex-col gap-5">
-                <p className="text-center brand-text-orange text-xl">Testimonials</p>
+                <p className="text-center brand-text-primary text-xl">Testimonials</p>
                 <h1 className="text-5xl font-semibold text-center text-white">Latest Client Feedback</h1>
             </div>
             <div>
@@ -60,7 +60,7 @@ const Testimonials = () => {
                                 ))}
                               </div>
                             </div>
-                            <FaQuoteRight size={32} className="brand-text-orange"/>
+                            <FaQuoteRight size={32} className="brand-text-primary"/>
                           </div>
                         </div>
                             
@@ -77,7 +77,7 @@ const Testimonials = () => {
                       key={index}
                       onClick={() => goToSlide(index)}
                       className={`testimonial-bullet h-[3px] w-12 rounded-full cursor-pointer transition-colors duration-300 ${
-                        activeIndex === index ? "bg-orange-400" : "bg-gray-300"
+                        activeIndex === index ? "bg-green-400" : "bg-gray-300"
                       }`}
                     ></div>
                   ))}

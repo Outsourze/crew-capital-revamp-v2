@@ -46,7 +46,7 @@ const OurServices = () => {
         <div className="max-w-7xl w-full m-auto py-20 px-10">
             <div>
                 <div className="flex flex-col justify-center gap-2 items-center">
-                  <p className="text-center brand-text-orange text-xl">Our Services</p>
+                  <p className="text-center brand-text-primary text-xl">Our Services</p>
                   <h1 className="font-semibold text-4xl text-center mb-14 leading-tight w-[70%] text-white">
                     Empowering Professionals With Industry Focused Guidance and Stability
                   </h1>
@@ -72,7 +72,7 @@ const OurServices = () => {
                               </p>    
                           </div>
 
-                          <Link href={item.url} className="px-5 flex items-center gap-3 absolute bottom-5 left-0 brand-text-orange cursor-pointer">
+                          <Link href={item.url} className="px-5 flex items-center gap-3 absolute bottom-5 left-0 brand-text-primary cursor-pointer">
                               <p>Read More</p>
                               <FaArrowRightLong />
                           </Link>

@@ -39,17 +39,17 @@ const FinancialHelp = () => {
             <Image src={bg2} className="absolute right-0 bottom-5"/>
             <div className="max-w-7xl w-full m-auto">
                 <div className="flex flex-col justify-center gap-2 items-center">
-                  <p className="text-center brand-text-orange text-xl ">Personalized Financial Guidance</p>
+                  <p className="text-center brand-text-primary text-xl ">Personalized Financial Guidance</p>
                   <h1 className="font-semibold text-4xl text-center mb-14 leading-tight w-[70%]">
                     Get The Financial Help You Need With The Service You Deserve.
                   </h1>
                 </div>
                 <div className="relative group rounded-lg">
                     {/* Custom navigation buttons */}
-                    <button className="swiper-button-prev absolute !-left-8 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white !text-orange-500 p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button className="swiper-button-prev absolute !-left-8 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white !text-primary-500 p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <GrPrevious />
                     </button>
-                    <button className="swiper-button-next absolute !-right-8 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white !text-orange-500 p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button className="swiper-button-next absolute !-right-8 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white !text-primary-500 p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <GrNext />
                     </button>
                     <Swiper
@@ -84,7 +84,7 @@ const FinancialHelp = () => {
                                 </p>    
                             </div>
                                         
-                            <div className="px-5 flex items-center gap-3 absolute bottom-5 left-0 brand-text-orange cursor-pointer">
+                            <div className="px-5 flex items-center gap-3 absolute bottom-5 left-0 brand-text-primary cursor-pointer">
                                 <p>Read More</p>
                                 <FaArrowRightLong />
                             </div>

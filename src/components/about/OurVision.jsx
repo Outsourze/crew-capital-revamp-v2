@@ -20,18 +20,18 @@ const OurVision = () => {
                 <div className="flex items-center gap-10 justify-between">
                     <div className="w-[48%] flex flex-col gap-8 items-start">
                         <div className="flex flex-col gap-2">
-                            <p className="brand-text-orange text-xl">Our Vision</p>
+                            <p className="brand-text-primary text-xl">Our Vision</p>
                             <h1 className="text-5xl font-semibold text-white">Driving and <span className="text-green-300">Growth</span> & <span className="text-green-300">Excellence</span>.</h1>
                         </div>
                         <p className="text-white opacity-90">Crew Capital was founded to ensure that high-quality education, career pathways, and professional services are accessible to everyone. We are committed to opening doors, elevating careers, and helping individuals and businesses reach their full potential.</p>
 
                         <div className="flex items-center gap-5 text-white text-lg">
                             <div className="flex items-center gap-3">
-                                <FaArrowRightLong className="brand-text-orange"/>
+                                <FaArrowRightLong className="brand-text-primary"/>
                                 <p>List your own property</p>
                             </div>
                             <div className="flex items-center gap-3">
-                                <FaArrowRightLong className="brand-text-orange"/>
+                                <FaArrowRightLong className="brand-text-primary"/>
                                 <p>Friendly host & Fast support</p>
                             </div>
                         </div>

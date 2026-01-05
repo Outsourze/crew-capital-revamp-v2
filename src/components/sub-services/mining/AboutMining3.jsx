@@ -11,7 +11,7 @@ const ClientSuccessSection = () => {
           
           {/* Title With Modern Accent */}
           <div className="flex flex-col gap-3 mb-6">
-            <p className="text-lg flex items-center gap-3 brand-text-orange font-medium">
+            <p className="text-lg flex items-center gap-3 brand-text-primary font-medium">
               <span className="w-10 h-[3px] bg-[#E3572B] rounded-full inline-block"></span>
               Real Success Stories
             </p>

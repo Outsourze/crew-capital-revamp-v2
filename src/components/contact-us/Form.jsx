@@ -6,8 +6,12 @@ const Form = () => {
         <div className="">
             <div className="max-w-4xl w-full m-auto">
                 <div className="flex flex-col gap-5">
-                    <p className="text-center brand-text-orange text-xl">Book Appointment</p>
-                    <h1 className="text-5xl font-semibold text-center text-white">Send Message Anytime</h1>
+                    <h4 className="uppercase tracking-widest text-white">
+                      CONTACT US
+                    </h4>
+                    <h3 className="text-3xl brand-text-primary">
+                      Go on, ask us anything…
+                    </h3>
                 </div>
                 <form className="my-5 py-5 flex flex-col gap-5 items-center">
                     <div className="flex items-center gap-5 w-full">

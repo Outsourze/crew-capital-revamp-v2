@@ -52,7 +52,7 @@ const Testimonials = () => {
   const goToSlide = (index) => swiperRef.current.swiper.slideToLoop(index);
 
   return (
-    <div className="w-full bg-[#fff8f2] relative">
+    <div className="w-full brand-bg-secondary relative">
       <Image src={bg1} className="absolute right-0 bottom-0"/>
       <div className="flex items-start justify-between gap-10">
         {/* Left Image */}
@@ -79,8 +79,12 @@ const Testimonials = () => {
           min-[1500px]:py-20 min-[1500px]:pr-10
          ">
           <div className="pl-5 flex flex-col gap-1">
-            <p className="brand-text-orange text-xl">Testimonials</p>
-            <h1 className="text-5xl font-semibold">What Our Clients Say?</h1>
+            <h4 className="uppercase tracking-[0.3em] text-white">
+              Testimonials
+            </h4>
+            <h3 className="text-3xl brand-text-primary">
+              What Our Clients Say?
+            </h3>
           </div>
 
           <div className="w-full 
@@ -98,7 +102,7 @@ const Testimonials = () => {
                   xl:p-5
                   lg:p-3
                   md:p-5">
-                  <div className="relative bg-white shadow-lg rounded-3xl border-t-[#E3572B] border-t-[3px] flex flex-col gap-5
+                  <div className="relative shadow-lg rounded-3xl border-t-[#D6DD37] border-t-[3px] flex flex-col gap-5
                     xl:p-8
                     lg:h-[320px] lg:p-5
                     md:p-5">
@@ -106,19 +110,19 @@ const Testimonials = () => {
                       <Image src={item.image} alt="image profile" className="w-24 h-24 rounded-full"/>
                       <div className="flex items-start justify-between w-full">
                         <div>
-                          <h3 className="text-2xl font-semibold">{item.name}</h3>
-                          <p className="text-gray-500 text-sm mb-3">{item.occupation}</p>
+                          <h3 className="text-2xl font-semibold text-white">{item.name}</h3>
+                          <p className="text-white text-sm mb-3">{item.occupation}</p>
                           <div className="flex gap-[1.5px]">
                             {[...Array(5)].map((_, index) => (
                               <FaStar size={14} key={index} className="text-yellow-400" />
                             ))}
                           </div>
                         </div>
-                        <FaQuoteRight size={32} className="brand-text-orange"/>
+                        <FaQuoteRight size={32} className="text-white"/>
                       </div>
                     </div>
                     
-                    <p className="text-gray-600 
+                    <p className="text-white
                       lg:mt-4
                       xl:leading-relaxed
                       lg:leading-tight
@@ -135,7 +139,7 @@ const Testimonials = () => {
                   key={index}
                   onClick={() => goToSlide(index)}
                   className={`testimonial-bullet h-[3px] w-12 rounded-full cursor-pointer transition-colors duration-300 ${
-                    activeIndex === index ? "bg-orange-400" : "bg-gray-300"
+                    activeIndex === index ? "brand-bg-primary" : "bg-gray-300"
                   }`}
                 ></div>
               ))}

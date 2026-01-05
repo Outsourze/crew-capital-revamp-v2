@@ -95,9 +95,9 @@ const FinancialServices = () => {
                 lg:hidden" />
             <div className="max-w-7xl m-auto py-12 px-10">
                 <div className="flex flex-col gap-5">
-                    <p className="text-center brand-text-orange text-xl">Financial Services</p>
+                    <p className="text-center brand-text-primary text-xl">Financial Services</p>
                     <h1 className="font-semibold text-4xl text-center mb-14 leading-tight text-dark-navy">
-                        Comprehensive Financial Solutions to Maximise Your <span className="brand-text-orange">Wealth</span> and <span className="brand-text-orange">Opportunities</span>
+                        Comprehensive Financial Solutions to Maximise Your <span className="brand-text-primary">Wealth</span> and <span className="brand-text-primary">Opportunities</span>
                     </h1>
                 </div>
 
@@ -108,11 +108,11 @@ const FinancialServices = () => {
                             className={`w-full sm:w-[49%] p-6 flex flex-col gap-5 rounded-2xl shadow-md hover:shadow-lg transition-transform duration-300
                                 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border border-[#E3572B]`}
                         >
-                            <h1 className="text-2xl font-semibold brand-text-orange">{data.title}</h1>
+                            <h1 className="text-2xl font-semibold brand-text-primary">{data.title}</h1>
                             <div className="flex flex-col gap-3 mt-2">
                                 {data.benefits.map((bene, i) => (
                                     <div key={i} className="flex gap-3 items-start">
-                                        <FaCheck className="mt-1 brand-text-orange flex-shrink-0" />
+                                        <FaCheck className="mt-1 brand-text-primary flex-shrink-0" />
                                         <p className="text-gray-500 leading-relaxed">{bene}</p>
                                     </div>
                                 ))}

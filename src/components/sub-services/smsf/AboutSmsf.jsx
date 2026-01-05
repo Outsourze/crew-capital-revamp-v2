@@ -189,8 +189,8 @@ const AboutSmsf = () => {
 
           {/* LEFT CONTENT */}
           <div className="w-full lg:w-1/2 flex flex-col gap-7 items-start">
-            <p className="brand-text-orange text-lg flex items-center gap-2">
-              <span className="w-8 h-[3px] brand-bg-orange rounded-full"></span>
+            <p className="brand-text-primary text-lg flex items-center gap-2">
+              <span className="w-8 h-[3px] brand-bg-primary rounded-full"></span>
               Your Guide to SMSFs
             </p>
 
@@ -207,7 +207,7 @@ const AboutSmsf = () => {
               We Understand Your Challenges
             </div>
 
-            <button className="mt-2 px-6 py-3 brand-bg-orange text-white rounded-lg hover:opacity-80 transition">
+            <button className="mt-2 px-6 py-3 brand-bg-primary text-white rounded-lg hover:opacity-80 transition">
               Learn More
             </button>
           </div>
@@ -226,7 +226,7 @@ const AboutSmsf = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-14">
             {/* TEXT */}
             <div className="w-full lg:w-1/2 flex flex-col gap-4">
-              <h2 className="text-3xl font-semibold brand-text-orange">1. Introduction to SMSFs</h2>
+              <h2 className="text-3xl font-semibold brand-text-primary">1. Introduction to SMSFs</h2>
               <p className="text-gray-700 leading-relaxed">
                 A Self-Managed Superannuation Fund (SMSF) is a private super fund that you manage yourself.
                 Regulated by the Australian Taxation Office (ATO), SMSFs offer greater control over investment
@@ -246,7 +246,7 @@ const AboutSmsf = () => {
             
             {/* TEXT */}
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
-              <h2 className="text-3xl font-semibold brand-text-orange">2. Understanding SMSFs</h2>
+              <h2 className="text-3xl font-semibold brand-text-primary">2. Understanding SMSFs</h2>
               
               <h3 className="text-dark-navy font-semibold text-xl">2.1 Key Features</h3>
 
@@ -274,7 +274,7 @@ const AboutSmsf = () => {
               {LegalRegulatoryData.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition"
+                  className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition"
                 >
                   <h4 className="text-dark-navy font-semibold text-lg">{item.title}</h4>
                   <p className="text-gray-600 text-sm mt-2">{item.descrpt}</p>
@@ -283,7 +283,7 @@ const AboutSmsf = () => {
             </div>
           </div>
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">3. Setting Up an SMSF</h2>
+            <h2 className="text-3xl font-semibold brand-text-primary">3. Setting Up an SMSF</h2>
             <h3 className="text-dark-navy font-semibold text-xl">3.1 Establish the Trust:</h3>
 
             <div className="flex items-center justify-between gap-2">
@@ -300,7 +300,7 @@ const AboutSmsf = () => {
                     rounded-r-lg rounded-b-lg -bottom-10 left-0
                   ">
                     <h3 className="font-semibold text-gray-800">{i.title}</h3>
-                    <div className="w-8 h-[2px] bg-orange-500 rounded-full"></div>
+                    <div className="w-8 h-[2px] bg-green-500 rounded-full"></div>
                     <p className="text-sm text-gray-600">{i.dscrpt}</p>
                   </div>
                 </div>
@@ -314,7 +314,7 @@ const AboutSmsf = () => {
                 {registerSmsfData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -329,7 +329,7 @@ const AboutSmsf = () => {
                 {investmentStrategyData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -338,13 +338,13 @@ const AboutSmsf = () => {
             </div>
           </div>
           <div className="w-full flex flex-col gap-6">
-                <h2 className="text-3xl font-semibold brand-text-orange">4. Investing in a property with SMSF.</h2>
+                <h2 className="text-3xl font-semibold brand-text-primary">4. Investing in a property with SMSF.</h2>
                 <h3 className="text-dark-navy font-semibold text-xl">4.1 Types of property investments:</h3>
                 <div className="flex justify-between gap-6">
                 {investProperty.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -359,7 +359,7 @@ const AboutSmsf = () => {
                 {barrowPurchsePropertyData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -374,7 +374,7 @@ const AboutSmsf = () => {
                 {stepToPurchasePropertyData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-[32%]"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-[32%]"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -384,13 +384,13 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">5. Benefits and Risk of SMSF Property Investment</h2>
+            <h2 className="text-3xl font-semibold brand-text-primary">5. Benefits and Risk of SMSF Property Investment</h2>
             <h3 className="text-dark-navy font-semibold text-xl">5.1 Benefits:</h3>
             <div className="flex justify-between gap-6">
                 {benefits.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -405,7 +405,7 @@ const AboutSmsf = () => {
                 {risk.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -415,13 +415,13 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">6. Ongoing Management of SMSF property</h2>
+            <h2 className="text-3xl font-semibold brand-text-primary">6. Ongoing Management of SMSF property</h2>
             <h3 className="text-dark-navy font-semibold text-xl">6.1 Property Management:</h3>
             <div className="flex justify-between gap-6">
                 {propertyManagement.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -436,7 +436,7 @@ const AboutSmsf = () => {
                 {reportingAdministration.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -446,13 +446,13 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">7. Exit Strategy</h2>
+            <h2 className="text-3xl font-semibold brand-text-primary">7. Exit Strategy</h2>
             <h3 className="text-dark-navy font-semibold text-xl">7.1 Selling the Property:</h3>
             <div className="flex justify-between gap-6">
                 {sellingProperty.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -467,7 +467,7 @@ const AboutSmsf = () => {
                 {windingSMSF.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>

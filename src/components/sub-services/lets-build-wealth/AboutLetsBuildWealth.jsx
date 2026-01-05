@@ -32,7 +32,7 @@ const AboutLetsBuildWealth = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 space-y-6 brand-bg-orange p-10 rounded-2xl shadow-xl"
+          className="flex-1 space-y-6 brand-bg-primary p-10 rounded-2xl shadow-xl"
         >
           <p className="text-white text-lg leading-relaxed">
             Backed by <span className="font-semibold">25 years of property experience</span>, the Airline Crew/Staff & FIFO/Mining professional property program provides everything you need to:

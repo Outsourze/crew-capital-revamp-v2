@@ -27,8 +27,8 @@ const NotFoundSection = () => {
                   alt="404"
                 /> */}
                 <div className="absolute w-full top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                  <h2 className="brand-text-orange text-4xl font-extrabold">404</h2>
-                  <p className="brand-text-orange xl:text-base lg:text-xs max-md:text-[9px]">We couldn't find that page.</p>
+                  <h2 className="brand-text-primary text-4xl font-extrabold">404</h2>
+                  <p className="brand-text-primary xl:text-base lg:text-xs max-md:text-[9px]">We couldn't find that page.</p>
                 </div>
               </div>
             </div>

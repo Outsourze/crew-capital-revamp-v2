@@ -25,7 +25,7 @@ export default function Carousel() {
         <p className="mb-6">
           TRANSFORMING THE LIVES OF INDIVIDUALS, COUPLES AND FAMILIES IN THE AVIATION & MINING SECTOR
         </p>
-        <button className="flex items-center gap-3 brand-bg-orange text-white px-6 py-3 rounded-md text-sm brand-text-blue">
+        <button className="flex items-center gap-3 brand-bg-primary text-white px-6 py-3 rounded-md text-sm brand-text-blue">
           Get Started <FaArrowRightLong />
         </button>
       </div>

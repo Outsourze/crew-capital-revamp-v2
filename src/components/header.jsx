@@ -1,27 +1,36 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import DesktopNav from '@/components/nav/destop-nav';
-import { useMediaQuery } from '@/utility/useMediaQuery';
-import crewCapitalLogo from "@/assets/logo/crew-capital-logo.png";
-import DesktopHeader from '@/components/nav/desktop-header';
+import Link from "next/link";
+import { useState } from "react";
+import { SlMenu } from "react-icons/sl";
 
 const Header = () => {
-  const isDesktop = useMediaQuery("(min-width: 1024px)");
-  const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1023px)");
-  const isMobile = useMediaQuery("(max-width: 767px)");
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const handleOpen = () => {
+        setIsNavOpen((prev) => !prev);
+    }
 
     return (
-      <div className="fixed top-0 left-0 right-0 w-full z-50 brand-bg-navy px-10">
-          <div className='flex flex-col w-full'>
-            {/* {isDesktop && <DesktopHeader />} */}
-            <div className='flex items-center justify-between max-w-[112rem] w-full m-auto'>
-              <Link href={"/"} aria-label="Outsouzed Home">
-                <Image src={crewCapitalLogo}/>
-              </Link>
-              {isDesktop && <DesktopNav />}
+        <div className="px-20 py-10 justify-between flex items-start">
+            <div className="text-white">
+                <h1>ICON</h1>
+                <p className="capitalize">THE PREMIUM INDUSTRY SOLUTION</p>
             </div>
-          </div>
-      </div>
+            <div className="relative">
+                <div 
+                    onClick={handleOpen}
+                    className="brand-bg-primary px-4 py-2 rounded-sm" >
+                    <SlMenu size={24}/>
+                </div>
+                {isNavOpen && (
+                    <div className="absolute -bottom-52 right-0 w-[300px] flex flex-col items-end gap-3">
+                        <Link className="text-lg" href={"/"}>Features</Link>
+                        <Link className="text-lg" href={"/"}>Integration</Link>
+                        <Link className="text-lg" href={"/"}>Testimonials</Link>
+                        <Link className="text-lg" href={"/"}>Faqs</Link>
+                    </div>
+                )}
+            </div>
+        </div>
     )
 }
 

@@ -79,7 +79,7 @@ const WhatClientSay = () => {
           min-[1500px]:py-20 min-[1500px]:pr-10
          ">
           <div className="pl-5 flex flex-col gap-1">
-            <p className="brand-text-orange text-xl">What to Expect?</p>
+            <p className="brand-text-primary text-xl">What to Expect?</p>
             <h1 className="text-5xl font-semibold">Our clients are a testament to what’s possible:</h1>
           </div>
 
@@ -105,7 +105,7 @@ const WhatClientSay = () => {
                       <div className="flex flex-col gap-5">
                         <div className="flex items-center gap-3">
                           <div className="flex items-center gap-3 w-full">
-                            <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
+                            <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
                               <FaQuoteRight className="text-[#E3572B]" />
                             </div>
                             <h3 className="text-2xl font-semibold uppercase">{item.name}</h3>
@@ -133,7 +133,7 @@ const WhatClientSay = () => {
                   key={index}
                   onClick={() => goToSlide(index)}
                   className={`testimonial-bullet h-[3px] w-12 rounded-full cursor-pointer transition-colors duration-300 ${
-                    activeIndex === index ? "bg-orange-400" : "bg-gray-300"
+                    activeIndex === index ? "bg-green-400" : "bg-gray-300"
                   }`}
                 ></div>
               ))}

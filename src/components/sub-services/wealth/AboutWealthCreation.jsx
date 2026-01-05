@@ -256,7 +256,7 @@ const AboutWealthCreation = () => {
         {/* ===================================================== */}
         <div className="relative">
           {/* TIMELINE LINE */}
-          <div className="absolute left-8 top-0 bottom-0 w-1 bg-orange-500/70 rounded-full hidden lg:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-1 bg-green-500/70 rounded-full hidden lg:block" />
 
           <div className="space-y-20">
             {steps.map((stepObj, index) => (

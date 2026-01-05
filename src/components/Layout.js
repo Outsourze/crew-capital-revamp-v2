@@ -17,8 +17,7 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={poppins.className}>
-        <Header />
-        <main className='lg:pt-28 lg:pb-16 md:py-16 md:pb-5 max-md:py-16 max-sm:pb-2'>
+        <main className=''>
           {children}
         </main>
         <Footer />

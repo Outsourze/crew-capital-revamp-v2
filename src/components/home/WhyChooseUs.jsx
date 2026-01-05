@@ -5,15 +5,15 @@ import house from "@/assets/images/home/Residential-Homes.webp";
 import Image from "next/image";
 const whyUsData = [{
     title: "About Us",
-    img: <Success className="w-16 h-16 text-green-300"/>,
+    img: <Success className="w-16 h-16 brand-text-primary"/>,
     dscrpt: "Get to know who we are, what we do, and why we do it."
 }, {
     title: "Success Stories",
-    img: <About className="w-16 h-16 text-green-300"/>,
+    img: <About className="w-16 h-16 brand-text-primary"/>,
     dscrpt: "See real-life examples of property our research has identified, and people we’ve helped."
 }, {
     title: "Meet the team",
-    img: <Meettheteam className="w-16 h-16 text-green-300"/>,
+    img: <Meettheteam className="w-16 h-16 brand-text-primary"/>,
     dscrpt: "Imagine a team of passionate people all committed to your success."
 }]
 
@@ -22,10 +22,14 @@ const WhyUs = () => {
         <div className="max-w-7xl m-auto py-12 px-10 flex w-full justify-between gap-10">
             <div className="flex flex-col gap-5 w-1/2">
                 <div className="flex flex-col">
-                    <p className="brand-text-orange text-xl">Why Choose ?</p>
-                    <h1 className="text-4xl font-semibold text-white">Crew Capital</h1>
+                    <h4 className="uppercase tracking-[0.3em]">
+                      Why Choose ?
+                    </h4>
+                    <h3 className="text-3xl brand-text-primary">
+                      Crew Capital
+                    </h3>
                 </div>
-                <p className="text-white opacity-90">Crew Capital was established to ensure that top-tier education, professional guidance, and career opportunities are accessible to individuals across aviation, mining, finance, and legal industries.</p>
+                <p>Crew Capital was established to ensure that top-tier education, professional guidance, and career opportunities are accessible to individuals across aviation, mining, finance, and legal industries.</p>
                 <Image
                   src={house}
                   alt="Residential Homes"
@@ -35,9 +39,9 @@ const WhyUs = () => {
             </div>
             <div className="w-1/2 flex flex-col gap-3">
                 {whyUsData.map((i, index) => (
-                    <div key={index} className="flex flex-col gap-3 text-white p-5 rounded-xl bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-white/10">
+                    <div key={index} className="flex flex-col gap-3 p-5 rounded-xl bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-white/10">
                         {i.img}
-                        <h3 className="text-xl font-semibold text-green-300">{i.title}</h3>
+                        <h3 className="text-lg font-semibold">{i.title}</h3>
                         <p>{i.dscrpt}</p>
                     </div>
                 ))}

@@ -16,7 +16,7 @@ const WhatWeDo = () => {
                 </div>
                 <div className="w-[45%] flex flex-col gap-7 items-start">
                     <div className="flex flex-col gap-4">
-                        <p className="brand-text-orange text-xl">What We Do</p>
+                        <p className="brand-text-primary text-xl">What We Do</p>
                         <h1 className="text-5xl font-semibold">Building Futures Through Expertise</h1>
                     </div>
                     <p className="text-gray-500 ">Crew Capital provides industry-focused support for aviation crew, mining professionals, and individuals seeking financial, legal, and wealth-building services tailored to create long-term stability and growth.</p>
