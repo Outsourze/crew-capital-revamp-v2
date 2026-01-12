@@ -44,12 +44,14 @@ const services = [{
 const OurServices = () => {
     return (
         <div className="max-w-7xl w-full m-auto py-20 px-10">
-            <div>
-                <div className="flex flex-col justify-center gap-2 items-center">
-                  <p className="text-center brand-text-primary text-xl">Our Services</p>
-                  <h1 className="font-semibold text-4xl text-center mb-14 leading-tight w-[70%] text-white">
-                    Empowering Professionals With Industry Focused Guidance and Stability
-                  </h1>
+            <div className="flex flex-col gap-20">
+                <div className="flex flex-col gap-5 text-center">
+                    <h4 className="uppercase tracking-[0.3em]">
+                      Our Services
+                    </h4>
+                    <h3 className="text-3xl brand-text-primary">
+                        Empowering Professionals With Industry Focused Guidance and Stability
+                    </h3>
                 </div>
                 <div className="flex flex-wrap justify-between gap-5">
                     {services.map((item, index) => (
@@ -63,16 +65,16 @@ const OurServices = () => {
                             />
                           </div>              
                           <div className="px-5 flex flex-col gap-3">
-                              <h3 className="font-semibold text-lg text-white">
+                              <h3 className="font-semibold text-lg">
                                 {item.title}
                               </h3>               
 
-                              <p className="text-sm text-white">
+                              <p className="text-sm ">
                                 {item.dscrpt}
                               </p>    
                           </div>
 
-                          <Link href={item.url} className="px-5 flex items-center gap-3 absolute bottom-5 left-0 brand-text-primary cursor-pointer">
+                          <Link href={item.url} className="px-5 flex items-center gap-3 absolute bottom-5 left-0 cursor-pointer">
                               <p>Read More</p>
                               <FaArrowRightLong />
                           </Link>

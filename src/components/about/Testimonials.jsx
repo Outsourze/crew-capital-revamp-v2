@@ -32,10 +32,14 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <div className="max-w-[90rem] w-full m-auto flex flex-col gap-10 py-10 px-10">
-            <div className="flex flex-col gap-5">
-                <p className="text-center brand-text-primary text-xl">Testimonials</p>
-                <h1 className="text-5xl font-semibold text-center text-white">Latest Client Feedback</h1>
+        <div className="w-full m-auto flex flex-col gap-10 py-10 px-10 brand-bg-secondary">
+            <div className="flex flex-col gap-5 text-center">
+              <h4 className="uppercase tracking-[0.3em] text-white">
+                Testimonials
+              </h4>
+              <h3 className="text-3xl brand-text-primary">
+                Latest Client Feedback
+              </h3>
             </div>
             <div>
                 <Swiper
@@ -77,7 +81,7 @@ const Testimonials = () => {
                       key={index}
                       onClick={() => goToSlide(index)}
                       className={`testimonial-bullet h-[3px] w-12 rounded-full cursor-pointer transition-colors duration-300 ${
-                        activeIndex === index ? "bg-green-400" : "bg-gray-300"
+                        activeIndex === index ? "brand-bg-primary" : "bg-gray-300"
                       }`}
                     ></div>
                   ))}

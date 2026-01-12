@@ -18,15 +18,16 @@ const Header = () => {
             <div className="relative">
                 <div 
                     onClick={handleOpen}
-                    className="brand-bg-primary px-4 py-2 rounded-sm" >
-                    <SlMenu size={24}/>
+                    className="brand-bg-primary px-4 py-2 rounded-sm cursor-pointer" >
+                    <SlMenu size={24} className=""/>
                 </div>
                 {isNavOpen && (
-                    <div className="absolute -bottom-52 right-0 w-[300px] flex flex-col items-end gap-3">
-                        <Link className="text-lg" href={"/"}>Features</Link>
-                        <Link className="text-lg" href={"/"}>Integration</Link>
-                        <Link className="text-lg" href={"/"}>Testimonials</Link>
-                        <Link className="text-lg" href={"/"}>Faqs</Link>
+                    <div className="absolute -bottom-60 right-0 w-[300px] flex flex-col items-end gap-3">
+                        <Link className="text-lg" href={"/"}>Home</Link>
+                        <Link className="text-lg" href={"/about"}>About</Link>
+                        <Link className="text-lg" href={"/services"}>Services</Link>
+                        <Link className="text-lg" href={"/event"}>Event/Webinars</Link>
+                        <Link className="text-lg" href={"/contact-us"}>Contact Us</Link>
                     </div>
                 )}
             </div>

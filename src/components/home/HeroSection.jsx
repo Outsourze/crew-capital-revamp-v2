@@ -2,6 +2,7 @@ import Image from "next/image";
 import partner1 from "@/assets/images/home/partner1.png";
 import partner2 from "@/assets/images/home/partner2.png";
 import partner3 from "@/assets/images/home/partner3.png";
+import { FillBtn } from "../ui/Button";
 
 const HeroSection = () => {
     const partners = [
@@ -16,7 +17,9 @@ const HeroSection = () => {
                 <h1 className="text-5xl leading-tight">
                   <span className="brand-text-primary">Industry professionals everywhere agree,</span> purpose-built support sets a new standard.
                 </h1>
-                <button className="px-40 rounded-4xl py-5 brand-bg-primary font-bold text-black">SCHEDULE A DEMO</button>
+                <FillBtn>
+                  SCHEDULE A DEMO
+                </FillBtn>
                 <p className="text-white font-semibold">Partnerships, Supporters & Integrations by:</p>
                 <div className="flex items-center gap-8">
                   {partners.map((partner, index) => (

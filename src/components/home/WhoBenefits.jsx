@@ -26,10 +26,10 @@ const WhoBenefits = () => {
   ];
 
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto px-6 lg:px-32">
+    <section className="bg-white">
+      <div className="py-20 relative px-10">
         {/* Heading */}
-        <div className="mb-8 text-center flex flex-col gap-8">
+        <div className="mb-8 text-center flex flex-col gap-5">
           <h4 className="uppercase tracking-[0.3em]">
             Tailored Property Advice
           </h4>
