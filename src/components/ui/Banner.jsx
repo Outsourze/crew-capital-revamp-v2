@@ -4,13 +4,12 @@ import Link from "next/link";
 const BannerIntro = ({ bgImg, title }) => {
   let bgCover = bgImg ? bgImg.src : aboutbanner.src;
   return (
-    <div className="max-w-[112rem] m-auto w-full pb-10 px-5">
+    <div className="m-auto w-full pb-10 ">
       <div
         style={{ backgroundImage: `url(${bgCover})` }}
-        className="relative flex flex-col gap-5 w-full bg-no-repeat bg-cover bg-center justify-center items-center py-32 rounded-3xl"
+        className="relative flex flex-col gap-5 w-full bg-no-repeat bg-cover bg-center justify-center items-center py-32"
       >
-        {/* Backdrop overlay */}
-        <div className="absolute inset-0 bg-black/20 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-[#D6DD37] mix-blend-color opacity-70" />
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center gap-5">

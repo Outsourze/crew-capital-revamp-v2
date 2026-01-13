@@ -6,6 +6,7 @@ import moneyAnimation from "@/assets/animations/money.json";
 import img1 from "@/assets/images/sub-services/smsf/handshake.jpg";
 import img2 from "@/assets/images/sub-services/smsf/calcu.jpg";
 import img3 from "@/assets/images/sub-services/smsf/piggybank.jpg";
+import { FillBtnLink } from "@/components/ui/Button";
 
 
 // 2. understanding of smsfs key feature
@@ -181,7 +182,7 @@ const windingSMSF = [{
 
 const AboutSmsf = () => {
   return (
-    <section className="bg-[#fff8f2] py-20 px-6 sm:px-10 lg:px-16">
+    <section className="py-20 px-6 sm:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto flex flex-col gap-32">
 
         {/* ================= HERO SECTION ================= */}
@@ -189,14 +190,15 @@ const AboutSmsf = () => {
 
           {/* LEFT CONTENT */}
           <div className="w-full lg:w-1/2 flex flex-col gap-7 items-start">
-            <p className="brand-text-primary text-lg flex items-center gap-2">
-              <span className="w-8 h-[3px] brand-bg-primary rounded-full"></span>
-              Your Guide to SMSFs
-            </p>
-
-            <h1 className="text-dark-navy text-4xl sm:text-5xl font-bold leading-tight">
-              Everything You Need to Know
-            </h1>
+          
+            <div className="flex flex-col gap-1 mb-5">
+              <h4 className="uppercase tracking-[0.3em]">
+                  Your Guide to SMSFs
+              </h4>
+              <h3 className="text-3xl brand-text-primary">
+                Everything You Need to Know
+              </h3>
+            </div>
 
             <p className="text-gray-700 text-lg leading-relaxed">
               Learn how Self-Managed Superannuation Funds can help you build wealth 
@@ -207,9 +209,9 @@ const AboutSmsf = () => {
               We Understand Your Challenges
             </div>
 
-            <button className="mt-2 px-6 py-3 brand-bg-primary text-white rounded-lg hover:opacity-80 transition">
+            <FillBtnLink href={"/"}>
               Learn More
-            </button>
+            </FillBtnLink>
           </div>
 
           {/* RIGHT IMAGE */}
@@ -226,7 +228,9 @@ const AboutSmsf = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-14">
             {/* TEXT */}
             <div className="w-full lg:w-1/2 flex flex-col gap-4">
-              <h2 className="text-3xl font-semibold brand-text-primary">1. Introduction to SMSFs</h2>
+              <h3 className="text-3xl brand-text-primary">
+                1. Introduction to SMSFs
+              </h3>
               <p className="text-gray-700 leading-relaxed">
                 A Self-Managed Superannuation Fund (SMSF) is a private super fund that you manage yourself.
                 Regulated by the Australian Taxation Office (ATO), SMSFs offer greater control over investment
@@ -246,13 +250,15 @@ const AboutSmsf = () => {
             
             {/* TEXT */}
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
-              <h2 className="text-3xl font-semibold brand-text-primary">2. Understanding SMSFs</h2>
+              <h3 className="text-3xl brand-text-primary">
+                2. Understanding SMSFs
+              </h3>
               
               <h3 className="text-dark-navy font-semibold text-xl">2.1 Key Features</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {keyFeature.map((i, index) => (
-                    <div className="bg-white border-l-4 border-[#E3572B] p-6 rounded-xl shadow-lg">
+                    <div className="bg-white border-l-4 border-[#D6DD37] p-6 rounded-xl shadow-lg">
                       <h4 className="font-semibold text-dark-navy text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
                     </div>
@@ -283,7 +289,9 @@ const AboutSmsf = () => {
             </div>
           </div>
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-primary">3. Setting Up an SMSF</h2>
+            <h3 className="text-3xl brand-text-primary">
+                3. Setting Up an SMSF
+              </h3>
             <h3 className="text-dark-navy font-semibold text-xl">3.1 Establish the Trust:</h3>
 
             <div className="flex items-center justify-between gap-2">
@@ -338,7 +346,8 @@ const AboutSmsf = () => {
             </div>
           </div>
           <div className="w-full flex flex-col gap-6">
-                <h2 className="text-3xl font-semibold brand-text-primary">4. Investing in a property with SMSF.</h2>
+                <h2 className="text-3xl brand-text-primary">4. Investing in a property with SMSF.</h2>
+                
                 <h3 className="text-dark-navy font-semibold text-xl">4.1 Types of property investments:</h3>
                 <div className="flex justify-between gap-6">
                 {investProperty.map((i, index) => (
@@ -384,7 +393,7 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-primary">5. Benefits and Risk of SMSF Property Investment</h2>
+            <h2 className="text-3xl brand-text-primary">5. Benefits and Risk of SMSF Property Investment</h2>
             <h3 className="text-dark-navy font-semibold text-xl">5.1 Benefits:</h3>
             <div className="flex justify-between gap-6">
                 {benefits.map((i, index) => (
@@ -415,7 +424,7 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-primary">6. Ongoing Management of SMSF property</h2>
+            <h2 className="text-3xl brand-text-primary">6. Ongoing Management of SMSF property</h2>
             <h3 className="text-dark-navy font-semibold text-xl">6.1 Property Management:</h3>
             <div className="flex justify-between gap-6">
                 {propertyManagement.map((i, index) => (
@@ -446,7 +455,7 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-primary">7. Exit Strategy</h2>
+            <h2 className="text-3xl brand-text-primary">7. Exit Strategy</h2>
             <h3 className="text-dark-navy font-semibold text-xl">7.1 Selling the Property:</h3>
             <div className="flex justify-between gap-6">
                 {sellingProperty.map((i, index) => (

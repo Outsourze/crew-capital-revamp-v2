@@ -15,7 +15,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="relative w-full bg-[#16243E] py-28">
+    <section className="relative w-full brand-bg-secondary py-28">
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
 
@@ -29,7 +29,7 @@ export default function Benefits() {
         >
           <h2 className="text-white text-5xl font-semibold leading-tight tracking-tight">
             Build Real Wealth  
-            <span className="text-[#E3572B]">. Smarter. Faster.</span>
+            <span className="brand-text-primary">. Smarter. Faster.</span>
           </h2>
 
           <div className="space-y-6">
@@ -42,7 +42,7 @@ export default function Benefits() {
                 viewport={{ once: true }}
                 className="flex items-start gap-4"
               >
-                <IoMdCheckmarkCircleOutline className="text-green-300 w-8 h-8 mt-1" />
+                <IoMdCheckmarkCircleOutline className="brand-text-primary w-8 h-8 mt-1" />
                 <p className="text-white/90 text-lg leading-relaxed font-light">
                   {item}
                 </p>

@@ -43,43 +43,45 @@ const services = [{
 
 const OurServices = () => {
     return (
-        <div className="max-w-7xl w-full m-auto py-20 px-10">
-            <div className="flex flex-col gap-20">
-                <div className="flex flex-col gap-5 text-center">
-                    <h4 className="uppercase tracking-[0.3em]">
-                      Our Services
-                    </h4>
-                    <h3 className="text-3xl brand-text-primary">
-                        Empowering Professionals With Industry Focused Guidance and Stability
-                    </h3>
-                </div>
-                <div className="flex flex-wrap justify-between gap-5">
-                    {services.map((item, index) => (
-                        <div key={index} className="w-[32%] h-[450px] rounded-xl rounded-t-3xl shadow-lg flex flex-col gap-4 relative bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-t-0 border-white/10  overflow-hidden ">
-                          <div className="relative w-full h-[250px] rounded-t-xl overflow-hidden">
-                            <Image
-                              src={item.img}
-                              alt={item.title}
-                              fill
-                              className="object-cover"
-                            />
-                          </div>              
-                          <div className="px-5 flex flex-col gap-3">
-                              <h3 className="font-semibold text-lg">
-                                {item.title}
-                              </h3>               
+        <div className="brand-bg-secondary">
+            <div className="max-w-7xl w-full m-auto py-20 px-10 ">
+                <div className="flex flex-col gap-20">
+                    <div className="flex flex-col gap-5 text-center">
+                        <h4 className="uppercase tracking-[0.3em] text-white">
+                          Our Services
+                        </h4>
+                        <h3 className="text-3xl brand-text-primary">
+                            Empowering Professionals With Industry Focused Guidance and Stability
+                        </h3>
+                    </div>
+                    <div className="flex flex-wrap justify-between gap-5 text-white">
+                        {services.map((item, index) => (
+                            <div key={index} className="w-[32%] h-[450px] rounded-xl rounded-t-3xl shadow-lg flex flex-col gap-4 relative bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-t-0 border-white/10  overflow-hidden ">
+                              <div className="relative w-full h-[250px] rounded-t-xl overflow-hidden">
+                                <Image
+                                  src={item.img}
+                                  alt={item.title}
+                                  fill
+                                  className="object-cover"
+                                />
+                              </div>              
+                              <div className="px-5 flex flex-col gap-3">
+                                  <h3 className="font-semibold text-lg">
+                                    {item.title}
+                                  </h3>               
 
-                              <p className="text-sm ">
-                                {item.dscrpt}
-                              </p>    
-                          </div>
+                                  <p className="text-sm ">
+                                    {item.dscrpt}
+                                  </p>    
+                              </div>
 
-                          <Link href={item.url} className="px-5 flex items-center gap-3 absolute bottom-5 left-0 cursor-pointer">
-                              <p>Read More</p>
-                              <FaArrowRightLong />
-                          </Link>
-                        </div>
-                    ))}
+                              <Link href={item.url} className="px-5 flex items-center gap-3 absolute bottom-5 left-0 cursor-pointer">
+                                  <p>Read More</p>
+                                  <FaArrowRightLong />
+                              </Link>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

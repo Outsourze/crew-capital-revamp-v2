@@ -52,7 +52,7 @@ const WhatClientSay = () => {
   const goToSlide = (index) => swiperRef.current.swiper.slideToLoop(index);
 
   return (
-    <div className="w-full bg-[#fff8f2] relative">
+    <div className="w-full relative">
       <Image src={bg1} className="absolute right-0 bottom-0"/>
       <div className="flex items-start justify-between gap-10">
         {/* Left Image */}
@@ -78,9 +78,13 @@ const WhatClientSay = () => {
         <div ref={rightRef} className="w-[58%] flex flex-col gap-5 pr-5 py-14
           min-[1500px]:py-20 min-[1500px]:pr-10
          ">
-          <div className="pl-5 flex flex-col gap-1">
-            <p className="brand-text-primary text-xl">What to Expect?</p>
-            <h1 className="text-5xl font-semibold">Our clients are a testament to what’s possible:</h1>
+          <div className="flex flex-col gap-1">
+            <h4 className="uppercase tracking-[0.3em]">
+                What to Expect?
+            </h4>
+            <h3 className="text-3xl brand-text-primary">
+                Our clients are a testament to what’s possible:
+            </h3>
           </div>
 
           <div className="w-full 
@@ -98,7 +102,7 @@ const WhatClientSay = () => {
                   xl:p-5
                   lg:p-3
                   md:p-5">
-                  <div className="relative flex flex-col justify-between bg-white shadow-lg rounded-3xl border-t-[#E3572B] border-t-[3px] flex flex-col gap-5
+                  <div className="relative flex flex-col justify-between bg-white shadow-lg rounded-3xl border-t-[#24282A] border-t-[3px] flex flex-col gap-5
                     xl:p-8
                     lg:h-[320px] lg:p-5
                     md:p-5">
@@ -106,7 +110,7 @@ const WhatClientSay = () => {
                         <div className="flex items-center gap-3">
                           <div className="flex items-center gap-3 w-full">
                             <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
-                              <FaQuoteRight className="text-[#E3572B]" />
+                              <FaQuoteRight className="brand-text-secondary" />
                             </div>
                             <h3 className="text-2xl font-semibold uppercase">{item.name}</h3>
                           </div>
@@ -120,7 +124,7 @@ const WhatClientSay = () => {
                       </div>
                     
 
-                      <div className="h-[3px] w-20 bg-[#E3572B] rounded-full mt-4"></div>
+                      <div className="h-[3px] w-20 brand-bg-secondary rounded-full mt-4"></div>
                   </div>
                 </SwiperSlide>
               ))}
@@ -133,7 +137,7 @@ const WhatClientSay = () => {
                   key={index}
                   onClick={() => goToSlide(index)}
                   className={`testimonial-bullet h-[3px] w-12 rounded-full cursor-pointer transition-colors duration-300 ${
-                    activeIndex === index ? "bg-green-400" : "bg-gray-300"
+                    activeIndex === index ? "brand-bg-secondary" : "bg-gray-300"
                   }`}
                 ></div>
               ))}

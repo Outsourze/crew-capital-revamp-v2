@@ -32,7 +32,6 @@ export default function Home() {
       >
         {/* Green image tint */} <div className="absolute inset-0 bg-[#D6DD37] mix-blend-color opacity-70" />
         {/* Content */}
-        <Header />  
         <HeroSection />
       </div>
       <WhoBenefits />

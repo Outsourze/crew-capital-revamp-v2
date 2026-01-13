@@ -66,7 +66,7 @@ const propertyData = [
 
 const PropertyServices = () => {
     return (
-        <div className="relative">
+        <div className="relative brand-bg-secondary">
             <Image src={bg1} className="absolute left-5 top-0 
              xl:block
              lg:hidden" />
@@ -74,24 +74,26 @@ const PropertyServices = () => {
              xl:block
              lg:hidden" />
             <div className="max-w-7xl m-auto py-12 px-10">
-                <div className="flex flex-col gap-5">
-                    <p className="text-center brand-text-primary text-xl ">Property Services</p>
-                    <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">
-                        Property Services Designed to Maximise Your <span className="text-green-300">Returns</span> and <span className="text-green-300">Opportunities</span>
-                    </h1>
+                <div className="flex flex-col gap-1 text-center mb-10">
+                  <h4 className="uppercase tracking-[0.3em] text-white">
+                    Property Services
+                  </h4>
+                  <h3 className="text-3xl brand-text-primary">
+                    Property Services Designed to Maximise Your Returns and Opportunities
+                  </h3>
                 </div>
 
                 <div className="flex flex-wrap gap-5 justify-between">
                     {propertyData.map((data, index) => (
                         <div 
                             key={index} 
-                            className="w-full sm:w-[49%] p-6 flex flex-col gap-5 bg-gradient-to-br from-gray-900/80 to-gray-900/60 border border-green-300 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                            className="w-full sm:w-[49%] p-6 flex flex-col gap-5 border border-[#D6DD37] rounded-md shadow-lg hover:shadow-2xl transition-all duration-300"
                         >
-                            <h1 className="text-2xl font-semibold text-green-300">{data.title}</h1>
+                            <h1 className="text-2xl brand-text-primary">{data.title}</h1>
                             <div className="flex flex-col gap-3 mt-2">
                                 {data.benefits.map((bene, i) => (
                                     <div key={i} className="flex gap-3 items-start">
-                                        <FaCheck className="mt-1 text-green-400 flex-shrink-0" />
+                                        <FaCheck className="mt-1 brand-text-primary flex-shrink-0" />
                                         <p className="text-gray-200 leading-relaxed">{bene}</p>
                                     </div>
                                 ))}

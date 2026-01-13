@@ -10,7 +10,7 @@ const Header = () => {
     }
 
     return (
-        <div className="px-20 py-10 justify-between flex items-start">
+        <div className="px-20 py-10 justify-between flex items-start absolute z-10 w-full">
             <div className="text-white">
                 <h1>ICON</h1>
                 <p className="capitalize">THE PREMIUM INDUSTRY SOLUTION</p>
@@ -22,7 +22,7 @@ const Header = () => {
                     <SlMenu size={24} className=""/>
                 </div>
                 {isNavOpen && (
-                    <div className="absolute -bottom-60 right-0 w-[300px] flex flex-col items-end gap-3">
+                    <div className="absolute -bottom-60 right-0 w-[300px] flex flex-col items-end gap-3 text-[#c9f0d5]">
                         <Link className="text-lg" href={"/"}>Home</Link>
                         <Link className="text-lg" href={"/about"}>About</Link>
                         <Link className="text-lg" href={"/services"}>Services</Link>

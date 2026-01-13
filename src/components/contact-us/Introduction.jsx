@@ -52,10 +52,10 @@ const Introduction = () => {
                        bg-white/5 backdrop-blur-md border border-white/10 
                        rounded-xl p-7 pt-10 w-full md:w-1/4"
           >
-            <div className="bg-[#E3572B] p-3 rounded-lg">{i.icon}</div>
+            <div className="brand-bg-primary p-3 rounded-lg">{i.icon}</div>
 
-            <h3 className="text-xl font-semibold">{i.title}</h3>
-            <p className="text-gray-300">{i.dscrpt}</p>
+            <h3 className="text-xl font-semibold brand-text-secondary">{i.title}</h3>
+            <p className="brand-text-secondary">{i.dscrpt}</p>
           </div>
         ))}
       </div>

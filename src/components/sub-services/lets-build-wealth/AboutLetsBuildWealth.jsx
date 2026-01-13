@@ -5,7 +5,7 @@ import { RiArrowRightDoubleLine } from "react-icons/ri";
 
 const AboutLetsBuildWealth = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6 sm:px-10 lg:px-16">
+    <section className="py-20 px-6 sm:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left text block */}
         <motion.div
@@ -15,7 +15,7 @@ const AboutLetsBuildWealth = () => {
           viewport={{ once: true }}
           className="flex-1 space-y-6"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+          <h2 className="text-4xl brand-text-primary">
             Calling all Airline Crew & FIFO workers
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -34,10 +34,10 @@ const AboutLetsBuildWealth = () => {
           viewport={{ once: true }}
           className="flex-1 space-y-6 brand-bg-primary p-10 rounded-2xl shadow-xl"
         >
-          <p className="text-white text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed">
             Backed by <span className="font-semibold">25 years of property experience</span>, the Airline Crew/Staff & FIFO/Mining professional property program provides everything you need to:
           </p>
-          <ul className="list-disc list-inside text-white space-y-3 text-lg">
+          <ul className="list-disc list-inside space-y-3 text-lg">
             <div className="flex items-center gap-3">
                 <RiArrowRightDoubleLine />
                 <p>Build a passive income stream that grows over time</p>

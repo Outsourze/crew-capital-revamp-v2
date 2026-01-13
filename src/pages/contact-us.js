@@ -5,11 +5,10 @@ import Partners from "@/components/ui/Partners";
 export default function ContactUs() {
   return (
     <div className={""}>
-      <div className="flex flex-col lg:gap-30 md:gap-10 max-md:gap-10 max-sm:gap-5">
+      <div className="flex flex-col relative">
         {/* hero section container */}
         <Introduction />
         <Form />
-        <Partners styles={"!max-w-4xl"}/>
       </div>
     </div>
   );
