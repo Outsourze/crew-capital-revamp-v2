@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Poppins } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer/FooterContainer";
+import ScrollToTop from "@/utility/ScrollToUp";
 
 const poppins = Poppins({
   variable: "--font-poppins-sans",
@@ -21,6 +22,7 @@ export default function Layout({ children }) {
         <main className=''>
           {children}
         </main>
+        <ScrollToTop />
         <Footer />
       </div>
     </>

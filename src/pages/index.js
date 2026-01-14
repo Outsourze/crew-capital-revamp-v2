@@ -4,7 +4,6 @@ import Testimonials from "@/components/home/Testimonials";
 import WhoBenefits from "@/components/home/WhoBenefits";
 import WhyUs from "@/components/home/WhyChooseUs";
 import bgImg from "@/assets/images/home/Residential-Homes.webp";
-import Header from "@/components/header";
 import HeroSection from "@/components/home/HeroSection";
 
 export default function Home() {
