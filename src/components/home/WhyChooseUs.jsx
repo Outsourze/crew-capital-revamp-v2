@@ -19,7 +19,8 @@ const whyUsData = [{
 
 const WhyUs = () => {
     return (
-        <div className="max-w-7xl m-auto py-12 px-0 flex w-full justify-between gap-10">
+        <div className="max-w-7xl m-auto py-12 flex w-full justify-between gap-10
+            xl:px-0 lg:px-10 md:px-5 max-md:px-5">
             <div className="flex flex-col gap-5 w-1/2">
                 <div className="flex flex-col">
                     <h4 className="uppercase tracking-[0.3em]">
