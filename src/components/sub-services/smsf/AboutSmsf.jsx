@@ -383,7 +383,8 @@ const AboutSmsf = () => {
                 {stepToPurchasePropertyData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition w-[32%]"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition 
+                        xl:w-[32%] lg:w-[48%] md:w-[48%] max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>

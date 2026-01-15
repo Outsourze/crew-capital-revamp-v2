@@ -53,7 +53,7 @@ const FinancialHelp = () => {
             pagination={{
               clickable: true,
               renderBullet: (index, className) => {
-                return `<span class="${className} w-5 h-5 rounded-full bg-black inline-block mx-1"></span>`;
+                return `<span class="${className} w-5 h-5 rounded-full !bg-black inline-block mx-1"></span>`;
               },
             }}
             breakpoints={{

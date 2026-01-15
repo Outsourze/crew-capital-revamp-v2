@@ -13,7 +13,7 @@ const HeroSection = () => {
 
     return (
         <div className="m-auto px-20 pt-56 pb-20 ">
-            <div className="w-[35%] flex flex-col gap-5 items-start text-white">
+            <div className="max-w-[600px] flex flex-col gap-5 items-start text-white">
                 <h1 className="text-5xl leading-tight">
                   <span className="brand-text-primary">Industry professionals everywhere agree,</span> purpose-built support sets a new standard.
                 </h1>
