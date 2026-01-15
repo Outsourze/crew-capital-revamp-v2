@@ -29,7 +29,7 @@ export default function ScrollToTop({ showAfter = 300 }) {
         fixed bottom-6 right-6 z-50
         flex items-center justify-center
         h-12 w-12 rounded-full
-        bg-[#D6DD37]
+        bg-[#D6E100]
         text-black
         shadow-lg shadow-black/20
         transition-all duration-300

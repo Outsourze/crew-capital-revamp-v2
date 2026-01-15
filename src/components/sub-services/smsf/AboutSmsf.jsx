@@ -258,7 +258,7 @@ const AboutSmsf = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {keyFeature.map((i, index) => (
-                    <div className="bg-white border-l-4 border-[#D6DD37] p-6 rounded-xl shadow-lg">
+                    <div className="bg-white border-l-4 border-[#D6E100] p-6 rounded-xl shadow-lg">
                       <h4 className="font-semibold text-dark-navy text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
                     </div>

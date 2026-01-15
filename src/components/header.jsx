@@ -63,7 +63,7 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <div className="px-20 py-10 justify-between flex items-start absolute z-10 w-full">
+    <div className="px-20 py-10 justify-between flex items-start absolute z-50 w-full">
       <div className="text-white">
         <h1>ICON</h1>
         <p className="capitalize">THE PREMIUM INDUSTRY SOLUTION</p>
@@ -73,7 +73,7 @@ const Header = () => {
         {/* Menu Button */}
         <button
           onClick={() => setIsNavOpen((prev) => !prev)}
-          className="brand-bg-primary px-4 py-2 rounded-sm cursor-pointer"
+          className="bg-[#D6DD37] px-4 py-2 rounded-sm cursor-pointer"
           aria-expanded={isNavOpen}
         >
           <SlMenu size={24} />
@@ -97,7 +97,7 @@ const Header = () => {
                 >
                   <Link
                     href={item.href}
-                    className="block text-lg px-3 py-1 hover:bg-[#24282A] hover:text-[#D6DD37]"
+                    className="block text-lg px-3 py-1 hover:bg-[#24282A] hover:text-[#D6E100]"
                   >
                     {item.label}
                   </Link>

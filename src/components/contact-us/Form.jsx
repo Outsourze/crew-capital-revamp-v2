@@ -8,7 +8,7 @@ const Form = () => {
           <p className="uppercase tracking-[0.35em] mb-6 text-white text-sm">
             Contact Us
           </p>
-          <h2 className="text-3xl md:text-4xl font-light text-[#D6DD37]">
+          <h2 className="text-3xl md:text-4xl font-light text-[#D6E100]">
             Go on, ask us anything
           </h2>
         </div>
@@ -28,7 +28,7 @@ const Form = () => {
                 w-full bg-transparent border-b border-white/70
                 py-3 text-white placeholder-white/80
                 outline-none transition
-                focus:border-[#D6DD37]
+                focus:border-[#D6E100]
               "
             />
           </div>
@@ -45,7 +45,7 @@ const Form = () => {
                 w-full bg-transparent border-b border-white/70
                 py-3 text-white placeholder-white/80
                 outline-none transition
-                focus:border-[#D6DD37]
+                focus:border-[#D6E100]
               "
             />
           </div>
@@ -62,7 +62,7 @@ const Form = () => {
                 w-full bg-transparent border-b border-white/70
                 py-3 text-white placeholder-white/80
                 outline-none transition
-                focus:border-[#D6DD37]
+                focus:border-[#D6E100]
               "
             />
           </div>
@@ -79,7 +79,7 @@ const Form = () => {
                 w-full bg-transparent border-b border-white/70
                 py-3 text-white placeholder-white/80
                 outline-none transition
-                focus:border-[#D6DD37]
+                focus:border-[#D6E100]
               "
             />
           </div>
@@ -96,7 +96,7 @@ const Form = () => {
                 w-full bg-transparent border-b border-white/70
                 py-3 text-white placeholder-white/80
                 resize-none outline-none transition
-                focus:border-[#D6DD37]
+                focus:border-[#D6E100]
               "
             />
           </div>
@@ -106,11 +106,11 @@ const Form = () => {
             <button
               type="submit"
               className="
-                border border-[#D6DD37]
+                border border-[#D6E100]
                 px-14 py-4 rounded-full
-                text-[#D6DD37] uppercase tracking-[0.25em] text-sm
+                text-[#D6E100] uppercase tracking-[0.25em] text-sm
                 transition-all duration-300
-                hover:bg-[#D6DD37] hover:text-[#212529]
+                hover:bg-[#D6E100] hover:text-[#212529]
               "
             >
               Send Enquiry

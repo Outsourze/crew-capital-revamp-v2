@@ -41,7 +41,7 @@ const Introduction = () => {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/20" />
-        {/* Green image tint */} <div className="absolute inset-0 bg-[#D6DD37] mix-blend-color opacity-70" />
+        {/* Green image tint */} <div className="absolute inset-0 bg-[#D6E100] mix-blend-color opacity-70" />
       </div>
 
       {/* Cards */}

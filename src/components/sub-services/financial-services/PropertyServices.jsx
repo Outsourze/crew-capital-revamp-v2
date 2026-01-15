@@ -87,7 +87,7 @@ const PropertyServices = () => {
                     {propertyData.map((data, index) => (
                         <div 
                             key={index} 
-                            className="w-full sm:w-[49%] p-6 flex flex-col gap-5 border border-[#D6DD37] rounded-md shadow-lg hover:shadow-2xl transition-all duration-300"
+                            className="w-full sm:w-[49%] p-6 flex flex-col gap-5 border border-[#D6E100] rounded-md shadow-lg hover:shadow-2xl transition-all duration-300"
                         >
                             <h1 className="text-2xl brand-text-primary">{data.title}</h1>
                             <div className="flex flex-col gap-3 mt-2">

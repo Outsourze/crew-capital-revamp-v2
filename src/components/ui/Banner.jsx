@@ -9,7 +9,7 @@ const BannerIntro = ({ bgImg, title }) => {
         style={{ backgroundImage: `url(${bgCover})` }}
         className="relative flex flex-col gap-5 w-full bg-no-repeat bg-cover bg-center justify-center items-center py-32"
       >
-        <div className="absolute inset-0 bg-[#D6DD37] mix-blend-color opacity-70" />
+        <div className="absolute inset-0 bg-[#D6E100] mix-blend-color opacity-70" />
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center gap-5">

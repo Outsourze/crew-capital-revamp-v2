@@ -4,7 +4,8 @@
 /* === Design Tokens / Brand Theme === */
 :root {
   /* Brand Colors */
-  --color-brand-primary: #D6DD37;
+  --color-brand-primary: #D6E100;
+  --color-brand-primary-second: #D6DD37;
   --color-brand-secondary: #24282A;
   --color-brand-default-text: #212529;
   --color-black: #000000;

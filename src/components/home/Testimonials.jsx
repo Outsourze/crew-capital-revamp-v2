@@ -102,7 +102,7 @@ const Testimonials = () => {
                   xl:p-5
                   lg:p-3
                   md:p-5">
-                  <div className="relative shadow-lg rounded-3xl border-t-[#D6DD37] border-t-[3px] flex flex-col gap-5
+                  <div className="relative shadow-lg rounded-3xl border-t-[#D6E100] border-t-[3px] flex flex-col gap-5
                     xl:p-8
                     lg:h-[320px] lg:p-5
                     md:p-5">
