@@ -40,7 +40,8 @@ const Introduction = () => {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/20" />
+        {/* Green image tint */} <div className="absolute inset-0 bg-[#D6DD37] mix-blend-color opacity-70" />
       </div>
 
       {/* Cards */}
@@ -54,8 +55,8 @@ const Introduction = () => {
           >
             <div className="brand-bg-primary p-3 rounded-lg">{i.icon}</div>
 
-            <h3 className="text-xl font-semibold brand-text-secondary">{i.title}</h3>
-            <p className="brand-text-secondary">{i.dscrpt}</p>
+            <h3 className="text-xl font-semibold brand-text-primary">{i.title}</h3>
+            <p className="text-white">{i.dscrpt}</p>
           </div>
         ))}
       </div>
