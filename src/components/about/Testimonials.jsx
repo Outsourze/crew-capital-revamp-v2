@@ -39,7 +39,7 @@ const Testimonials = () => {
         <div className="w-full m-auto flex flex-col gap-10 py-20 brand-bg-secondary
           lg:px-20
           md:px-10
-          max-md:px-5">
+          max-md:px-0">
             <div className="flex flex-col gap-5 text-center">
               <h4 className="uppercase tracking-[0.3em] text-white">
                 Testimonials
