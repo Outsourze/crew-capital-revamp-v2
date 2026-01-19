@@ -103,7 +103,7 @@ const Header = () => {
                 className="
                   flex flex-col gap-3
                   max-md:bg-[#E0E76E]/90
-                  max-md:py-10
+                  max-md:py-5
                 "
               >
                 {navItems.map((item) => (

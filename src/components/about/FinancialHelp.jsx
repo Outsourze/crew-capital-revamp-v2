@@ -7,7 +7,7 @@ import img1 from "@/assets/images/about/house.png";
 import img2 from "@/assets/images/about/car.png";
 import img3 from "@/assets/images/about/subdivision.webp";
 import img4 from "@/assets/images/about/comercial.png";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const items = [
     {
@@ -79,10 +79,10 @@ const FinancialHelp = () => {
                 
                 {/* Custom arrows: center relative to slides, not pagination */}
                 <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer">
-                  <MdKeyboardArrowLeft size={52} />
+                  <SlArrowLeft size={52} />
                 </button>
                 <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer">
-                  <MdKeyboardArrowRight size={52} />
+                  <SlArrowRight size={52} />
                 </button>
               </div>
             </div>

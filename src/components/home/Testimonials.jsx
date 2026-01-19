@@ -63,6 +63,7 @@ const Testimonials = () => {
             overflow-hidden 
             rounded-none sm:rounded-r-[50%]
             h-[250px] sm:h-auto
+            max-md:hidden
           "
           style={{ height: typeof window !== "undefined" && window.innerWidth >= 640 ? rightHeight : "250px" }}
         >
@@ -75,10 +76,14 @@ const Testimonials = () => {
         </div>
 
         {/* Right Content */}
-        <div ref={rightRef} className="w-[58%] flex flex-col gap-5 pr-5 py-14
+        <div ref={rightRef} className="flex flex-col gap-5 pr-5 py-14
           min-[1500px]:py-20 min-[1500px]:pr-10
+          md:w-[58%]
+          max-md:w-full max-md:px-8
          ">
-          <div className="pl-5 flex flex-col gap-1">
+          <div className="flex flex-col gap-1
+            md:pl-5 
+            max-md:p-0">
             <h4 className="uppercase tracking-[0.3em] text-white">
               Testimonials
             </h4>
@@ -101,11 +106,13 @@ const Testimonials = () => {
                 <SwiperSlide key={index} className="
                   xl:p-5
                   lg:p-3
-                  md:p-5">
+                  md:p-5
+                  max-md:p-0">
                   <div className="relative shadow-lg rounded-3xl border-t-[#D6E100] border-t-[3px] flex flex-col gap-5
                     xl:p-8
                     lg:h-[320px] lg:p-5
-                    md:p-5">
+                    md:p-5
+                    max-md:p-5">
                     <div className="flex items-center gap-3">
                       <Image src={item.image} alt="image profile" className="w-24 h-24 rounded-full"/>
                       <div className="flex items-start justify-between w-full">

@@ -3,7 +3,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const WhoBenefits = () => {
   const items = [
@@ -27,7 +27,8 @@ const WhoBenefits = () => {
 
   return (
     <section className="bg-white">
-      <div className="py-20 relative px-10">
+      <div className="py-20 relative 
+        lg:px-20 md:px-10 max-md:px-8">
         {/* Heading */}
         <div className="mb-8 text-center flex flex-col gap-5">
           <h4 className="uppercase tracking-[0.3em]">
@@ -73,7 +74,7 @@ const WhoBenefits = () => {
                   <h4 className="mb-4 text-lg font-semibold tracking-wide text-center">
                     {ser.title}
                   </h4>
-                  <p className="text-sm leading-relaxed text-gray-600 text-left">
+                  <p className="leading-relaxed text-gray-600 text-left">
                     {ser.dscrpt}
                   </p>
                 </div>
@@ -83,10 +84,10 @@ const WhoBenefits = () => {
         
           {/* Custom arrows: center relative to slides, not pagination */}
           <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer">
-            <MdKeyboardArrowLeft size={52} />
+            <SlArrowLeft size={24} />
           </button>
           <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer">
-            <MdKeyboardArrowRight size={52} />
+            <SlArrowRight size={24} />
           </button>
         </div>
       </div>
