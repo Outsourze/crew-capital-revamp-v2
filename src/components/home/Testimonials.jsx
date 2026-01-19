@@ -24,7 +24,6 @@ const Testimonials = () => {
   const rightRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [rightHeight, setRightHeight] = useState(0);
-  const isDesktop = useMediaQuery("(min-width: 1024px)");
   const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1023px)");
   const isMobile = useMediaQuery("(max-width: 767px)");
 
@@ -81,11 +80,11 @@ const Testimonials = () => {
         <div ref={rightRef} className="flex flex-col pr-5 py-14
           min-[1500px]:py-20 min-[1500px]:pr-10
           md:w-[58%] md:gap-5 
-          max-md:w-full max-md:px-5 max-md:gap-12
+          max-md:w-full max-md:px-0 max-md:gap-12
          ">
           <div className="flex flex-col gap-1
             md:pl-5 
-            max-md:p-0">
+            max-md:p-5">
             <h4 className="uppercase tracking-[0.3em] text-white">
               Testimonials
             </h4>
@@ -109,7 +108,7 @@ const Testimonials = () => {
                   xl:p-5
                   lg:p-3
                   md:p-5
-                  max-md:p-0">
+                  max-md:p-5">
                   <div className="relative shadow-lg rounded-3xl border-t-[#D6E100] border-t-[3px] flex flex-col gap-5
                     xl:p-8
                     lg:h-[320px] lg:p-5
