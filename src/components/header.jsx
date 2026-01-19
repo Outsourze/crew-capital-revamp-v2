@@ -66,7 +66,7 @@ const Header = () => {
     <div className="py-10 justify-between flex items-start absolute z-50 w-full
       lg:px-20 
       md:px-10
-      max-md:px-8">
+      max-md:px-5">
       <div className="text-white">
         <h1>ICON</h1>
         <p className="capitalize">THE PREMIUM INDUSTRY SOLUTION</p>
@@ -94,7 +94,7 @@ const Header = () => {
               exit="exit"
               className="
                 absolute right-0  w-full
-                max-md:px-8 max-md:m-2
+                max-md:px-5 max-md:m-2
                 md:w-[300px] md:px-0 md:mt-4
               "
             >
