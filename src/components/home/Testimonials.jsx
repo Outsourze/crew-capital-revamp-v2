@@ -52,7 +52,9 @@ const Testimonials = () => {
   const goToSlide = (index) => swiperRef.current.swiper.slideToLoop(index);
 
   return (
-    <div className="w-full brand-bg-secondary relative">
+    <div className="w-full brand-bg-secondary relative
+      md:py-0
+      max-md:pb-5">
       <Image src={bg1} className="absolute right-0 bottom-0"/>
       <div className="flex items-start justify-between gap-10">
         {/* Left Image */}
@@ -76,10 +78,10 @@ const Testimonials = () => {
         </div>
 
         {/* Right Content */}
-        <div ref={rightRef} className="flex flex-col gap-5 pr-5 py-14
+        <div ref={rightRef} className="flex flex-col pr-5 py-14
           min-[1500px]:py-20 min-[1500px]:pr-10
-          md:w-[58%]
-          max-md:w-full max-md:px-5
+          md:w-[58%] md:gap-5 
+          max-md:w-full max-md:px-5 max-md:gap-12
          ">
           <div className="flex flex-col gap-1
             md:pl-5 
