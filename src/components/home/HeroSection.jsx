@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="m-auto z-10 relative
           lg:px-20 
           md:px-10 md:pt-56 md:pb-20 
-          max-md:pt-44 max-md:px-8 max-md:pb-20">
+          max-md:pt-44 max-md:px-5 max-md:pb-20">
             <div className="max-w-[600px] flex flex-col items-start text-white
               md:gap-5 max-md:gap-8">
                 <h1 className="

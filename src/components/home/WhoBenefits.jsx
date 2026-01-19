@@ -28,7 +28,7 @@ const WhoBenefits = () => {
   return (
     <section className="bg-white">
       <div className="py-20 relative 
-        lg:px-20 md:px-10 max-md:px-8">
+        lg:px-20 md:px-10 max-md:px-5">
         {/* Heading */}
         <div className="mb-8 text-center flex flex-col gap-5">
           <h4 className="uppercase tracking-[0.3em]">

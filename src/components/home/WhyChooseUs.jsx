@@ -23,7 +23,7 @@ const WhyUs = () => {
             xl:px-0 
             lg:px-20  
             md:px-10 md:flex-row
-            max-md:px-8 max-md:flex-col">
+            max-md:px-5 max-md:flex-col">
             <div className="flex flex-col gap-5 
                 md:w-1/2 max-md:w-full">
                 <div className="flex flex-col">

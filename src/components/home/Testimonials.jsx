@@ -79,7 +79,7 @@ const Testimonials = () => {
         <div ref={rightRef} className="flex flex-col gap-5 pr-5 py-14
           min-[1500px]:py-20 min-[1500px]:pr-10
           md:w-[58%]
-          max-md:w-full max-md:px-8
+          max-md:w-full max-md:px-5
          ">
           <div className="flex flex-col gap-1
             md:pl-5 

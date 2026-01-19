@@ -48,7 +48,7 @@ const Foundation = () => {
     return (
         <div className="w-full mx-auto brand-bg-secondary">
             <div className="items-center justify-center flex flex-col gap-16 py-20
-                lg:px-20 md:px-10 max-md:px-8">
+                lg:px-20 md:px-10 max-md:px-5">
                 <div className="flex flex-col gap-5 text-center">
                     <h4 className="uppercase tracking-[0.3em] text-white">
                       Key Foundations
