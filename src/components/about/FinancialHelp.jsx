@@ -31,7 +31,8 @@ const items = [
 
 const FinancialHelp = () => {
     return (
-        <div className="py-20 relative px-10">
+        <div className="py-20 relative
+          lg:px-20 md:px-10 max-md:px-5">
             <div className="w-full m-auto">
               <div className="mb-8 text-center flex flex-col gap-5">
                 <h4 className="uppercase tracking-[0.3em]">
@@ -41,7 +42,9 @@ const FinancialHelp = () => {
                   Get The Financial Help You Need With The Service You Deserve.
                 </h3>
               </div>
-              <div className="relative px-10">
+              <div className="relative
+              md:px-10
+              max-md:px-6">
                 {/* Swiper */}
                 <Swiper
                   modules={[Navigation, Pagination]}
@@ -65,11 +68,12 @@ const FinancialHelp = () => {
                 >
                   {items.map((ser, index) => (
                     <SwiperSlide key={index}>
-                      <div className="h-full p-8 pb-14 transition">
+                      <div className="h-full transition
+                        md:p-8 md:pb-14 max-md:pb-12">
                         <h4 className="mb-4 text-lg font-semibold tracking-wide text-center">
                           {ser.title}
                         </h4>
-                        <p className="text-sm leading-relaxed text-gray-600 text-left">
+                        <p className="leading-relaxed text-gray-600 text-left">
                           {ser.dscrpt}
                         </p>
                       </div>
@@ -79,10 +83,10 @@ const FinancialHelp = () => {
                 
                 {/* Custom arrows: center relative to slides, not pagination */}
                 <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer">
-                  <SlArrowLeft size={52} />
+                  <SlArrowLeft size={24} />
                 </button>
                 <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer">
-                  <SlArrowRight size={52} />
+                  <SlArrowRight size={24} />
                 </button>
               </div>
             </div>
