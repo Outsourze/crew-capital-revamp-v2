@@ -20,18 +20,23 @@ const HeroSection = () => {
               md:gap-5 max-md:gap-8">
                 <h1 className="
                   md:text-5xl md:leading-tight
-                  max-md:text-4xl max-md:leading-snug">
+                  max-md:text-4xl max-md:leading-snug
+                  max-sm:text-3xl max-sm:leading-snug">
                   <span className="brand-text-primary">Industry professionals everywhere agree,</span> purpose-built support sets a new standard.
                 </h1>
                 <FillBtn>
                   SCHEDULE A DEMO
                 </FillBtn>
                 <p className="text-[#c9f0d5] font-semibold">Partnerships, Supporters & Integrations by:</p>
-                <div className="flex items-center gap-8">
+                <div className="flex items-center 
+                  md:gap-8
+                  max-md:gap-5">
                   {partners.map((partner, index) => (
                     <div
                       key={index}
-                      className="relative w-24 h-24 rounded-full overflow-hidden bg-white"
+                      className="relative rounded-full overflow-hidden bg-white
+                        md:w-24 md:h-24
+                        max-md:w-22 max-md:h-22"
                     >
                       <Image
                         src={partner}

@@ -38,7 +38,11 @@ const WhyUs = () => {
                 <Image
                   src={house}
                   alt="Residential Homes"
-                  className="w-full rounded-3xl object-cover shadow-2xl transition-transform duration-500 hover:scale-105 hover:rotate-1"
+                  className="w-full object-cover shadow-2xl transition-transform duration-500 hover:scale-105 hover:rotate-1
+                    lg:rounded-3xl 
+                    md:rounded-2xl
+                    max-md:rounded-xl
+                    max-sm:rounded-lg"
                 />
 
             </div>

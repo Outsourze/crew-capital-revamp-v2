@@ -39,7 +39,9 @@ const WhoBenefits = () => {
           </h3>
         </div>
 
-        <div className="relative px-10">
+        <div className="relative 
+          md:px-10
+          max-md:px-6">
           {/* Swiper */}
           <Swiper
             modules={[Navigation, Pagination]}
@@ -70,7 +72,8 @@ const WhoBenefits = () => {
           >
             {items.map((ser, index) => (
               <SwiperSlide key={index}>
-                <div className="h-full p-8 pb-14 transition">
+                <div className="h-full transition
+                  md:p-8 md:pb-14 max-md:pb-12">
                   <h4 className="mb-4 text-lg font-semibold tracking-wide text-center">
                     {ser.title}
                   </h4>

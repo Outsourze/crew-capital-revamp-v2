@@ -145,7 +145,10 @@ const Testimonials = () => {
                 <div
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`testimonial-bullet h-[3px] w-12 rounded-full cursor-pointer transition-colors duration-300 ${
+                  className={`testimonial-bullet h-[3px] rounded-full cursor-pointer transition-colors duration-300
+                    md:w-12 
+                    max-md:w-10
+                    max-sm:w-8 ${
                     activeIndex === index ? "brand-bg-primary" : "bg-gray-300"
                   }`}
                 ></div>
