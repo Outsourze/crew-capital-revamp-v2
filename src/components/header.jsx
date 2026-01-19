@@ -63,13 +63,18 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <div className="px-20 py-10 justify-between flex items-start absolute z-50 w-full">
+    <div className="py-10 justify-between flex items-start absolute z-50 w-full
+      lg:px-20 
+      md:px-10
+      max-md:px-8">
       <div className="text-white">
         <h1>ICON</h1>
         <p className="capitalize">THE PREMIUM INDUSTRY SOLUTION</p>
       </div>
 
-      <div className="relative">
+      <div className="
+        md:relative
+        max-md:static">
         {/* Menu Button */}
         <button
           onClick={() => setIsNavOpen((prev) => !prev)}
@@ -87,25 +92,45 @@ const Header = () => {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="absolute right-0 mt-4 w-[300px] flex flex-col gap-3 text-[#c9f0d5]"
+              className="
+                absolute right-0  w-full
+                max-md:px-8 max-md:m-2
+                md:w-[300px] md:px-0 md:mt-4
+              "
             >
-              {navItems.map((item) => (
-                <motion.div
-                  key={item.href}
-                  variants={itemVariants}
-                  className="w-full text-right"
-                >
-                  <Link
-                    href={item.href}
-                    className="block text-lg px-3 py-1 hover:bg-[#24282A] hover:text-[#D6E100]"
+              {/* BACKGROUND CONTAINER */}
+              <div
+                className="
+                  flex flex-col gap-3
+                  max-md:bg-[#E0E76E]/90
+                  max-md:py-10
+                "
+              >
+                {navItems.map((item) => (
+                  <motion.div
+                    key={item.href}
+                    variants={itemVariants}
+                    className="w-full text-right max-md:text-center"
                   >
-                    {item.label}
-                  </Link>
-                </motion.div>
-              ))}
+                    <Link
+                      href={item.href}
+                      className="
+                        block text-lg px-2 py-1
+                        hover:bg-[#24282A]
+                        hover:text-[#D6E100]
+                        md:text-white
+                        max-md:text-black
+                      "
+                    >
+                      {item.label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
+
       </div>
     </div>
   );

@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <div>
       <div
-        className="relative min-h-screen"
+        className="relative 
+          md:min-h-screen
+          max-md:min-h-[80vh]"
         style={{
         backgroundImage: `
           linear-gradient(
