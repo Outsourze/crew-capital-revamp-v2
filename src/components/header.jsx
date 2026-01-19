@@ -94,7 +94,7 @@ const Header = () => {
               exit="exit"
               className="
                 absolute right-0  w-full
-                max-md:px-5 max-md:m-2
+                max-md:px-5 max-md:p-2
                 md:w-[300px] md:px-0 md:mt-4
               "
             >
