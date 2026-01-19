@@ -21,7 +21,7 @@ const HeroSection = () => {
                 <h1 className="
                   md:text-5xl md:leading-tight
                   max-md:text-4xl max-md:leading-snug
-                  max-sm:text-3xl max-sm:leading-snug">
+                  max-sm:text-4xl max-sm:leading-tight">
                   <span className="brand-text-primary">Industry professionals everywhere agree,</span> purpose-built support sets a new standard.
                 </h1>
                 <FillBtn>
