@@ -1,6 +1,6 @@
 const Form = () => {
   return (
-    <section className="bg-[#24282A] -mt-28 py-20 pt-52">
+    <section className="brand-bg-secondary -mt-28 py-20 pt-52">
       <div className="max-w-4xl w-full mx-auto px-4">
 
         {/* Heading */}

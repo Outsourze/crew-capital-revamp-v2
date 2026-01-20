@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const MiningBanner = () => {
     return (
-        <div className="max-w-[90rem] m-auto w-full rounded-2xl absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-[#1c2e4e] overflow-hidden flex justify-between items-end">
+        <div className="max-w-[90rem] m-auto w-full rounded-2xl absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-[#1c2e4e] overflow-hidden flex justify-between items-end
+            lg:flex md:hidden max-md:hidden">
             
             {/* Text content */}
             <div className="max-w-3xl p-10 py-14 ">

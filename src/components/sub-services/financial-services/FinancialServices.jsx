@@ -89,16 +89,25 @@ const FinancialServices = () => {
         <div className="relative ">
             <Image src={bg1} className="absolute left-5 top-5
                 xl:block
-                lg:hidden" />
+                md:hidden
+                max-md:hidden" />
             <Image src={bg2} className="absolute right-5 bottom-5
                 xl:block
-                lg:hidden" />
-            <div className="max-w-7xl m-auto py-12 px-10">
+                md:hidden
+                max-md:hidden" />
+            <div className="m-auto py-12
+                max-w-[90rem] 
+                xl:px-10
+                lg:px-20
+                md:px-10
+                max-md:px-5">
                 <div className="flex flex-col gap-1 text-center mb-10">
                   <h4 className="uppercase tracking-[0.3em]">
                       Financial Services
                   </h4>
-                  <h3 className="text-3xl brand-text-primary">
+                  <h3 className="brand-text-primary
+                     md:text-3xl 
+                    max-md:text-2xl">
                     Comprehensive Financial Solutions to Maximise Your Wealth and Opportunities
                   </h3>
                 </div>
@@ -107,7 +116,9 @@ const FinancialServices = () => {
                     {financialData.map((data, index) => (
                         <div 
                             key={index} 
-                            className={`w-full sm:w-[49%] p-6 flex flex-col gap-5 rounded-md shadow-md hover:shadow-lg transition-transform duration-300
+                            className={`w-full p-6 flex flex-col gap-5 rounded-md shadow-md hover:shadow-lg transition-transform duration-300
+                                md:w-[48%]
+                                max-md:w-full
                                 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border `}
                         >
                             <h1 className="text-2xl ">{data.title}</h1>

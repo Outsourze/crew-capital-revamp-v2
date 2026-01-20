@@ -5,11 +5,22 @@ import { BsDownload } from "react-icons/bs";
 
 const AboutMining2 = () => {
   return (
-    <div className="py-24 px-10 brand-bg-secondary">
-      <div className="max-w-7xl pb-32 m-auto flex flex-col lg:flex-row items-center gap-16">
+    <div className="py-20 brand-bg-secondary
+      xl:px-10
+      lg:px-20 
+      md:px-10 
+      max-md:px-5 ">
+      <div className="max-w-[90rem] m-auto flex flex-col lg:flex-row items-center gap-16
+        xl:px-10
+        lg:pb-32
+        md:pb-0 md:px-0
+        max-md:pb-0 max-md:px-0">
         
         {/* Image Left */}
-        <div className="w-full lg:w-[45%] relative rounded-2xl overflow-hidden shadow-xl">
+        <div className="w-full lg:w-[45%] relative rounded-2xl overflow-hidden shadow-xl
+          lg:block
+          md:hidden
+          max-md:hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-dark-navy/30 to-transparent rounded-2xl"></div>
           <Image src={bgImg} alt="property investment" className="rounded-2xl" />
         </div>
@@ -43,7 +54,7 @@ const AboutMining2 = () => {
 
           {/* CTA Button */}
           <FillBtnLink href={"/"}>
-             Download Free Guide 
+             Download
           </FillBtnLink>
         </div>
       </div>

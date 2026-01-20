@@ -13,7 +13,8 @@ const BannerIntro = ({ bgImg, title }) => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center gap-5">
-          <h1 className="text-4xl text-white font-semibold">{title}</h1>
+          <h1 className="text-white font-semibold
+            md:text-3xl max-md:text-xl">{title}</h1>
           <div className="flex gap-2 items-center py-2 px-4 rounded-full text-white text-sm bg-white/10 backdrop-blur-md">
             <Link href={"/"}>Home</Link>
             <p>

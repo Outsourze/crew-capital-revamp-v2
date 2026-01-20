@@ -5,7 +5,11 @@ import Image from "next/image";
 const AboutFinancialService = () => {
   return (
     <div className="">
-      <div className="max-w-7xl m-auto flex flex-col gap-16 py-24 px-10">
+      <div className="max-w-[90rem] m-auto flex flex-col gap-16 
+        xl:px-10
+        lg:px-20 lg:py-20 
+        md:px-10 md:py-10
+        max-md:px-5 max-md:py-10">
         <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-12">
           {/* Text Content */}
           <div className="w-full lg:w-[45%] flex flex-col gap-7 items-start">

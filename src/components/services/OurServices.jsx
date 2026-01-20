@@ -44,7 +44,11 @@ const services = [{
 const OurServices = () => {
     return (
         <div className="brand-bg-secondary">
-            <div className="max-w-7xl w-full m-auto py-20 px-10 ">
+            <div className="max-w-[90rem] w-full m-auto py-20 
+                xl:px-10 
+                lg:px-20
+                md:px-10
+                max-md:px-5">
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col gap-5 text-center">
                         <h4 className="uppercase tracking-[0.3em] text-white">
@@ -56,8 +60,11 @@ const OurServices = () => {
                     </div>
                     <div className="flex flex-wrap justify-between gap-5 text-white">
                         {services.map((item, index) => (
-                            <div key={index} className="w-[32%] h-[450px] rounded-xl rounded-t-3xl shadow-lg flex flex-col gap-4 relative bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-t-0 border-white/10  overflow-hidden ">
-                              <div className="relative w-full h-[250px] rounded-t-xl overflow-hidden">
+                            <div key={index} className="h-[450px] rounded-xl shadow-lg flex flex-col gap-4 relative bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-t-0 border-white/10  overflow-hidden 
+                                lg:w-[32%] lg:rounded-t-3xl 
+                                md:w-[47%] md:rounded-t-2xl
+                                max-md:w-full max-md:rounded-lg">
+                              <div className="relative w-full h-[250px] overflow-hidden">
                                 <Image
                                   src={item.img}
                                   alt={item.title}

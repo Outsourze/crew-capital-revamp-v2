@@ -4,10 +4,20 @@ import { CiCircleCheck } from "react-icons/ci";
 
 const ClientSuccessSection = () => {
   return (
-    <section className="py-24 px-10 pt-10">
-      <div className="max-w-[90rem] mx-auto flex justify-between gap-10 items-start">
+    <section className="py-24 
+      xl:px-10 xl:pt-10
+      lg:px-20 lg:pt-0
+      md:px-10 md:py-0 
+      max-md:px-5 max-md:py-0">
+      <div className="max-w-[90rem] mx-auto flex justify-between gap-10 items-start
+        lg:flex-row
+        md:flex-col
+        max-md:flex-col">
         {/* LEFT SIDE */}
-        <div className="flex flex-col py-12 w-1/2">
+        <div className="flex flex-col py-12 
+          lg:w-1/2
+          md:w-full
+          max-md:w-full">
           
           <div className="flex flex-col gap-1 mb-10">
             <h4 className="uppercase tracking-[0.3em]">
@@ -36,10 +46,13 @@ const ClientSuccessSection = () => {
         </div>
 
                 {/* RIGHT SIDE – Modern Bullet Points */}
-        <div className="flex flex-col gap-8 justify-start brand-bg-navy px-7 rounded-2xl py-12 w-1/2">
+        <div className="flex flex-col gap-8 justify-start brand-bg-navy rounded-2xl 
+          lg:w-1/2 lg:py-12 lg:px-7 
+          md:w-full md:py-5 md:px-0
+          max-md:w-full max-md:py-5 max-md:px-0">
 
           {/* Sub Indicator + Title */}
-          <div className="flex flex-col gap-1 mb-10">
+          <div className="flex flex-col gap-1 lg:mb-10 md:mb-0 max-md:mb-0">
             <h4 className="uppercase tracking-[0.3em]">
               Why FIFO Workers Trust Us
             </h4>
@@ -48,7 +61,7 @@ const ClientSuccessSection = () => {
             </h3>
           </div>
           {/* Bullet Items */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col xl:gap-7 lg:gap-0 md:gap-5 max-md:gap-3">
             {[
               {
                 title: "THIS ISN’T JUST RECYCLED INFORMATION",
@@ -67,7 +80,10 @@ const ClientSuccessSection = () => {
                 desc: "Avoid costly mistakes and build your property portfolio quicker without doing all the legwork yourself.",
               },
             ].map((item, index) => (
-              <div key={index} className="flex gap-3 p-5 rounded-xl bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-white/10">
+              <div key={index} className="flex gap-3 rounded-xl bg-[rgba(255,255,255,0.03)] backdrop-blur-sm border border-white/10 
+                lg:px-5
+                md:px-0 md:py-5
+                max-md:px-0 max-md:py-3">
                 <div className="mt-1">
                   <CiCircleCheck className="text-3xl" />
                 </div>

@@ -1,10 +1,4 @@
-import Image from "next/image";
 import { useState } from "react";
-import img1 from "@/assets/images/home/research.png";
-import img2 from "@/assets/images/home/education.png";
-import img3 from "@/assets/images/home/investment.png";
-import img4 from "@/assets/images/home/ongoing-support.png";
-import banner from "@/assets/images/home/banner.png";
 import IA from "@/assets/icons/Research.svg"
 import IB from "@/assets/icons/Education.svg"
 import IC from "@/assets/icons/Investment.svg"
@@ -28,23 +22,7 @@ const FoundationData = [{
     dscrpt: "We're dedicated to assisting you at every step of your investment journey. With extensive experience in the property sector, our team is committed to offering personalized guidance throughout the entire investment process. From participating in our informative events to finalizing your property acquisition and beyond, providing tailored advice that matches your specific circumstances and investment aspirations."
 }]
 
-const technicalData = [{
-    title: "60",
-    dscrpt: "Year of Experienced"
-}, {
-    title: "9,200",
-    dscrpt: "Satisfied Customers"
-}, {
-    title: "5,800",
-    dscrpt: "Project Completed"
-}, {
-    title: "100",
-    dscrpt: "Get Awards"
-}]
-
 const Foundation = () => {
-    const [hoverActive, setHoverActive] = useState(null);
-
     return (
         <div className="w-full mx-auto brand-bg-secondary">
             <div className="items-center justify-center flex flex-col gap-16 py-20

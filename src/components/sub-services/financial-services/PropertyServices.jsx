@@ -69,16 +69,25 @@ const PropertyServices = () => {
         <div className="relative brand-bg-secondary">
             <Image src={bg1} className="absolute left-5 top-0 
              xl:block
-             lg:hidden" />
+             md:hidden
+             max-md:hidden" />
             <Image src={bg2} className="absolute right-5 bottom-0 
              xl:block
-             lg:hidden" />
-            <div className="max-w-7xl m-auto py-12 px-10">
+             md:hidden
+             max-md:hidden" />
+            <div className="m-auto py-12
+                max-w-[90rem] 
+                xl:px-10
+                lg:px-20
+                md:px-10
+                max-md:px-5">
                 <div className="flex flex-col gap-1 text-center mb-10">
                   <h4 className="uppercase tracking-[0.3em] text-white">
                     Property Services
                   </h4>
-                  <h3 className="text-3xl brand-text-primary">
+                  <h3 className="brand-text-primary
+                     md:text-3xl 
+                    max-md:text-2xl">
                     Property Services Designed to Maximise Your Returns and Opportunities
                   </h3>
                 </div>
@@ -87,7 +96,9 @@ const PropertyServices = () => {
                     {propertyData.map((data, index) => (
                         <div 
                             key={index} 
-                            className="w-full sm:w-[49%] p-6 flex flex-col gap-5 border border-[#D6E100] rounded-md shadow-lg hover:shadow-2xl transition-all duration-300"
+                            className="w-full p-6 flex flex-col gap-5 border border-[#D6E100] rounded-md shadow-lg hover:shadow-2xl transition-all duration-300
+                                md:w-[48%]
+                                max-md:w-full"
                         >
                             <h1 className="text-2xl brand-text-primary">{data.title}</h1>
                             <div className="flex flex-col gap-3 mt-2">
