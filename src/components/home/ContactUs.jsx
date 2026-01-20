@@ -1,7 +1,7 @@
 const ContactUs = () => {
   return (
     <section className="bg-[#D6E100] min-h-screen flex items-center justify-center">
-      <div className="w-full max-w-4xl px-6 py-20">
+      <div className="w-full max-w-4xl px-5 py-20">
         
         {/* Header */}
         <div className="text-center mb-16">

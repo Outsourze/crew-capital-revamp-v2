@@ -9,6 +9,8 @@ import icon3 from "@/assets/images/p1.png";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import { FaQuoteRight } from "react-icons/fa";
+import { useMediaQuery } from "@/utility/useMediaQuery";
+
 
 const testimonialsData = [
   { name: "Melissa", occupation: "Qantas Flight Attendant", image: icon1, text: "Big Thank you to Peter, Matt & the team at Crew Capital, I'm on my second investment property in less than 2 years. All thanks to the team at Crew Capital." },
@@ -19,6 +21,8 @@ const testimonialsData = [
 const Testimonials = () => {
     const swiperRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
+    const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1023px)");
+    const isMobile = useMediaQuery("(max-width: 767px)");
 
     // Update active slide
     useEffect(() => {
@@ -32,7 +36,10 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <div className="w-full m-auto flex flex-col gap-10 py-10 px-10 brand-bg-secondary">
+        <div className="w-full m-auto flex flex-col gap-10 py-20 brand-bg-secondary
+          lg:px-20
+          md:px-10
+          max-md:px-0">
             <div className="flex flex-col gap-5 text-center">
               <h4 className="uppercase tracking-[0.3em] text-white">
                 Testimonials
@@ -45,7 +52,7 @@ const Testimonials = () => {
                 <Swiper
                   ref={swiperRef}
                   modules={[Navigation]}
-                  slidesPerView={2}
+                  slidesPerView={isTablet || isMobile ? 1 : 2}
                   spaceBetween={0}
                   loop={true}
                 >

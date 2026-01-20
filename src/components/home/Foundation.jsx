@@ -47,7 +47,8 @@ const Foundation = () => {
 
     return (
         <div className="w-full mx-auto brand-bg-secondary">
-            <div className="items-center justify-center flex flex-col gap-16 py-20 px-10">
+            <div className="items-center justify-center flex flex-col gap-16 py-20
+                lg:px-20 md:px-10 max-md:px-5">
                 <div className="flex flex-col gap-5 text-center">
                     <h4 className="uppercase tracking-[0.3em] text-white">
                       Key Foundations
@@ -59,7 +60,8 @@ const Foundation = () => {
                 <div className="flex flex-col">
                     <div className="flex flex-wrap max-w-7xl gap-5 justify-between">
                         {FoundationData.map((i, index) => (
-                            <div key={index} className="w-[48%] text-white p-5 flex flex-col gap-5 border-1 border-[#D6E100] rounded-xl">
+                            <div key={index} className="text-white p-5 flex flex-col gap-5 border-1 border-[#D6E100] rounded-xl
+                                md:w-[48%] max-md:w-full">
                                 {i.img}
                                 <h1 className="text-2xl font-semibold">{i.title}</h1>
                                 <p>{i.dscrpt}</p>

@@ -17,9 +17,16 @@ const achievement = [{
 
 const OurAchievement = () => {
     return (
-        <div className="px-10">
-            <div className="max-w-[90rem] m-auto w-full py-20 flex justify-between items-center">
-                <div className="flex flex-col gap-1 w-[45%]">
+        <div className="
+          lg:px-20
+          md:px-10
+          max-md:px-5">
+            <div className="max-w-[90rem] m-auto w-full flex justify-between items-center
+              md:flex-row md:py-20 
+              max-md:flex-col max-md:gap-10 max-md:py-10">
+                <div className="flex flex-col gap-1 
+                  md:w-[45%]
+                  max-md:w-full max-md:items-center max-md:text-center">
                     <h4 className="uppercase tracking-[0.3em]">
                       Company Overview
                     </h4>
@@ -27,12 +34,18 @@ const OurAchievement = () => {
                       Empowering Professionals Across Industries
                     </h3>
                 </div>
-                <div className="w-[45%] flex  items-end justify-end gap-5">
+                <div className="flex gap-5 
+                  md:w-[45%]
+                  max-md:w-full max-md:justify-center">
                     {achievement.map((item, index) => (
-                      <div key={item.numbers} className="flex items-center gap-4">
+                      <div key={item.numbers} className="flex items-center md:gap-4 max-md:gap-2">
                         <div className="text-center ">
-                          <h3 className="text-4xl font-semibold">{item.numbers}</h3>
-                          <p className="text-xl text-gray-500">{item.text}</p>
+                          <h3 className="font-semibold
+                            md:text-4xl 
+                            max-md:text-3xl">{item.numbers}</h3>
+                          <p className=" text-gray-500
+                            md:text-xl
+                            max-md:text-base">{item.text}</p>
                         </div>
                         {/* Add middle dot except after last item */}
                         {index !== achievement.length - 1 && (
