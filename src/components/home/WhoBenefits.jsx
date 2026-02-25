@@ -1,114 +1,100 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import img1 from "@/assets/images/home/home-owners.png";
-import img2 from "@/assets/images/home/property.png";
-import img3 from "@/assets/images/home/passive-income.png";
-import img4 from "@/assets/images/home/reinvestor.png";
-import img5 from "@/assets/images/home/financial-secure.png";
-import Image from "next/image";
-import { GrNext , GrPrevious } from "react-icons/gr";
-import { FaStar } from "react-icons/fa";
-import p1 from "@/assets/images/p1.png";
-import p2 from "@/assets/images/p2.webp";
-import p3 from "@/assets/images/p3.jpg";
-import p4 from "@/assets/images/p4.jpg";
-import bg1 from "@/assets/images/bg-01-white.png";
-import bg2 from "@/assets/images/bg-04-white.png";
+import "swiper/css/pagination";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const WhoBenefits = () => {
   const items = [
     {
         title: "First Home Owners",
-        img: img1,
-        img2: p1,
         dscrpt: "“I’m eager to purchase my first property. It’ll mark my entry into the property market. I’m searching for a one-stop solution: education, mentorship, brokers, financial planners, real estate agents, and more."
     }, {
         title: "Property Investors",
-        img: img2,
-        img2: p2,
         dscrpt: "“I have property ownership and equity, yet I’m uncertain about leveraging it to expand my property portfolio.”"
     }, {
         title: "Passive Income & Income Replacers",
-        img: img3,
-        img2: p3,
         dscrpt: "“I aspire to create passive income to complement and eventually replace my current earnings. This way, I could attain the freedom to fully enjoy my life."
     }, {
         title: "Rentvestors",
-        img: img4,
-        img2: p4,
         dscrpt: "“Firstly, purchasing property where I currently reside is beyond my means. Secondly, I prefer not to relocate, yet I’m eager to own property. I’m seeking the right strategies to turn this aspiration into reality.”"
     }, {
         title: "Financially Secure Seekers",
-        img: img5,
-        img2: p1,
         dscrpt: "“I’ve always had the desire to construct a property portfolio and secure my financial future. However, I’m uncertain about the process; what if I make mistakes or incur losses? I require support.”"
     }
   ];
 
   return (
-    <div className="relative">
-      <Image src={bg1} className="absolute left-5 top-0"/>
-      <Image src={bg2} className="absolute right-5 bottom-0"/>
-      <div className="max-w-7xl m-auto py-12 px-10">
-        <div className="flex flex-col gap-5">
-          <p className="text-center brand-text-orange text-xl ">Tailored Property Advice</p>
-          <h1 className="font-semibold text-white text-4xl text-center mb-14 leading-tight">
-            Who Benefits From Our <span className="text-green-300">Expert Advice</span> and <span className="text-green-300">Experience</span>?
-          </h1>
+    <section className="bg-white">
+      <div className="py-20 relative 
+        lg:px-20 md:px-10 max-md:px-5">
+        {/* Heading */}
+        <div className="mb-8 text-center flex flex-col gap-5">
+          <h4 className="uppercase tracking-[0.3em]">
+            Tailored Property Advice
+          </h4>
+          <h3 className="text-3xl brand-text-primary">
+            Who Benefits From Our Expert Advice and Experience?
+          </h3>
         </div>
 
-
-        <div className="relative group rounded-lg">
-          {/* Custom navigation buttons */}
-          <button className="swiper-button-prev absolute !-left-3 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <GrPrevious />
-          </button>
-          <button className="swiper-button-next absolute !-right-3 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <GrNext />
-          </button>
-
+        <div className="relative 
+          md:px-10
+          max-md:px-6">
+          {/* Swiper */}
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Pagination]}
+            spaceBetween={24}
             navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              prevEl: ".custom-prev",
+              nextEl: ".custom-next",
             }}
-            slidesPerView={3}
-            spaceBetween={0}
-            loop={false}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="pb-20"
+            onSwiper={(swiper) => {
+              // Tailwind classes for pagination bullets
+              swiper.pagination.el.classList.add(
+                "flex",
+                "justify-center",
+                "gap-3",
+                "mt-6"
+              );
+              swiper.pagination.bullets.forEach((bullet) => {
+                bullet.classList.add("!bg-black", "w-5", "h-5", "rounded-full");
+              });
+            }}
           >
-            {items.map((item, index) => (
+            {items.map((ser, index) => (
               <SwiperSlide key={index}>
-                <div className="px-4 py-4 rounded-lg relative flex flex-col items-center">
-                  <div className="z-10 w-[96%] relative">
-                      <Image src={item.img} className="rounded-2xl object-cover" />
-                      <Image src={item.img2} alt="profile" className="absolute w-12 h-12 rounded-full right-5 z-10 -bottom-5 p-[2px] bg-white"/>
-                  </div>
-
-
-                  <div className="bg-white h-[350px] w-full rounded-2xl relative -top-24 -z-10 pt-30 px-8 flex flex-col items-start gap-2">
-                      <div className="flex gap-3 items-center">
-                          <div className="flex gap-[1.5px]">
-                            {[...Array(5)].map((_, index) => (
-                              <FaStar size={16} key={index} className="text-yellow-400" />
-                            ))}
-                          </div>
-                          <p className="text-sm text-red-600">5.0</p>
-                          <p className="text-sm text-gray-500">(2)</p>
-                      </div>
-                          
-                    <h3 className="font-semibold text-lg">{item.title}</h3>
-                    <p className="text-gray-500 text-sm">{item.dscrpt}</p>
-                  </div>
+                <div className="h-full transition
+                  md:p-8 md:pb-14 max-md:pb-12">
+                  <h4 className="mb-4 text-lg font-semibold tracking-wide text-center">
+                    {ser.title}
+                  </h4>
+                  <p className="leading-relaxed text-gray-600 text-left">
+                    {ser.dscrpt}
+                  </p>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
+        
+          {/* Custom arrows: center relative to slides, not pagination */}
+          <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer">
+            <SlArrowLeft size={24} />
+          </button>
+          <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer">
+            <SlArrowRight size={24} />
+          </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,16 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import img1 from "@/assets/images/about/house.png";
 import img2 from "@/assets/images/about/car.png";
 import img3 from "@/assets/images/about/subdivision.webp";
 import img4 from "@/assets/images/about/comercial.png";
-import Image from "next/image";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { GrNext , GrPrevious } from "react-icons/gr";
-import bg1 from "@/assets/images/bg-01.png";
-import bg2 from "@/assets/images/bg-04.png";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const items = [
     {
@@ -34,65 +31,64 @@ const items = [
 
 const FinancialHelp = () => {
     return (
-        <div className="bg-[#fff8f2] py-20 relative px-10">
-            <Image src={bg1} className="absolute left-0 top-5"/>
-            <Image src={bg2} className="absolute right-0 bottom-5"/>
-            <div className="max-w-7xl w-full m-auto">
-                <div className="flex flex-col justify-center gap-2 items-center">
-                  <p className="text-center brand-text-orange text-xl ">Personalized Financial Guidance</p>
-                  <h1 className="font-semibold text-4xl text-center mb-14 leading-tight w-[70%]">
-                    Get The Financial Help You Need With The Service You Deserve.
-                  </h1>
-                </div>
-                <div className="relative group rounded-lg">
-                    {/* Custom navigation buttons */}
-                    <button className="swiper-button-prev absolute !-left-8 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white !text-orange-500 p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <GrPrevious />
-                    </button>
-                    <button className="swiper-button-next absolute !-right-8 top-1/2 transform -translate-y-1/2 z-20 !w-14 !h-14 bg-white !text-orange-500 p-4 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <GrNext />
-                    </button>
-                    <Swiper
-                        modules={[Navigation]}
-                          navigation={{
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                          }}
-                          slidesPerView={3}
-                          spaceBetween={30}
-                          loop={false}
-                        >
-                        {items.map((item, index) => (
-                          <SwiperSlide key={index} className="py-3 !overflow-visible">
-                          <div className="h-[450px] rounded-xl rounded-t-3xl bg-white shadow-lg flex flex-col gap-4 relative">
-                                        
-                            <div className="relative w-full h-[250px] rounded-t-xl overflow-hidden">
-                              <Image
-                                src={item.img}
-                                alt={item.title}
-                                fill
-                                className="object-cover"
-                              />
-                            </div>              
-                            <div className="px-5 flex flex-col gap-3">
-                                <h3 className="font-semibold text-lg">
-                                  {item.title}
-                                </h3>               
-                        
-                                <p className="text-sm text-gray-600">
-                                  {item.dscrpt}
-                                </p>    
-                            </div>
-                                        
-                            <div className="px-5 flex items-center gap-3 absolute bottom-5 left-0 brand-text-orange cursor-pointer">
-                                <p>Read More</p>
-                                <FaArrowRightLong />
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      ))}
-                    </Swiper>
-                </div>
+        <div className="py-20 relative
+          lg:px-20 md:px-10 max-md:px-5">
+            <div className="w-full m-auto">
+              <div className="mb-8 text-center flex flex-col gap-5">
+                <h4 className="uppercase tracking-[0.3em]">
+                  Personalized Financial Guidance
+                </h4>
+                <h3 className="text-3xl brand-text-primary">
+                  Get The Financial Help You Need With The Service You Deserve.
+                </h3>
+              </div>
+              <div className="relative
+              md:px-10
+              max-md:px-6">
+                {/* Swiper */}
+                <Swiper
+                  modules={[Navigation, Pagination]}
+            spaceBetween={24}
+            navigation={{
+              prevEl: ".custom-prev",
+              nextEl: ".custom-next",
+            }}
+            pagination={{
+              clickable: true,
+              renderBullet: (index, className) => {
+                return `<span class="${className} w-5 h-5 rounded-full !bg-black inline-block mx-1"></span>`;
+              },
+            }}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="pb-20"
+                >
+                  {items.map((ser, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="h-full transition
+                        md:p-8 md:pb-14 max-md:pb-12">
+                        <h4 className="mb-4 text-lg font-semibold tracking-wide text-center">
+                          {ser.title}
+                        </h4>
+                        <p className="leading-relaxed text-gray-600 text-left">
+                          {ser.dscrpt}
+                        </p>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                
+                {/* Custom arrows: center relative to slides, not pagination */}
+                <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer">
+                  <SlArrowLeft size={24} />
+                </button>
+                <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer">
+                  <SlArrowRight size={24} />
+                </button>
+              </div>
             </div>
         </div>
     )

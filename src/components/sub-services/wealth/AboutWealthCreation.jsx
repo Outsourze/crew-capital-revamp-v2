@@ -16,7 +16,7 @@ import IJ from "@/assets/icons/wealth-creation/Sales & Lead Generation.svg";
 
 const steps = [
   {
-    step: <IA className="text-white w-7 h-7"/>,
+    step: <IA className="w-7 h-7"/>,
     title: "Education and Research",
     items: [
       {
@@ -37,7 +37,7 @@ const steps = [
     ],
   },
   {
-    step: <IB className="text-white w-7 h-7"/>,
+    step: <IB className="w-7 h-7"/>,
     title: "Financial Preparation",
     items: [
       {
@@ -59,7 +59,7 @@ const steps = [
   },
 
   {
-    step: <IC className="text-white w-7 h-7"/>,
+    step: <IC className="w-7 h-7"/>,
     title: "Develop a Strategy",
     items: [
       {
@@ -76,7 +76,7 @@ const steps = [
   },
 
   {
-    step: <ID className="text-white w-7 h-7"/>,
+    step: <ID className=" w-7 h-7"/>,
     title: "Property Selection",
     items: [
       {
@@ -98,7 +98,7 @@ const steps = [
   },
 
   {
-    step: <IE className="text-white w-7 h-7"/>,
+    step: <IE className=" w-7 h-7"/>,
     title: "Financing",
     items: [
       {
@@ -119,7 +119,7 @@ const steps = [
     ],
   },
   {
-    step: <IF className="text-white w-7 h-7"/>,
+    step: <IF className=" w-7 h-7"/>,
     title: "Acquisition",
     items: [
       {
@@ -141,7 +141,7 @@ const steps = [
   },
 
   {
-    step: <IG className="text-white w-7 h-7"/>,
+    step: <IG className=" w-7 h-7"/>,
     title: "Property Management",
     items: [
       {
@@ -163,7 +163,7 @@ const steps = [
   },
 
   {
-    step: <IH className="text-white w-7 h-7"/>,
+    step: <IH className=" w-7 h-7"/>,
     title: "Portfolio Growth",
     items: [
       {
@@ -185,7 +185,7 @@ const steps = [
   },
 
   {
-    step: <II className="text-white w-7 h-7"/>,
+    step: <II className=" w-7 h-7"/>,
     title: "Tax Considerations",
     items: [
       {
@@ -207,7 +207,7 @@ const steps = [
   },
 
   {
-    step: <IJ className="text-white w-7 h-7"/>,
+    step: <IJ className=" w-7 h-7"/>,
     title: "Long-Term Strategy",
     items: [
       {
@@ -239,15 +239,16 @@ const AboutWealthCreation = () => {
             viewport={{ once: true }}
             className="flex flex-col gap-7 max-w-2xl mx-auto text-center"
           >
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
-              Creating Wealth Through Property
-            </h1>
-
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Investment in Australia involves a series of strategic steps.
+            <div className="flex flex-col gap-1 mb-5">
+              <h4 className="uppercase tracking-[0.3em]">
+                  Creating Wealth Through Property
+              </h4>
+              <h3 className="text-3xl leading-normal">
+                Investment in Australia involves a series of strategic steps.
               Here's a comprehensive guide to help you get started and succeed in
               property investment:
-            </p>
+              </h3>
+            </div>
           </motion.div>
         </div>
 
@@ -256,7 +257,7 @@ const AboutWealthCreation = () => {
         {/* ===================================================== */}
         <div className="relative">
           {/* TIMELINE LINE */}
-          <div className="absolute left-8 top-0 bottom-0 w-1 bg-orange-500/70 rounded-full hidden lg:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-1 bg-green-500/70 rounded-full hidden lg:block" />
 
           <div className="space-y-20">
             {steps.map((stepObj, index) => (
@@ -270,14 +271,14 @@ const AboutWealthCreation = () => {
               >
                 {/* STEP NUMBER CIRCLE */}
                 
-                <div className="absolute border-2 border-white left-1 top-0 w-14 h-14 rounded-full bg-[#E3572B] shadow-lg flex items-center justify-center text-white font-bold text-xl hidden lg:flex">
+                <div className="absolute border-2 border-white left-1 top-0 w-14 h-14 rounded-full brand-bg-secondary shadow-lg flex items-center justify-center brand-text-primary font-bold text-xl hidden lg:flex">
                   {stepObj.step}
                 </div>
                 
 
                 {/* CONTENT */}
                 <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                  <h2 className="text-3xl font-semibold text-[#E3572B] mb-6">
+                  <h2 className="text-3xl font-semibold mb-6">
                     Step {index + 1}: {stepObj.title}
                   </h2>
 

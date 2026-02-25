@@ -2,8 +2,8 @@
 
 import dynamic from "next/dynamic";
 import animation404 from "@/assets/animations/Error 404.json";
-import { OrangeBtnLink } from "../ui/Button";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+import { FillBtnLink } from "../ui/Button";
 // Lazy-load Lottie to avoid SSR issues
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -28,10 +28,10 @@ const Error404 = () => {
         The page you are looking for does not exist.
       </p>
 
-      <OrangeBtnLink url={"/"}>
+      <FillBtnLink href={"/"}>
         <FaRegArrowAltCircleLeft size={20}/>
         Go back home
-      </OrangeBtnLink>
+      </FillBtnLink>
     </div>
   );
 };

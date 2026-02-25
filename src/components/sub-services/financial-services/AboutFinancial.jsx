@@ -1,24 +1,28 @@
 import bgImg from "@/assets/images/sub-services/financialservices/financial-services.jpg";
+import { FillBtnLink } from "@/components/ui/Button";
 import Image from "next/image";
 
 const AboutFinancialService = () => {
   return (
-    <div className="bg-[#fff8f2]">
-      <div className="max-w-7xl m-auto flex flex-col gap-16 py-24 px-10">
+    <div className="">
+      <div className="max-w-[90rem] m-auto flex flex-col gap-16 
+        xl:px-10
+        lg:px-20 lg:py-20 
+        md:px-10 md:py-10
+        max-md:px-5 max-md:py-10">
         <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-12">
           {/* Text Content */}
           <div className="w-full lg:w-[45%] flex flex-col gap-7 items-start">
-            <div className="flex flex-col gap-4">
-              <p className="brand-text-orange text-xl flex items-center gap-2">
-                <span className="w-8 h-[3px] brand-bg-orange rounded-full inline-block"></span>
-                Discover What’s Possible
-              </p>
-              <h1 className="text-dark-navy text-5xl font-bold">
+            <div className="flex flex-col gap-1">
+              <h4 className="uppercase tracking-[0.3em]">
+                  Discover What’s Possible
+              </h4>
+              <h3 className="text-3xl brand-text-primary">
                 Who benefits from our expert advice and experience?
-              </h1>
+              </h3>
             </div>
 
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className=" leading-relaxed">
               Crew Capital was established to ensure that top-tier education and opportunities are accessible to everyone working in the aviation & mining industry.
             </p>
 
@@ -28,9 +32,9 @@ const AboutFinancialService = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="mt-5 px-6 py-3 brand-bg-orange text-white rounded-lg hover:opacity-80 transition-colors">
+            <FillBtnLink href={"/"}>
               Learn More
-            </button>
+            </FillBtnLink>
           </div>
 
           {/* Image */}

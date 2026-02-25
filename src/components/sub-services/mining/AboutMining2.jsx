@@ -1,15 +1,26 @@
 import bgImg from "@/assets/images/sub-services/mining/mining2.jpg";
-import { DarkBtnLink } from "@/components/ui/Button";
+import { FillBtnLink } from "@/components/ui/Button";
 import Image from "next/image";
 import { BsDownload } from "react-icons/bs";
 
 const AboutMining2 = () => {
   return (
-    <div className="py-24 px-10">
-      <div className="max-w-7xl m-auto flex flex-col lg:flex-row items-center gap-16">
+    <div className="py-20 brand-bg-secondary
+      xl:px-10
+      lg:px-20 
+      md:px-10 
+      max-md:px-5 ">
+      <div className="max-w-[90rem] m-auto flex flex-col lg:flex-row items-center gap-16
+        xl:px-10
+        lg:pb-32
+        md:pb-0 md:px-0
+        max-md:pb-0 max-md:px-0">
         
         {/* Image Left */}
-        <div className="w-full lg:w-[45%] relative rounded-2xl overflow-hidden shadow-xl">
+        <div className="w-full lg:w-[45%] relative rounded-2xl overflow-hidden shadow-xl
+          lg:block
+          md:hidden
+          max-md:hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-dark-navy/30 to-transparent rounded-2xl"></div>
           <Image src={bgImg} alt="property investment" className="rounded-2xl" />
         </div>
@@ -17,15 +28,15 @@ const AboutMining2 = () => {
         {/* Text Right */}
         <div className="w-full lg:w-[55%] flex flex-col gap-7 items-start">
           {/* Section Indicator */}
-          <p className="text-green-300 text-xl flex items-center gap-2">
-            <span className="w-8 h-[3px] bg-green-300 rounded-full inline-block"></span>
-            Simplifying Property Investment
-          </p>
-
-          {/* Main Title */}
-          <h1 className="text-white text-4xl lg:text-5xl font-bold leading-snug">
-            Invest Smarter, Save More, and Avoid the Hassle
-          </h1>
+          
+          <div className="flex flex-col gap-1">
+              <h4 className="uppercase tracking-[0.3em] text-white">
+                Simplifying Property Investment
+              </h4>
+              <h3 className="text-3xl brand-text-primary">
+                Invest Smarter, Save More, and Avoid the Hassle
+              </h3>
+            </div>
 
           {/* Paragraphs */}
           <p className="text-white text-lg leading-relaxed">
@@ -42,9 +53,9 @@ const AboutMining2 = () => {
           </div>
 
           {/* CTA Button */}
-          <DarkBtnLink url={"/"}>
-            <BsDownload size={20}/> Download Free Guide 
-          </DarkBtnLink>
+          <FillBtnLink href={"/"}>
+             Download
+          </FillBtnLink>
         </div>
       </div>
     </div>

@@ -17,7 +17,6 @@ export default function FinancialService() {
           <PropertyServices />
           <FinancialServices />
           <AncillaryServices />
-          <Partners />
         </div>
       </div>
     </div>

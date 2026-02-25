@@ -13,7 +13,7 @@ export default function Mining() {
         <BannerIntro title={"MINING PROFESSIONALS"} bgImg={mining}/>
         <div className="flex flex-col lg:gap-10 md:gap-10 max-md:gap-10 max-sm:gap-5">
           <AboutMining />
-          <div className="flex flex-col gap-10 relative pb-36">
+          <div className="flex flex-col gap-10 relative lg:pb-36 md:pb-0 max-md:pb-0">
             <AboutMining2 />
             <MiningBanner />
           </div>

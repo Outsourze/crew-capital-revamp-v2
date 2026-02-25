@@ -4,8 +4,10 @@
 /* === Design Tokens / Brand Theme === */
 :root {
   /* Brand Colors */
-  --color-brand-orange: #E3572B;
-  --color-brand-navy-blue: #16243E;
+  --color-brand-primary: #D6E100;
+  --color-brand-primary-second: #D6DD37;
+  --color-brand-secondary: #24282A;
+  --color-brand-default-text: #212529;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-slight-white: #F6F6FE;
@@ -34,7 +36,7 @@
 /* //dark mode and lightmode bg */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #16243E;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -42,7 +44,7 @@
 /* === Base Styles === */
 body {
   background-color: var(--background);
-  color: var(--color-brand-navy-blue);
+  color: var(--color-brand-default-text);
 }
 
 @layer utilities {
@@ -72,20 +74,20 @@ body {
     text-shadow: var(--text-shadow-heading);
   }
 
-  .brand-bg-navy {
-    background-color: var(--color-brand-navy-blue);
+  .brand-bg-primary {
+    background-color: var(--color-brand-primary);
   }
 
-  .brand-text-navy {
-    color: var(--color-brand-navy-blue); 
+  .brand-text-primary {
+    color: var(--color-brand-primary);
   }
 
-  .brand-bg-orange {
-    background-color: var(--color-brand-orange);
+  .brand-bg-secondary {
+    background-color: var(--color-brand-secondary);
   }
 
-  .brand-text-orange {
-    color: var(--color-brand-orange);
+  .brand-text-secondary {
+    color: var(--color-brand-secondary);
   }
 
   .brand-text-gray {

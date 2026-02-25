@@ -86,34 +86,47 @@ const financialData = [
 
 const FinancialServices = () => {
     return (
-        <div className="relative bg-[#fff8f2]">
+        <div className="relative ">
             <Image src={bg1} className="absolute left-5 top-5
                 xl:block
-                lg:hidden" />
+                md:hidden
+                max-md:hidden" />
             <Image src={bg2} className="absolute right-5 bottom-5
                 xl:block
-                lg:hidden" />
-            <div className="max-w-7xl m-auto py-12 px-10">
-                <div className="flex flex-col gap-5">
-                    <p className="text-center brand-text-orange text-xl">Financial Services</p>
-                    <h1 className="font-semibold text-4xl text-center mb-14 leading-tight text-dark-navy">
-                        Comprehensive Financial Solutions to Maximise Your <span className="brand-text-orange">Wealth</span> and <span className="brand-text-orange">Opportunities</span>
-                    </h1>
+                md:hidden
+                max-md:hidden" />
+            <div className="m-auto py-12
+                max-w-[90rem] 
+                xl:px-10
+                lg:px-20
+                md:px-10
+                max-md:px-5">
+                <div className="flex flex-col gap-1 text-center mb-10">
+                  <h4 className="uppercase tracking-[0.3em]">
+                      Financial Services
+                  </h4>
+                  <h3 className="brand-text-primary
+                     md:text-3xl 
+                    max-md:text-2xl">
+                    Comprehensive Financial Solutions to Maximise Your Wealth and Opportunities
+                  </h3>
                 </div>
 
                 <div className="flex flex-wrap gap-5 justify-between">
                     {financialData.map((data, index) => (
                         <div 
                             key={index} 
-                            className={`w-full sm:w-[49%] p-6 flex flex-col gap-5 rounded-2xl shadow-md hover:shadow-lg transition-transform duration-300
-                                ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border border-[#E3572B]`}
+                            className={`w-full p-6 flex flex-col gap-5 rounded-md shadow-md hover:shadow-lg transition-transform duration-300
+                                md:w-[48%]
+                                max-md:w-full
+                                ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border `}
                         >
-                            <h1 className="text-2xl font-semibold brand-text-orange">{data.title}</h1>
+                            <h1 className="text-2xl ">{data.title}</h1>
                             <div className="flex flex-col gap-3 mt-2">
                                 {data.benefits.map((bene, i) => (
                                     <div key={i} className="flex gap-3 items-start">
-                                        <FaCheck className="mt-1 brand-text-orange flex-shrink-0" />
-                                        <p className="text-gray-500 leading-relaxed">{bene}</p>
+                                        <FaCheck className="mt-1 flex-shrink-0" />
+                                        <p className="leading-relaxed">{bene}</p>
                                     </div>
                                 ))}
                             </div>

@@ -6,6 +6,7 @@ import moneyAnimation from "@/assets/animations/money.json";
 import img1 from "@/assets/images/sub-services/smsf/handshake.jpg";
 import img2 from "@/assets/images/sub-services/smsf/calcu.jpg";
 import img3 from "@/assets/images/sub-services/smsf/piggybank.jpg";
+import { FillBtnLink } from "@/components/ui/Button";
 
 
 // 2. understanding of smsfs key feature
@@ -181,22 +182,27 @@ const windingSMSF = [{
 
 const AboutSmsf = () => {
   return (
-    <section className="bg-[#fff8f2] py-20 px-6 sm:px-10 lg:px-16">
-      <div className="max-w-7xl mx-auto flex flex-col gap-32">
+    <section className="px-6 
+      xl:px-10 
+      lg:px-20 lg:py-20 
+      md:px-10 md:py-10
+      max-md::px-5 max-md:py-10">
+      <div className="max-w-[90rem] mx-auto flex flex-col gap-32">
 
         {/* ================= HERO SECTION ================= */}
         <div className="flex flex-col lg:flex-row items-center gap-14">
 
           {/* LEFT CONTENT */}
           <div className="w-full lg:w-1/2 flex flex-col gap-7 items-start">
-            <p className="brand-text-orange text-lg flex items-center gap-2">
-              <span className="w-8 h-[3px] brand-bg-orange rounded-full"></span>
-              Your Guide to SMSFs
-            </p>
-
-            <h1 className="text-dark-navy text-4xl sm:text-5xl font-bold leading-tight">
-              Everything You Need to Know
-            </h1>
+          
+            <div className="flex flex-col gap-1 mb-5">
+              <h4 className="uppercase tracking-[0.3em]">
+                  Your Guide to SMSFs
+              </h4>
+              <h3 className="text-3xl brand-text-primary">
+                Everything You Need to Know
+              </h3>
+            </div>
 
             <p className="text-gray-700 text-lg leading-relaxed">
               Learn how Self-Managed Superannuation Funds can help you build wealth 
@@ -207,9 +213,9 @@ const AboutSmsf = () => {
               We Understand Your Challenges
             </div>
 
-            <button className="mt-2 px-6 py-3 brand-bg-orange text-white rounded-lg hover:opacity-80 transition">
+            <FillBtnLink href={"/"}>
               Learn More
-            </button>
+            </FillBtnLink>
           </div>
 
           {/* RIGHT IMAGE */}
@@ -226,7 +232,9 @@ const AboutSmsf = () => {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-14">
             {/* TEXT */}
             <div className="w-full lg:w-1/2 flex flex-col gap-4">
-              <h2 className="text-3xl font-semibold brand-text-orange">1. Introduction to SMSFs</h2>
+              <h3 className="text-3xl brand-text-primary">
+                1. Introduction to SMSFs
+              </h3>
               <p className="text-gray-700 leading-relaxed">
                 A Self-Managed Superannuation Fund (SMSF) is a private super fund that you manage yourself.
                 Regulated by the Australian Taxation Office (ATO), SMSFs offer greater control over investment
@@ -246,13 +254,15 @@ const AboutSmsf = () => {
             
             {/* TEXT */}
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
-              <h2 className="text-3xl font-semibold brand-text-orange">2. Understanding SMSFs</h2>
+              <h3 className="text-3xl brand-text-primary">
+                2. Understanding SMSFs
+              </h3>
               
               <h3 className="text-dark-navy font-semibold text-xl">2.1 Key Features</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {keyFeature.map((i, index) => (
-                    <div className="bg-white border-l-4 border-[#E3572B] p-6 rounded-xl shadow-lg">
+                    <div className="bg-white border-l-4 border-[#D6E100] p-6 rounded-xl shadow-lg">
                       <h4 className="font-semibold text-dark-navy text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
                     </div>
@@ -274,7 +284,7 @@ const AboutSmsf = () => {
               {LegalRegulatoryData.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition"
+                  className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition"
                 >
                   <h4 className="text-dark-navy font-semibold text-lg">{item.title}</h4>
                   <p className="text-gray-600 text-sm mt-2">{item.descrpt}</p>
@@ -283,12 +293,20 @@ const AboutSmsf = () => {
             </div>
           </div>
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">3. Setting Up an SMSF</h2>
+            <h3 className="text-3xl brand-text-primary">
+                3. Setting Up an SMSF
+              </h3>
             <h3 className="text-dark-navy font-semibold text-xl">3.1 Establish the Trust:</h3>
 
-            <div className="flex items-center justify-between gap-2">
+            <div className="flex flex-wrap items-center justify-between 
+              lg:gap-5
+              md:gap-5 md:gap-y-20
+              max-md:gap-5 max-md:gap-y-20">
             {establishTrustData.map((i, index) => (
-                <div key={index} className="w-[32%] relative group">
+                <div key={index} className="relative group
+                  lg:w-[31%] 
+                  md:w-[48%]
+                  max-md:w-full">
                   <Image
                     src={i.img}
                     className="rounded-xl w-full h-[280px] object-cover transition-all"
@@ -296,11 +314,14 @@ const AboutSmsf = () => {
             
                   <div className="
                     bg-white/90 backdrop-blur-sm shadow-xl border border-gray-200
-                    flex flex-col gap-2 p-5 absolute w-[80%] h-[130px]
+                    flex flex-col gap-2 p-5 absolute 
                     rounded-r-lg rounded-b-lg -bottom-10 left-0
+                    xl:w-[80%] xl:h-[130px]
+                    lg:w-[90%] lg:h-[170px]
+                    md:w-[80%] md:h-[130px]
                   ">
                     <h3 className="font-semibold text-gray-800">{i.title}</h3>
-                    <div className="w-8 h-[2px] bg-orange-500 rounded-full"></div>
+                    <div className="w-8 h-[2px] bg-green-500 rounded-full"></div>
                     <p className="text-sm text-gray-600">{i.dscrpt}</p>
                   </div>
                 </div>
@@ -310,11 +331,13 @@ const AboutSmsf = () => {
           <div className="flex flex-col gap-6">
               <h3 className="text-dark-navy font-semibold text-xl">3.2 Register the SMSF:</h3>
             
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {registerSmsfData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -325,11 +348,13 @@ const AboutSmsf = () => {
           <div className="flex flex-col gap-6">
               <h3 className="text-dark-navy font-semibold text-xl">3.3 Create an Investment Strategy:</h3>
             
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {investmentStrategyData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -338,13 +363,16 @@ const AboutSmsf = () => {
             </div>
           </div>
           <div className="w-full flex flex-col gap-6">
-                <h2 className="text-3xl font-semibold brand-text-orange">4. Investing in a property with SMSF.</h2>
+                <h2 className="text-3xl brand-text-primary">4. Investing in a property with SMSF.</h2>
+                
                 <h3 className="text-dark-navy font-semibold text-xl">4.1 Types of property investments:</h3>
-                <div className="flex justify-between gap-6">
+                <div className="flex justify-between gap-6 flex-wrap">
                 {investProperty.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -359,7 +387,9 @@ const AboutSmsf = () => {
                 {barrowPurchsePropertyData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition 
+                      md:w-1/2
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -374,7 +404,8 @@ const AboutSmsf = () => {
                 {stepToPurchasePropertyData.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-[32%]"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition 
+                        xl:w-[32%] lg:w-[48%] md:w-[48%] max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -384,13 +415,17 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">5. Benefits and Risk of SMSF Property Investment</h2>
+            <h2 className="text-3xl brand-text-primary">5. Benefits and Risk of SMSF Property Investment</h2>
             <h3 className="text-dark-navy font-semibold text-xl">5.1 Benefits:</h3>
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {benefits.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition 
+                      xl:w-[32%]
+                      lg:w-[48%]
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -401,11 +436,15 @@ const AboutSmsf = () => {
 
           <div className="w-full flex flex-col gap-6">
             <h3 className="text-dark-navy font-semibold text-xl">5.2 Risks:</h3>
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {risk.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition
+                      xl:w-[32%]
+                      lg:w-[48%]
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -415,13 +454,17 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">6. Ongoing Management of SMSF property</h2>
+            <h2 className="text-3xl brand-text-primary">6. Ongoing Management of SMSF property</h2>
             <h3 className="text-dark-navy font-semibold text-xl">6.1 Property Management:</h3>
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {propertyManagement.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition 
+                      xl:w-[32%]
+                      lg:w-[48%]
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -432,11 +475,15 @@ const AboutSmsf = () => {
 
           <div className="w-full flex flex-col gap-6">
             <h3 className="text-dark-navy font-semibold text-xl">6.2 Reporting and Administration:</h3>
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {reportingAdministration.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition 
+                      xl:w-[32%]
+                      lg:w-[48%]
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -446,13 +493,17 @@ const AboutSmsf = () => {
           </div>
 
           <div className="w-full flex flex-col gap-6">
-            <h2 className="text-3xl font-semibold brand-text-orange">7. Exit Strategy</h2>
+            <h2 className="text-3xl brand-text-primary">7. Exit Strategy</h2>
             <h3 className="text-dark-navy font-semibold text-xl">7.1 Selling the Property:</h3>
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {sellingProperty.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition 
+                      xl:w-[32%]
+                      lg:w-[48%]
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>
@@ -463,11 +514,15 @@ const AboutSmsf = () => {
 
           <div className="w-full flex flex-col gap-6">
             <h3 className="text-dark-navy font-semibold text-xl">7.2 Winding Up the SMSF:</h3>
-            <div className="flex justify-between gap-6">
+            <div className="flex justify-between gap-6 flex-wrap">
                 {windingSMSF.map((i, index) => (
                     <div
                       key={index}
-                      className="bg-white border border-orange-200 p-6 rounded-xl shadow hover:shadow-lg transition w-1/2"
+                      className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition
+                      xl:w-[32%]
+                      lg:w-[48%]
+                      md:w-[48%]
+                      max-md:w-full"
                     >
                       <h4 className="text-dark-navy font-semibold text-lg">{i.title}</h4>
                       <p className="text-gray-600 text-sm mt-2">{i.dscrpt}</p>

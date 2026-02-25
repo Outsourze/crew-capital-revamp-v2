@@ -1,35 +1,38 @@
 import bgImg from "@/assets/images/sub-services/airline/office-girl.jpg";
+import { FillBtnLink } from "@/components/ui/Button";
 import Image from "next/image";
 
 const AboutAirline = () => {
   return (
-    <div className="bg-[#fff8f2]">
-      <div className="max-w-7xl m-auto flex flex-col gap-16 py-24 px-10">
+    <div className="">
+      <div className="max-w-7xl m-auto flex flex-col gap-16 
+        xl:px-10
+        lg:px-20
+        md:px-10 md:py-20 
+        max-md:px-5 max-md:py-10">
         <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-12">
           {/* Text Content */}
           <div className="w-full lg:w-[45%] flex flex-col gap-7 items-start">
-            <div className="flex flex-col gap-4">
-              <p className="brand-text-orange text-xl flex items-center gap-2">
-                <span className="w-8 h-[3px] brand-bg-orange rounded-full inline-block"></span>
+            <div className="flex flex-col">
+              <h4 className="uppercase tracking-[0.3em]">
                 What We Do
-              </p>
-              <h1 className="text-dark-navy text-5xl font-bold">
+              </h4>
+              <h3 className="text-3xl brand-text-primary">
                 Attention Airline Crew & Aviation Professionals
-              </h1>
+              </h3>
             </div>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="">
               Feeling drained by shift work and yearning for more freedom? Imagine having enough passive income (earning money while you sleep) to reduce work hours and focus on what you truly love.
             </p>
 
             {/* Callout */}
-            <div className="bg-green-100/50 border-l-4 border-[#E3572B] px-5 py-3 rounded-md text-dark-navy font-medium">
+            <div className=" tracking-[0.3em] bg-green-100/50 border-l-4 border-[#E3572B] px-5 py-3 rounded-md text-dark-navy font-medium">
               We Understand Your Challenges
             </div>
 
-            {/* CTA Button */}
-            <button className="mt-5 px-6 py-3 brand-bg-orange text-white rounded-lg hover:opacity-80 transition-colors">
+            <FillBtnLink href={"/"}>
               Learn More
-            </button>
+            </FillBtnLink>
           </div>
 
           {/* Image */}
