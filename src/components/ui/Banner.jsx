@@ -1,4 +1,4 @@
-import aboutbanner from "@/assets/images/about/about-banner.jpg";
+import aboutbanner from "@/assets/images/about/about-banner.png";
 import Link from "next/link";
 
 const BannerIntro = ({ bgImg, title }) => {

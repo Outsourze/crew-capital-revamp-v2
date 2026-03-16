@@ -1,5 +1,5 @@
 import BannerIntro from "@/components/ui/Banner";
-import mining from "@/assets/images/sub-services/mining/mining-bg.jpg";
+import mining from "@/assets/images/sub-services/mining/mining-bg.png";
 import AboutMining from "@/components/sub-services/mining/AboutMining";
 import AboutMining2 from "@/components/sub-services/mining/AboutMining2";
 import MiningBanner from "@/components/sub-services/mining/Banner";

@@ -1,4 +1,4 @@
-import money from "@/assets/images/sub-services/wealthcreation/money.jpg";
+import money from "@/assets/images/sub-services/letsbuildwealth/money.jpg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -9,7 +9,6 @@ import { FaQuoteRight } from "react-icons/fa";
 import icon1 from "@/assets/images/p3.avif";
 import icon2 from "@/assets/images/p4.png";
 import icon3 from "@/assets/images/p1.png";
-import { FaStar } from "react-icons/fa";
 import bg1 from "@/assets/images/bg-01.png";
 import { useMediaQuery } from "@/utility/useMediaQuery";
 
