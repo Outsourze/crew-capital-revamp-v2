@@ -4,17 +4,17 @@ import OutsouzedLogo from "@/assets/logo/outsourze Logo.svg";
 import bg1 from "@/assets/images/bg-01-white.png";
 import bg2 from "@/assets/images/bg-04-white.png";
 import Image from "next/image";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import { FaViber, FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaTiktok } from "react-icons/fa6";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import FooterBanner from "./FooterBanner";
 
 const FooterContainer = () => {
   const socialMed = [
-    { icon: <FaFacebookF size={18} />, url: "/" },
-    { icon: <FaTwitter size={18} />, url: "/" },
-    { icon: <FaXTwitter size={18} className="brand-text-primary" />, url: "/" },
-    { icon: <FaViber size={18} />, url: "/" },
+    { icon: <FaFacebookF size={18} />, url: "https://www.facebook.com/people/Crew-Capital/61558145407438/" },
+    { icon: <FaInstagram size={18} />, url: "https://www.instagram.com/crew.capital" },
+    { icon: <FaTiktok size={18}  />, url: "https://www.tiktok.com/@crewcapital" },
+    { icon: <FaWhatsapp size={18} className="brand-text-primary"/>, url: "https://wa.me/61410815351" },
   ];
 
   const quickLink = [

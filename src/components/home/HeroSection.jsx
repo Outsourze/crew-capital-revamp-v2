@@ -2,7 +2,7 @@ import Image from "next/image";
 import partner1 from "@/assets/images/home/partner1.png";
 import partner2 from "@/assets/images/home/partner2.png";
 import partner3 from "@/assets/images/home/partner3.png";
-import { FillBtn } from "../ui/Button";
+import { FillBtnLink } from "../ui/Button";
 
 const HeroSection = () => {
     const partners = [
@@ -24,9 +24,9 @@ const HeroSection = () => {
                   max-sm:text-4xl max-sm:leading-tight">
                   <span className="brand-text-primary">Industry professionals everywhere agree,</span> purpose-built support sets a new standard.
                 </h1>
-                <FillBtn>
-                  SCHEDULE A DEMO
-                </FillBtn>
+                <FillBtnLink href={"/contact-us"}>
+                  Schedule an appointment
+                </FillBtnLink>
                 <p className="text-[#c9f0d5] font-semibold">Partnerships, Supporters & Integrations by:</p>
                 <div className="flex items-center 
                   md:gap-8

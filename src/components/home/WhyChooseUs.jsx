@@ -1,7 +1,7 @@
 import Success from "@/assets/icons/Success.svg";
 import About from "@/assets/icons/Aboutus.svg";
 import Meettheteam from "@/assets/icons/Meettheteam.svg";
-import house from "@/assets/images/home/Residential-Homes.webp";
+import house from "@/assets/images/home/Residential-Homes.png";
 import Image from "next/image";
 const whyUsData = [{
     title: "About Us",

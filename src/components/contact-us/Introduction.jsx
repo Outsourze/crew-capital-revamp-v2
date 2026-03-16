@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: <IoCallSharp size={36} />,
     title: "Call Us",
-    dscrpt: "+1300 008 566",
+    dscrpt: "+61 410 815 351",
   },
   {
     icon: <MdOutlineAccessTime size={36} />,
