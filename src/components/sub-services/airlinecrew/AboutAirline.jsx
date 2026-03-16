@@ -1,4 +1,4 @@
-import bgImg from "@/assets/images/sub-services/airline/office-girl.jpg";
+import bgImg from "@/assets/images/sub-services/airline/airline.jpg";
 import { FillBtnLink } from "@/components/ui/Button";
 import Image from "next/image";
 

@@ -13,8 +13,8 @@ const footerDetailBanner = [
     icon: <MdEmail className="brand-text-primary" size={22} />,
   },
   {
-    title: "Call Emergency",
-    info: "+61 410 815 351",
+    title: "Call",
+    info: "+1300 008 566",
     icon: <MdCall className="brand-text-primary" size={22} />,
   },
 ];

@@ -1,5 +1,5 @@
 import BannerIntro from "@/components/ui/Banner";
-import wealthCreation from "@/assets/images/sub-services/wealthcreation/wealthcreation-bg.jpg";
+import wealthCreation from "@/assets/images/sub-services/wealthcreation/wealthcreation-bg.png";
 import AboutWealthCreation from "@/components/sub-services/wealth/AboutWealthCreation";
 
 export default function WealthCreation() {

@@ -1,6 +1,5 @@
 import business from "@/assets/images/services/business.jpg";
 import Image from "next/image";
-import { FaArrowRightLong } from "react-icons/fa6";
 import { FillBtnLink } from "../ui/Button";
 
 const WhatWeDo = () => {
@@ -28,9 +27,6 @@ const WhatWeDo = () => {
                         </h3>
                     </div>
                     <p className="text-gray-500 ">Crew Capital provides industry-focused support for aviation crew, mining professionals, and individuals seeking financial, legal, and wealth-building services tailored to create long-term stability and growth.</p>
-                    <FillBtnLink href={"/"}>
-                        Get Started 
-                    </FillBtnLink>
                 </div>
             </div>
         </div>

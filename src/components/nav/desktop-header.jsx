@@ -15,7 +15,7 @@ const DesktopHeader = () => {
             </div>
             <div className="flex items-center gap-2">
                 <IoCall size={15} className="brand-text-blue"/>
-                <p className="text-sm ">Call Us: +61 410 815 351</p>
+                <p className="text-sm ">Call Us: +1300 008 566</p>
             </div>
             <div className="flex items-center gap-2">
                 <FaRegMap size={16} className="brand-text-blue"/>

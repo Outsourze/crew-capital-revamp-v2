@@ -1,5 +1,5 @@
 import BannerIntro from "@/components/ui/Banner";
-import letsBuildWealth from "@/assets/images/sub-services/letsbuildwealth/letsbuildwealth-bg.jpg";
+import letsBuildWealth from "@/assets/images/sub-services/letsbuildwealth/letsbuildwealth-bg.png";
 import AboutLetsBuildWealth from "@/components/sub-services/lets-build-wealth/AboutLetsBuildWealth";
 import WealthChecklist from "@/components/sub-services/lets-build-wealth/WealthChecklist";
 import WhatClientSay from "@/components/sub-services/lets-build-wealth/WhatClientSay";

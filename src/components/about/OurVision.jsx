@@ -1,5 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import aboutP from "@/assets/images/about/aboutP.png";
+import aboutP from "@/assets/images/about/aboutP.jpg";
 import Image from "next/image";
 import bg1 from "@/assets/images/bg-01-white.png";
 import bg2 from "@/assets/images/bg-04-white.png";

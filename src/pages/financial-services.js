@@ -1,5 +1,5 @@
 import BannerIntro from "@/components/ui/Banner";
-import finiancialService from "@/assets/images/sub-services/financialservices/financial-services-bg.jpg";
+import finiancialService from "@/assets/images/sub-services/financialservices/financial-services-bg.png";
 import AboutFinancialService from "@/components/sub-services/financial-services/AboutFinancial";
 import PropertyServices from "@/components/sub-services/financial-services/PropertyServices";
 import FinancialServices from "@/components/sub-services/financial-services/FinancialServices";

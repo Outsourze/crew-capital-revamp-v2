@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineEmail, MdOutlineAccessTime } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-import airport from "@/assets/images/contact-us/airport.webp";
+import airport from "@/assets/images/contact-us/house.png";
 
 const contactInfo = [
   {
@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: <IoCallSharp size={36} />,
     title: "Call Us",
-    dscrpt: "+61 410 815 351",
+    dscrpt: "+1300 008 566",
   },
   {
     icon: <MdOutlineAccessTime size={36} />,
