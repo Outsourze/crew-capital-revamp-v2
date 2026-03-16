@@ -69,7 +69,7 @@ const Header = () => {
       md:px-10
       max-md:px-5">
       <Link href={"/"} aria-label="Outsouzed Home" className="p-0 m-0">
-        <OutsouzedLogo className="lg:w-72 md:w-52 max-md:w-36 h-auto"/>
+        <OutsouzedLogo className="lg:w-72 md:w-52 max-md:w-44 h-auto"/>
       </Link>
 
       <div className="
