@@ -36,12 +36,12 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <div className="w-full m-auto flex flex-col gap-10 py-20 brand-bg-secondary
+        <div className="w-full m-auto flex flex-col gap-10 py-20 
           lg:px-20
           md:px-10
           max-md:px-0">
             <div className="flex flex-col gap-5 text-center">
-              <h4 className="uppercase tracking-[0.3em] text-white">
+              <h4 className="uppercase tracking-[0.3em] ">
                 Testimonials
               </h4>
               <h3 className="text-3xl brand-text-primary">
@@ -63,8 +63,8 @@ const Testimonials = () => {
                           <Image src={item.image} alt="image profile" className="w-24 h-24 rounded-full"/>
                           <div className="flex items-start justify-between w-full">
                             <div>
-                              <h3 className="text-2xl font-semibold text-white">{item.name}</h3>
-                              <p className="text-white text-sm mb-3">{item.occupation}</p>
+                              <h3 className="text-2xl font-semibold ">{item.name}</h3>
+                              <p className="text-sm mb-3">{item.occupation}</p>
                               <div className="flex gap-[1.5px]">
                                 {[...Array(5)].map((_, index) => (
                                   <FaStar size={14} key={index} className="text-yellow-400" />
@@ -75,7 +75,7 @@ const Testimonials = () => {
                           </div>
                         </div>
                             
-                        <p className="leading-relaxed mt-4 text-white">{item.text}</p>
+                        <p className="leading-relaxed mt-4">{item.text}</p>
                       </div>
                     </SwiperSlide>
                   ))}

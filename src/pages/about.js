@@ -3,6 +3,7 @@ import OurAchievement from "@/components/about/OurAchievement";
 import FinancialHelp from "@/components/about/FinancialHelp";
 import Testimonials from "@/components/about/Testimonials";
 import BannerIntro from "@/components/ui/Banner";
+import MeetOurteam from "@/components/about/MeetOurTeam";
 
 export default function About() {
   return (
@@ -14,6 +15,7 @@ export default function About() {
           <OurAchievement />
           <OurVision />
           <FinancialHelp />
+          <MeetOurteam />
           <Testimonials />
         </div>
       </div>
