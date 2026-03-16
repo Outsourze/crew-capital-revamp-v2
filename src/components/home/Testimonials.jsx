@@ -1,4 +1,4 @@
-import home from "@/assets/images/home/real-estate-miniature-house-model-zcovmnik4h0l5s7k.jpg";
+import home from "@/assets/images/home/real-estate-miniature-house-model.jpg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";

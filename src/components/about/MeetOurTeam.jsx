@@ -8,28 +8,28 @@ import timm from "@/assets/images/about/timm.png";
 const founderData = [
   {
     name: "Peter Thompson",
-    occupation: "Co-Founder",
+    occupation: "Managing Partner",
     descrpt:
       "Peter Thompson is an entrepreneur and property strategist who founded Crew Capital Management to help investors build wealth through coordinated property advisory, finance, and investment strategies. His work combines financial strategy, and long-term property investment, with a focus on helping clients build sustainable wealth over time.",
     img: peter,
   },
   {
     name: "Matt Cooper",
-    occupation: "Co-Founder",
+    occupation: "Managing Partner",
     descrpt:
       "Matt Cooper successfully transitioned from elite professional athlete to business professional, combining his sporting discipline and leadership with roles in property investment advisory, mortgage and financial services, and investor engagement through Crew Capital.",
     img: matt,
   },
   {
     name: "Tim Brasher",
-    occupation: "Co-Founder",
+    occupation: "Sales Director",
     descrpt:
       "Tim Brasher successfully transitioned from elite NRL fullback and international representative to business professional, contributing to Crew Capital’s property investment advisory platform through investor engagement, client relationships, and strategic property discussions.",
     img: timm,
   },
   {
     name: "Nathalie",
-    occupation: "Co-Founder",
+    occupation: "Admin Support",
     descrpt:
       "Supporting Crew Capital's client operations and investor communication to deliver clear strategies.",
     img: natalie,
