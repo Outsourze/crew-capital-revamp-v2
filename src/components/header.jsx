@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { SlMenu } from "react-icons/sl";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import OutsouzedLogo from "@/assets/logo/outsourze Logo.svg";
 
 const containerVariants = {
   hidden: {
@@ -67,10 +68,9 @@ const Header = () => {
       lg:px-20 
       md:px-10
       max-md:px-5">
-      <div className="text-white">
-        <h1>ICON</h1>
-        <p className="capitalize">THE PREMIUM INDUSTRY SOLUTION</p>
-      </div>
+      <Link href={"/"} aria-label="Outsouzed Home" className="p-0 m-0">
+        <OutsouzedLogo className="lg:w-72 md:w-52 max-md:w-36 h-auto"/>
+      </Link>
 
       <div className="
         md:relative

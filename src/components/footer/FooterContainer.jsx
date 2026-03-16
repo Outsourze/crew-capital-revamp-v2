@@ -1,6 +1,6 @@
 import CopyRight from "./Copyright";
 import Link from "next/link";
-import crewCapitalLogo from "@/assets/logo/Crew-Capital-Management_cap-logo-white-1.png";
+import OutsouzedLogo from "@/assets/logo/outsourze Logo.svg";
 import bg1 from "@/assets/images/bg-01-white.png";
 import bg2 from "@/assets/images/bg-04-white.png";
 import Image from "next/image";
@@ -60,13 +60,10 @@ const FooterContainer = () => {
         <div className="grid grid-cols-1 gap-12 max-md:gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="flex flex-col gap-6 text-center max-md:text-center md:text-left">
-            <Link href="/">
-              <Image
-                src={crewCapitalLogo}
-                alt="Crew Capital Logo"
-                className="w-36 max-md:w-32 mx-auto md:mx-0"
-              />
+            <Link href={"/"} aria-label="Outsouzed Home" className="p-0 m-0">
+              <OutsouzedLogo className="lg:w-72 md:w-52 max-md:w-36 h-auto"/>
             </Link>
+
 
             <p className="text-white text-sm max-md:text-xs leading-relaxed max-w-md mx-auto md:mx-0">
               Helping you find your dream home with ease. Trusted, reliable, and local real estate experts.

@@ -36,6 +36,7 @@ export default function ScrollToTop({ showAfter = 300 }) {
         hover:scale-110
         hover:bg-[#c8cf2f]
         active:scale-95
+        cursor-pointer
       "
     >
       <FiArrowUp size={22} />
