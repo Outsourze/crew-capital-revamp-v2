@@ -14,7 +14,7 @@ const Form = () => {
         </div>
 
         {/* Form */}
-        <form className="flex flex-col gap-10">
+        <form className="flex flex-col gap-10" id="form">
 
           {/* First Name */}
           <div>
