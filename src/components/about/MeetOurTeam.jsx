@@ -29,7 +29,7 @@ const founderData = [
   },
   {
     name: "Nathalie",
-    occupation: "Admin Support",
+    occupation: "Admin & Marketing",
     descrpt:
       "Supporting Crew Capital's client operations and investor communication to deliver clear strategies.",
     img: natalie,

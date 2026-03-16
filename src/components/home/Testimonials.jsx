@@ -1,4 +1,4 @@
-import home from "@/assets/images/home/real-estate-miniature-house-model.jpg";
+import home from "@/assets/images/home/advance-lifestyle.png";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -56,25 +56,7 @@ const Testimonials = () => {
       max-md:pb-5">
       <Image src={bg1} className="absolute right-0 bottom-0"/>
       <div className="flex items-start justify-between gap-10">
-        {/* Left Image */}
-        <div
-          className="
-            w-full sm:w-[40%] 
-            relative 
-            overflow-hidden 
-            rounded-none sm:rounded-r-[50%]
-            h-[250px] sm:h-auto
-            max-md:hidden
-          "
-          style={{ height: typeof window !== "undefined" && window.innerWidth >= 640 ? rightHeight : "250px" }}
-        >
-          <Image
-            src={home}
-            alt="home img"
-            fill
-            style={{ objectFit: "cover", objectPosition: "center" }}
-          />
-        </div>
+        
 
         {/* Right Content */}
         <div ref={rightRef} className="flex flex-col pr-5 py-14
@@ -156,6 +138,26 @@ const Testimonials = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Left Image */}
+        <div
+          className="
+            w-full sm:w-[40%] 
+            relative 
+            overflow-hidden 
+            rounded-none sm:rounded-l-[50%]
+            h-[250px] sm:h-auto
+            max-md:hidden
+          "
+          style={{ height: typeof window !== "undefined" && window.innerWidth >= 640 ? rightHeight : "250px" }}
+        >
+          <Image
+            src={home}
+            alt="home img"
+            fill
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
         </div>
       </div>
     </div>

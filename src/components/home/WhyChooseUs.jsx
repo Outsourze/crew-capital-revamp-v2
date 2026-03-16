@@ -1,7 +1,7 @@
 import Success from "@/assets/icons/Success.svg";
 import About from "@/assets/icons/Aboutus.svg";
 import Meettheteam from "@/assets/icons/Meettheteam.svg";
-import house from "@/assets/images/home/Residential-Homes.png";
+import house from "@/assets/images/home/real-estate-miniature-house-model.jpg";
 import Image from "next/image";
 const whyUsData = [{
     title: "About Us",
@@ -19,7 +19,7 @@ const whyUsData = [{
 
 const WhyUs = () => {
     return (
-        <div className="max-w-7xl m-auto py-12 flex w-full justify-between gap-10
+        <div className="max-w-7xl m-auto py-20 flex w-full justify-between gap-10 
             xl:px-0 
             lg:px-20  
             md:px-10 md:flex-row
