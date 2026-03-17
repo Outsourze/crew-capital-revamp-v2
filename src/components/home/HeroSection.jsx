@@ -22,7 +22,7 @@ const HeroSection = () => {
                   md:text-5xl md:leading-tight
                   max-md:text-4xl max-md:leading-snug
                   max-sm:text-4xl max-sm:leading-tight">
-                  <span className="brand-text-primary">Industry professionals everywhere agree,</span> purpose-built support sets a new standard.
+                  <span className="brand-text-primary">Your Complete Property & Finance Team,</span> Guiding You From First Purchase to Financial Freedom.
                 </h1>
                 <FillBtnLink href={"/contact-us"}>
                   Schedule an appointment
