@@ -9,47 +9,75 @@ const HeroSection = () => {
         partner1,
         partner2,
         partner3
-    ]
+    ];
 
     return (
-        <div className="m-auto z-10 relative
-          lg:px-20 
-          md:px-10 md:pt-56 md:pb-20 
-          max-md:pt-44 max-md:px-5 max-md:pb-20">
-            <div className="max-w-[600px] flex flex-col items-start text-white
-              md:gap-5 max-md:gap-8">
-                <h1 className="
-                  md:text-5xl md:leading-tight
-                  max-md:text-4xl max-md:leading-snug
-                  max-sm:text-4xl max-sm:leading-tight">
-                  <span className="brand-text-primary">Your Complete Property & Finance Team,</span> Guiding You From First Purchase to Financial Freedom.
+        <div
+            className="m-auto z-10 relative
+            lg:px-20 
+            md:px-10 md:pt-56 md:pb-20 
+            max-md:pt-44 max-md:px-5 max-md:pb-20"
+        >
+            <div
+                className="max-w-[600px] flex flex-col items-start text-white
+                md:gap-6 max-md:gap-8"
+            >
+                <h1
+                    className="
+                    md:text-5xl md:leading-tight
+                    max-md:text-4xl max-md:leading-snug
+                    max-sm:text-4xl max-sm:leading-tight"
+                >
+                    <span className="brand-text-primary">
+                        Your Complete Property & Finance Team,
+                    </span>{" "}
+                    Guiding You From First Purchase to Financial Freedom.
                 </h1>
+
+                {/* Subheading */}
+                <p
+                    className="
+                    text-[#c9f0d5]
+                    md:text-lg
+                    max-md:text-base
+                    leading-relaxed
+                    max-w-[520px]"
+                >
+                    Strategic property advice, tailored finance, and expert acquisition all working together
+                </p>
+
                 <FillBtnLink href={"/contact-us"}>
-                  Schedule an appointment
+                    Schedule an appointment
                 </FillBtnLink>
-                <p className="text-[#c9f0d5] font-semibold">Partnerships, Supporters & Integrations by:</p>
-                <div className="flex items-center 
-                  md:gap-8
-                  max-md:gap-5">
-                  {partners.map((partner, index) => (
-                    <div
-                      key={index}
-                      className="relative rounded-full overflow-hidden bg-white
-                        md:w-24 md:h-24
-                        max-md:w-22 max-md:h-22"
-                    >
-                      <Image
-                        src={partner}
-                        alt={`Partner ${index + 1}`}
-                        fill
-                        className="object-contain scale-130 rounded-full"
-                      />
-                    </div>
-                  ))}
+
+                <p className="text-[#c9f0d5] font-semibold">
+                    Partnerships, Supporters & Integrations by:
+                </p>
+
+                <div
+                    className="flex items-center 
+                    md:gap-8
+                    max-md:gap-5"
+                >
+                    {partners.map((partner, index) => (
+                        <div
+                            key={index}
+                            className="relative rounded-full overflow-hidden bg-white
+                            md:w-24 md:h-24
+                            max-md:w-22 max-md:h-22"
+                        >
+                            <Image
+                                src={partner}
+                                alt={`Partner ${index + 1}`}
+                                fill
+                                className="object-contain scale-130 rounded-full"
+                            />
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default HeroSection;
